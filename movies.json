@@ -6,10 +6,10 @@
     "duration": 120,
     "description": "Cinco años después de los eventos de \"Dominion\"...",
     "posterUrl": "https://pelispedia.mov/wp-content/uploads/jurassic-world-el-renacer-2025.jpg",
-    "backdropUrl": "",
+    "backdropUrl": "https://pelispedia.mov/wp-content/uploads/jurassic-world-el-renacer-2025.jpg",
     "streamUrl": "https://filemoon.link/e/zy85yq3z154r",
     "streamType": "WEB",
-    "cast": [],
+    "cast": [acc],
     "genres": ["Acción", "Aventura", "Ciencia ficción"]
   },
  
