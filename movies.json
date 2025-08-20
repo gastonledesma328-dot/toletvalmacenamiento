@@ -12,17 +12,4 @@
     "cast": [],
     "genres": ["Acción", "Aventura", "Ciencia ficción"]
   },
-  {
-    "id": "mi-perfecto-ex-2024",
-    "title": "Mi Perfecto Ex (2024)",
-    "year": 2024,
-    "duration": 105,
-    "description": "Cata deja a su novio, esperando que le suplique volver...",
-    "posterUrl": "",
-    "backdropUrl": "",
-    "streamUrl": "https://filemoon.link/e/zy85yq3z154r",
-    "streamType": "DIRECT_URL",
-    "cast": [],
-    "genres": ["Comedia", "Romance"]
-  }
-]
+ 
