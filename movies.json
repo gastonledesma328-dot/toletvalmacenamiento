@@ -1,13 +1,58 @@
-{
-  "id": "titulo-en-slug",
-  "title": "Titulo",
-  "year": 2024,
-  "duration": 123,
-  "description": "Sinopsis...",
-  "posterUrl": "https://...jpg",
-  "backdropUrl": "https://...jpg",
-  "streamUrl": "",
-  "streamType": "UNKNOWN",
-  "cast": ["Actriz 1", "Actor 2"],
-  "genres": ["Acción", "Drama"]
-}
+[
+  {
+    "id": "jurassic-world-el-renacer-2025---pelispedia",
+    "title": "Jurassic World: El renacer (2025) - PELISPEDIA",
+    "year": 0,
+    "duration": 0,
+    "description": "Cinco años después de los eventos de \"Dominion\", sigue a Zora (Scarlett Johansson), que dirige un equipo para conseguir material genético de tres enormes dinosaurios. Cuando la operación se cruza con una familia, quedan varados en una isla donde hacen un siniestro descubrimiento..",
+    "posterUrl": "https://pelispedia.mov/wp-content/uploads/jurassic-world-el-renacer-2025.jpg",
+    "backdropUrl": "",
+    "streamUrl": "",
+    "streamType": "UNKNOWN",
+    "cast": [],
+    "genres": []
+  },
+  {
+    "id": 1258706693,
+    "title": "Mi Perfecto Ex",
+    "description": "Pelicula Mi Perfecto Ex:Cata deja a su novio, esperando que le suplique volver. Cuando no lo hace, va a un resort donde lo encuentra transformad...",
+    "synopsis": "Pelicula Mi Perfecto Ex:Cata deja a su novio, esperando que le suplique volver. Cuando no lo hace, va a un resort donde lo encuentra transformad...",
+    "posterUrl": "",
+    "backdropUrl": "",
+    "trailerUrl": "",
+    "streamUrl": "",
+    "category": "peliculas",
+    "duration": 0,
+    "year": 0,
+    "rating": 0.0,
+    "genre": [
+      "ver Mi Perfecto Ex 2024 online HD"
+    ],
+    "director": "",
+    "cast": [],
+    "country": "",
+    "language": "",
+    "quality": "HD",
+    "ageRating": "",
+    "releaseDate": "",
+    "studio": "",
+    "awards": [],
+    "isFavorite": false,
+    "isWatched": false,
+    "watchProgress": 0,
+    "streamType": "DIRECT_URL"
+  },
+  {
+    "id": "ver-mi-perfecto-ex-2024-online-latino-hd---pelisplus",
+    "title": "Ver Mi Perfecto Ex (2024) Online Latino HD - Pelisplus",
+    "year": 0,
+    "duration": 0,
+    "description": "",
+    "posterUrl": "",
+    "backdropUrl": "",
+    "streamUrl": "https://habetar.com/e/eroccnzmeamz",
+    "streamType": "UNKNOWN",
+    "cast": [],
+    "genres": []
+  }
+]
