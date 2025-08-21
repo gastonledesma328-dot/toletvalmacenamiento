@@ -1,15 +1,10 @@
 [
   {
-    "id": "1444",
+    "id": "jurassic-2025",
     "title": "Jurassic World: El renacer (2025)",
+    "posterUrl": "https://pics.filmaffinity.com/jurassic_world_rebirth-254962281-mmed.jpg",
+    "streamUrl": "https://xenolyzb.com/e/pvp1q29rscyv",
     "year": 2025,
-    "duration": 120,
-    "description": "Cinco años después de los eventos de \"Dominion\"...",
-    "posterUrl": "https://pelispedia.mov/wp-content/uploads/jurassic-world-el-renacer-2025.jpg",
-    "backdropUrl": "https://pelispedia.mov/wp-content/uploads/jurassic-world-el-renacer-2025.jpg",
-    "streamUrl": "https://filemoon.link/e/zy85yq3z154r",
-    "streamType": "WEB",
-    "cast": [],
-    "genres": ["Acción", "Aventura", "Ciencia ficción"]
-  },
- 
+    "duration": 120
+  }
+]
