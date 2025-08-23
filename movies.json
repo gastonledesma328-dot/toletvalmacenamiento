@@ -4,76 +4,98 @@
     "title": "Pitufos 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/c75ddfa25470c0ce23b102aace18cbd3_hd.webp",
     "streamUrl": "https://lamovie.link/embed-603nlbprx18a.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Animación",
+    "description": "Los Pitufos regresan con nuevas aventuras mágicas en su mundo encantado."
   },
   {
     "id": "lamovie-f1-la-pelicula-2025",
     "title": "F1 La Pelicula 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/e7457d17b2c25be95c52d11b9661e3d0_hd.webp",
     "streamUrl": "https://lamovie.link/embed-t6q9g8bfs9xl.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Acción",
+    "description": "Una historia llena de velocidad, drama y adrenalina en el mundo de la Fórmula 1."
   },
   {
     "id": "lamovie-los-tipos-malos-2-2025",
     "title": "Los Tipos Malos 2 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/1e3e51624f2739f2246c355d747eb732_hd.webp",
     "streamUrl": "https://lamovie.link/embed-h58l5flumid5.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Animación",
+    "description": "Los divertidos villanos favoritos regresan en una nueva misión alocada."
   },
   {
     "id": "lamovie-elio-2025",
     "title": "Elio 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/8d744b3b3cd88b53220a18ce98ff2e32_hd.webp",
     "streamUrl": "https://lamovie.link/embed-u5rzs30rp4s5.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Ciencia ficción y Fantasía",
+    "description": "Un niño es transportado a una aventura intergaláctica inesperada."
   },
   {
     "id": "lamovie-mision-imposible-la-sentencia-final-2025",
     "title": "Imposible - La sentencia final (2025) HD",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/a3929fbe84e2ac33ce75cc03fa641974_hd.webp",
     "streamUrl": "https://lamovie.link/embed-heqjtv97ef12.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Acción",
+    "description": "Ethan Hunt enfrenta su misión más peligrosa en esta entrega final."
   },
   {
     "id": "lamovie-amores-materialistas-2025",
     "title": "Amores Materialistas 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/2911f0d8896a1d25bfe2ad96ac356529_hd.webp",
     "streamUrl": "https://lamovie.link/embed-kq0e1bj6gp4n.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Romance",
+    "description": "Una historia moderna donde el amor se enfrenta a la obsesión por lo material."
   },
   {
     "id": "lamovie-superman-2025",
     "title": "Superman 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/d505450b7b5b26ffb99b6d7dcec352f7_hd.webp",
     "streamUrl": "https://lamovie.link/embed-yyl8vgxc4dkg.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Acción y Aventura",
+    "description": "El Hombre de Acero vuelve a la gran pantalla para proteger a la humanidad."
   },
   {
     "id": "lamovie-happy-gilmore-2-2025",
     "title": "Happy Gilmore 2 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/af7502534a99245d4f8f39ad0b01b9c4_hd.webp",
     "streamUrl": "https://lamovie.link/embed-dm4olkny4y6r.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Comedia",
+    "description": "El golfista más irreverente regresa en una secuela cargada de humor."
   },
   {
     "id": "lamovie-lilo-y-stitch-2025",
     "title": "Lilo Y Stitch 2025 (2025)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/d55c3437bcfd7e555d6d53fa7f7b8b7e_hd.webp",
     "streamUrl": "https://lamovie.link/embed-2zhdwaa2lq2k.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Familia",
+    "description": "El tierno alienígena y su amiga hawaiana vuelven en esta nueva versión."
   },
   {
     "id": "lamovie-mamma-mia-2008",
     "title": "Mamma Mia 2008 (2008)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/fdec523bd0d2a84b9295c4787772944e_hd.webp",
     "streamUrl": "https://lamovie.link/embed-21pp4chje935.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Música",
+    "description": "Un musical lleno de romance y canciones inolvidables de ABBA."
   },
   {
     "id": "lamovie-implacable-2024",
     "title": "Implacable 2024 (2024)",
     "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/fc3260a87835978a0ba92072ea36284c_hd.webp",
     "streamUrl": "https://lamovie.link/embed-0xpla7bbivqx.html",
-    "streamType": "WEB"
+    "streamType": "WEB",
+    "category": "Suspenso",
+    "description": "Un thriller intenso donde la venganza y la justicia se entrelazan."
   }
 ]
