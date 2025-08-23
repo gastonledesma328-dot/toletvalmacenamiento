@@ -164,10 +164,13 @@
     "country": "Argentina",
     "quality": "HD"
   },
+
+
+  
   {
     "id": "lamovie-jurassic-world-renace-2025",
     "title": "Jurassic World Renace (2025)",
-    "posterUrl": "https://www.impawards.com/2025/jurassic_world_renace.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/jurassic_world_renace.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-r3hsoz54c3vf.html",
     "streamType": "WEB",
     "category": "Acción / Aventura / Ciencia ficción",
@@ -182,7 +185,7 @@
   {
     "id": "lamovie-como-entrenar-a-tu-dragon-2025",
     "title": "Cómo Entrenar a tu Dragón (2025)",
-    "posterUrl": "https://www.impawards.com/2025/how_to_train_your_dragon_ver2.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/how_to_train_your_dragon_ver2.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-93gmqk26d9ug.html",
     "streamType": "WEB",
     "category": "Animación / Fantasía / Aventura",
@@ -197,7 +200,7 @@
   {
     "id": "lamovie-happy-gilmore-1996",
     "title": "Happy Gilmore (1996)",
-    "posterUrl": "https://www.impawards.com/1996/happy_gilmore.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/1996/happy_gilmore.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-jfonhmpp3y69.html",
     "streamType": "WEB",
     "category": "Comedia / Deporte",
@@ -212,7 +215,7 @@
   {
     "id": "lamovie-it-eso-2017",
     "title": "It (Eso) (2017)",
-    "posterUrl": "https://www.impawards.com/2017/it_ver2.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2017/it_ver2.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-j2wagq76hh3n.html",
     "streamType": "WEB",
     "category": "Terror / Suspenso",
@@ -227,7 +230,7 @@
   {
     "id": "lamovie-sin-previo-aviso-2025",
     "title": "Sin Previo Aviso (2025)",
-    "posterUrl": "https://www.impawards.com/2025/sin_previo_aviso.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/sin_previo_aviso.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-z57xmvxyjwkv.html",
     "streamType": "WEB",
     "category": "Thriller / Drama",
@@ -242,7 +245,7 @@
   {
     "id": "lamovie-lo-mejor-del-mundo-2025",
     "title": "Lo Mejor del Mundo (2025)",
-    "posterUrl": "https://www.impawards.com/2025/lo_mejor_del_mundo.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/lo_mejor_del_mundo.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-u8293syk1cdd.html",
     "streamType": "WEB",
     "category": "Drama / Romance",
@@ -257,7 +260,7 @@
   {
     "id": "lamovie-el-origen-2010",
     "title": "El Origen (Inception) (2010)",
-    "posterUrl": "https://www.impawards.com/2010/inception_ver3.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2010/inception_ver3.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-uog0l1cy08dd.html",
     "streamType": "WEB",
     "category": "Acción / Ciencia ficción",
@@ -272,7 +275,7 @@
   {
     "id": "lamovie-el-amateur-operacion-venganza-2025",
     "title": "El Amateur: Operación Venganza (2025)",
-    "posterUrl": "https://www.impawards.com/2025/el_amateur_operacion_venganza.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/el_amateur_operacion_venganza.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-jzlw9bitg9tm.html",
     "streamType": "WEB",
     "category": "Acción / Thriller",
@@ -287,7 +290,7 @@
   {
     "id": "lamovie-el-contador-2-2025",
     "title": "El Contador 2 (The Accountant 2) (2025)",
-    "posterUrl": "https://www.impawards.com/2025/accountant_two.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/accountant_two.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-l6y620vj9njw.html",
     "streamType": "WEB",
     "category": "Acción / Crimen / Thriller",
@@ -302,7 +305,7 @@
   {
     "id": "lamovie-mama-reinventada-2025",
     "title": "Mamá Reinventada (2025)",
-    "posterUrl": "https://www.impawards.com/2025/mama_reinventada.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/mama_reinventada.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-dw0r9viiuvq8.html",
     "streamType": "WEB",
     "category": "Comedia / Drama",
@@ -317,7 +320,7 @@
   {
     "id": "lamovie-mirreyes-vs-godinez-2019",
     "title": "Mirreyes vs Godínez (2019)",
-    "posterUrl": "https://www.impawards.com/2019/mirreyes_vs_godinez.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2019/mirreyes_vs_godinez.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-ylimck31km8w.html",
     "streamType": "WEB",
     "category": "Comedia",
@@ -332,7 +335,7 @@
   {
     "id": "lamovie-como-perder-a-un-hombre-en-10-dias-2003",
     "title": "Cómo perder a un hombre en 10 días (2003)",
-    "posterUrl": "https://www.impawards.com/2003/how_to_lose_a_guy_in_10_days.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2003/how_to_lose_a_guy_in_10_days.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-5nwz9vi5zemk.html",
     "streamType": "WEB",
     "category": "Romance / Comedia",
@@ -347,7 +350,7 @@
   {
     "id": "lamovie-el-fantastico-sr-zorro-2009",
     "title": "El Fantástico Sr. Zorro (Fantastic Mr. Fox) (2009)",
-    "posterUrl": "https://www.impawards.com/2009/fantastic_mr_fox_ver3.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2009/fantastic_mr_fox_ver3.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-fnx7miiktzny.html",
     "streamType": "WEB",
     "category": "Animación / Aventura / Comedia",
@@ -362,7 +365,7 @@
   {
     "id": "lamovie-un-mejor-papa-2025",
     "title": "Un Mejor Papá (2025)",
-    "posterUrl": "https://www.impawards.com/2025/un_mejor_papa.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/un_mejor_papa.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-bm071b75303f.html",
     "streamType": "WEB",
     "category": "Comedia / Drama familiar",
@@ -377,7 +380,7 @@
   {
     "id": "lamovie-el-cuento-de-las-comadrejas-2019",
     "title": "El Cuento de las Comadrejas (2019)",
-    "posterUrl": "https://www.impawards.com/2019/el_cuento_de_las_comadrejas.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2019/el_cuento_de_las_comadrejas.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-fenmueou9y9s.html",
     "streamType": "WEB",
     "category": "Comedia / Drama",
@@ -392,7 +395,7 @@
   {
     "id": "lamovie-mufasa-el-rey-leon-2024",
     "title": "Mufasa: El Rey León (2024)",
-    "posterUrl": "https://www.impawards.com/2024/mufasa_the_lion_king.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/mufasa_the_lion_king.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-as79zsodqldc.html",
     "streamType": "WEB",
     "category": "Animación / Aventura / Musical",
@@ -407,7 +410,7 @@
   {
     "id": "lamovie-better-man-2024",
     "title": "Better Man: La Historia de Robbie Williams (2024)",
-    "posterUrl": "https://www.impawards.com/2024/better_man.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/better_man.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-y7c3h85vanwf.html",
     "streamType": "WEB",
     "category": "Biografía / Drama / Musical",
@@ -422,7 +425,7 @@
   {
     "id": "lamovie-moana-2-2024",
     "title": "Moana 2 (2024)",
-    "posterUrl": "https://www.impawards.com/2024/moana_two.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/moana_two.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-0zyh6v00tu8h.html",
     "streamType": "WEB",
     "category": "Animación / Aventura / Fantasía",
@@ -437,7 +440,7 @@
   {
     "id": "lamovie-sonic-3-la-pelicula-2024",
     "title": "Sonic 3: La Película (2024)",
-    "posterUrl": "https://www.impawards.com/2024/sonic_the_hedgehog_three.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/sonic_the_hedgehog_three.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-5z0kyms1zyct.html",
     "streamType": "WEB",
     "category": "Acción / Aventura / Fantasía",
@@ -452,7 +455,7 @@
   {
     "id": "lamovie-kraven-el-cazador-2024",
     "title": "Kraven: El Cazador (2024)",
-    "posterUrl": "https://www.impawards.com/2024/kraven_the_hunter.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/kraven_the_hunter.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-6x88npkz0aqz.html",
     "streamType": "WEB",
     "category": "Acción / Superhéroes",
@@ -467,7 +470,7 @@
   {
     "id": "lamovie-wicked-2024",
     "title": "Wicked (2024)",
-    "posterUrl": "https://www.impawards.com/2024/wicked_ver2.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/wicked_ver3.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-xknvzuxn6xxy.html",
     "streamType": "WEB",
     "category": "Musical / Fantasía / Drama",
@@ -482,27 +485,27 @@
   {
     "id": "lamovie-gladiador-ii-2024",
     "title": "Gladiador II (Gladiator II) (2024)",
-    "posterUrl": "https://www.impawards.com/2024/gladiator_ii_ver6.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/gladiator_ii_ver6.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-k32v2qz0q9ug.html",
     "streamType": "WEB",
     "category": "Acción / Drama histórico",
     "description": "Lucius, ahora adulto, se ve obligado a entrar en la arena y enfrentarse a un imperio corrupto, siguiendo el legado de Máximo.",
-    "duration": "157m",
+    "duration": "148m",
     "rating": "R",
     "year": 2024,
     "language": "Inglés",
-    "country": "EE.UU.",
+    "country": "EE.UU. / Reino Unido",
     "quality": "HD"
   },
   {
     "id": "lamovie-venom-el-ultimo-baile-2024",
     "title": "Venom: El Último Baile (2024)",
-    "posterUrl": "https://www.impawards.com/2024/venom_the_last_dance_ver2.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/venom_the_last_dance_ver7.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-x0502elyecz5.html",
     "streamType": "WEB",
     "category": "Acción / Superhéroes / Ciencia ficción",
     "description": "Eddie Brock y Venom se enfrentan a su amenaza más letal hasta la fecha, en una batalla que decidirá su futuro y el del mundo.",
-    "duration": "128m",
+    "duration": "109m",
     "rating": "PG-13",
     "year": 2024,
     "language": "Inglés",
@@ -512,7 +515,7 @@
   {
     "id": "lamovie-la-sustancia-2024",
     "title": "La Sustancia (The Substance) (2024)",
-    "posterUrl": "https://www.impawards.com/2024/la_sustancia.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/la_sustancia.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-se641y39hdnm.html",
     "streamType": "WEB",
     "category": "Terror corporal / Ciencia ficción / Satírico",
@@ -527,7 +530,7 @@
   {
     "id": "lamovie-joker-folie-a-deux-2024",
     "title": "Joker: Folie à Deux (2024)",
-    "posterUrl": "https://www.impawards.com/2024/joker_folie_a_deux_ver3.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/joker_folie_a_deux_ver3.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-sflanz2im8c4.html",
     "streamType": "WEB",
     "category": "Drama psicológico / Musical / Suspenso",
@@ -542,7 +545,7 @@
   {
     "id": "lamovie-deadpool-wolverine-2024",
     "title": "Deadpool & Wolverine (2024)",
-    "posterUrl": "https://www.impawards.com/2024/deadpool_and_wolverine_ver6.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/deadpool_and_wolverine_ver6.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-lxfxt3st0ir5.html",
     "streamType": "WEB",
     "category": "Acción / Comedia / Superhéroes",
@@ -557,7 +560,7 @@
   {
     "id": "lamovie-intensamente-2-2024",
     "title": "Intensamente 2 (Inside Out 2) (2024)",
-    "posterUrl": "https://www.impawards.com/2024/inside_out_2.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/inside_out_2.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-ygqbs42hctbc.html",
     "streamType": "WEB",
     "category": "Animación / Coming-of-Age / Comedia dramática",
@@ -572,7 +575,7 @@
   {
     "id": "lamovie-open-season-amigos-salvajes-2006",
     "title": "Open Season: Amigos salvajes (2006)",
-    "posterUrl": "https://www.impawards.com/2006/open_season_ver3_xlg.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2006/open_season_ver3_xlg.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-58w4ifrdb9c3.html",
     "streamType": "WEB",
     "category": "Animación / Comedia / Aventura",
@@ -587,7 +590,7 @@
   {
     "id": "lamovie-angeles-del-desierto-2024",
     "title": "Ángeles del Desierto (Dirty Angels) (2024)",
-    "posterUrl": "https://www.impawards.com/2024/dirty_angels.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2024/dirty_angels.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-r6a2xj4u24en.html",
     "streamType": "WEB",
     "category": "Acción / Drama / Thriller militar",
@@ -602,7 +605,7 @@
   {
     "id": "lamovie-ex-machina-2015",
     "title": "Ex Machina (2015)",
-    "posterUrl": "https://www.impawards.com/2015/ex_machina.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2015/ex_machina.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-nldsgbzaai8c.html",
     "streamType": "WEB",
     "category": "Ciencia ficción / Drama psicológico",
@@ -617,7 +620,7 @@
   {
     "id": "lamovie-pasajeros-2016",
     "title": "Passengers (2016)",
-    "posterUrl": "https://www.impawards.com/2016/passengers.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2016/passengers.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-b3flkyjbgz35.html",
     "streamType": "WEB",
     "category": "Ciencia ficción / Romance / Drama",
@@ -632,7 +635,7 @@
   {
     "id": "lamovie-batman-vs-superman-2016",
     "title": "Batman vs Superman: El origen de la justicia (2016)",
-    "posterUrl": "https://www.impawards.com/2016/batman_v_superman_dawn_of_justice_ver45.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2016/batman_v_superman_dawn_of_justice_ver45.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-ij73s4gtypil.html",
     "streamType": "WEB",
     "category": "Acción / Superhéroes / Ciencia ficción",
@@ -647,7 +650,7 @@
   {
     "id": "lamovie-capitan-america-un-nuevo-mundo-2025",
     "title": "Capitán América: Un Nuevo Mundo (2025)",
-    "posterUrl": "https://www.impawards.com/2025/captain_america_brave_new_world_ver3.html",
+    "posterUrl": "https://images.weserv.nl/?url=www.impawards.com/2025/captain_america_brave_new_world_ver3.jpg&output=webp",
     "streamUrl": "https://lamovie.link/embed-hqrp92kfsq2g.html",
     "streamType": "WEB",
     "category": "Superhéroes / Acción / Ciencia ficción",
@@ -660,6 +663,7 @@
     "quality": "HD"
   }
 ]
+
 
 
 
