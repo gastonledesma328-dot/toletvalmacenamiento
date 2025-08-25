@@ -104,8 +104,6 @@
     "country": "EE.UU.",
     "quality": "4K"
   },
-
-  
   {
     "id": "lamovie-happy-gilmore-2-2025",
     "title": "Happy Gilmore 2 (2025)",
@@ -121,8 +119,6 @@
     "country": "EE.UU.",
     "quality": "HD"
   },
-
-  
   {
     "id": "lamovie-lilo-y-stitch-2025",
     "title": "Lilo Y Stitch 2025 (2025)",
@@ -138,8 +134,6 @@
     "country": "EE.UU.",
     "quality": "HD"
   },
-
-  
   {
     "id": "lamovie-mamma-mia-2008",
     "title": "Mamma Mia (2008)",
@@ -155,8 +149,6 @@
     "country": "Reino Unido / EE.UU.",
     "quality": "HD"
   },
-
-  
   {
     "id": "lamovie-implacable-2024",
     "title": "Implacable (2024)",
@@ -172,9 +164,6 @@
     "country": "Argentina",
     "quality": "HD"
   },
-
-
-  
   {
     "id": "lamovie-jurassic-world-renace-2025",
     "title": "Jurassic World Renace (2025)",
@@ -190,8 +179,6 @@
     "country": "EE.UU.",
     "quality": "HD"
   },
-
-  
   {
     "id": "lamovie-como-entrenar-a-tu-dragon-2025",
     "title": "Cómo Entrenar a tu Dragón (2025)",
@@ -237,7 +224,6 @@
     "country": "EE.UU.",
     "quality": "HD"
   },
-  
   {
     "id": "lamovie-lo-mejor-del-mundo-2025",
     "title": "Lo Mejor del Mundo (2025)",
@@ -298,7 +284,6 @@
     "country": "EE.UU.",
     "quality": "HD"
   },
-
   {
     "id": "lamovie-como-perder-a-un-hombre-en-10-dias-2003",
     "title": "Cómo perder a un hombre en 10 días (2003)",
@@ -553,24 +538,20 @@
     "language": "Español / Inglés",
     "country": "EE.UU.",
     "quality": "HD"
+  },
+  {
+    "id": "lamovie-nueve-reinas-2000",
+    "title": "Nueve Reinas (2000)",
+    "posterUrl": "https://pelispedia.mov/wp-content/uploads/nueve-reinas-2000.jpg",
+    "streamUrl": "https://embed69.org/f/tt0247586",
+    "streamType": "WEB",
+    "category": "Crimen, Drama, Suspense",
+    "description": "Buenos Aires. Juan y Marcos son dos estafadores de poca monta, uno joven y un veterano en el arte del timpo, que casualmente se ven envueltos en un asunto que les puede hacer millonarios: tienen menos de un día para hacer una estafa que no puede fallar..",
+    "duration": "2h 30m",
+    "rating": "7.7",
+    "year": 2000,
+    "language": "",
+    "country": "",
+    "quality": "HD"
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
