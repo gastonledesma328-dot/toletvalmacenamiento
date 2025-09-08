@@ -1,5 +1,4 @@
-
-        list.add(
+list.add(
             Movie(
                 1, "Telefe", "Canal generalista argentino",
                 "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
