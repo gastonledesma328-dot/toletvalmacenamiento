@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <!-- Status Bar (no interactiva) -->
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/status_bar_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="24dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <TextView
+            android:id="@+id/tvEvents"
+            style="@style/StatusBarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/events"
+            android:drawableStart="@drawable/ic_events"
+            android:drawablePadding="8dp"
+            android:focusable="false" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            style="@style/StatusBarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:drawableStart="@drawable/ic_account"
+            android:drawablePadding="8dp"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/ivNotifications"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_notifications"
+            android:contentDescription="@string/notifications"
+            android:importantForAccessibility="no"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/ivWifi"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_wifi"
+            android:contentDescription="@string/wifi"
+            android:importantForAccessibility="no"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/StatusBarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:36"
+            android:textStyle="bold"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            style="@style/StatusBarTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOLE TV"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Sidebar Navigation -->
+        <LinearLayout
+            android:id="@+id/sidebar"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/nav_background"
+            android:orientation="vertical"
+            android:paddingVertical="24dp"
+            android:paddingHorizontal="10dp"
+            android:descendantFocusability="afterDescendants">
+
+            <!-- CINE -->
+            <ImageView
+                android:id="@+id/navCine"
+                style="@style/NavigationItemStyle"
+                android:src="@drawable/ic_cinema"
+                android:contentDescription="@string/section_cine"
+                android:tag="cine"
+                android:background="@drawable/bg_nav_item"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:nextFocusUp="@id/navCine"
+                android:nextFocusDown="@id/navCanales" />
+
+            <!-- CANALES -->
+            <ImageView
+                android:id="@+id/navCanales"
+                style="@style/NavigationItemStyle"
+                android:src="@drawable/ic_play"
+                android:contentDescription="@string/section_canales"
+                android:tag="canales"
+                android:background="@drawable/bg_nav_item"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:nextFocusUp="@id/navCine"
+                android:nextFocusDown="@id/navEntretenimiento" />
+
+            <!-- ENTRETENIMIENTO -->
+            <ImageView
+                android:id="@+id/navEntretenimiento"
+                style="@style/NavigationItemStyle"
+                android:src="@drawable/ic_entertainment"
+                android:contentDescription="@string/section_entretenimiento"
+                android:tag="entretenimiento"
+                android:background="@drawable/bg_nav_item"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:nextFocusUp="@id/navCanales"
+                android:nextFocusDown="@id/navDeportes" />
+
+            <!-- DEPORTES -->
+            <ImageView
+                android:id="@+id/navDeportes"
+                style="@style/NavigationItemStyle"
+                android:src="@drawable/ic_sports"
+                android:contentDescription="@string/section_deportes"
+                android:tag="deportes"
+                android:background="@drawable/bg_nav_item"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:nextFocusUp="@id/navEntretenimiento"
+                android:nextFocusDown="@id/navFavoritos" />
+
+            <!-- FAVORITOS -->
+            <ImageView
+                android:id="@+id/navFavoritos"
+                style="@style/NavigationItemStyle"
+                android:src="@drawable/ic_favorites"
+                android:contentDescription="@string/section_favoritos"
+                android:tag="favoritos"
+                android:background="@drawable/bg_nav_item"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:nextFocusUp="@id/navDeportes"
+                android:nextFocusDown="@id/navPeliculas" />
+
+            <!-- PELÍCULAS -->
+            <ImageView
+                android:id="@+id/navPeliculas"
+                style="@style/NavigationItemStyle"
+                android:src="@drawable/ic_movies"
+                android:contentDescription="@string/section_peliculas"
+                android:tag="peliculas"
+                android:background="@drawable/bg_nav_item"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:nextFocusUp="@id/navFavoritos"
+                android:nextFocusDown="@id/navPeliculas" />
+        </LinearLayout>
+
+        <!-- Content Area -->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScroll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:descendantFocusability="afterDescendants">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- 1) CINE -->
+                <TextView
+                    android:id="@+id/tvCineTitle"
+                    style="@style/SectionTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_cine"
+                    android:focusable="false" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_channel"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:descendantFocusability="afterDescendants" />
+
+                <!-- 2) CANALES -->
+                <TextView
+                    android:id="@+id/tvCanalesTitle"
+                    style="@style/SectionTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_canales"
+                    android:focusable="false" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCanales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_channel"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:descendantFocusability="afterDescendants" />
+
+                <!-- 3) ENTRETENIMIENTO -->
+                <TextView
+                    android:id="@+id/tvEntretenimientoTitle"
+                    style="@style/SectionTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_entretenimiento"
+                    android:focusable="false" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEntretenimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_channel"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:descendantFocusability="afterDescendants" />
+
+                <!-- 4) DEPORTES -->
+                <TextView
+                    android:id="@+id/tvDeportesTitle"
+                    style="@style/SectionTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_deportes"
+                    android:focusable="false" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDeportes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_channel"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:descendantFocusability="afterDescendants" />
+
+                <!-- 5) FAVORITOS -->
+                <TextView
+                    android:id="@+id/tvFavoritosTitle"
+                    style="@style/SectionTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_favoritos"
+                    android:focusable="false" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFavoritos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_channel"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:descendantFocusability="afterDescendants" />
+
+                <!-- 6) PELÍCULAS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/tvPeliculasTitle"
+                        style="@style/SectionTitleStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/section_peliculas"
+                        android:focusable="false" />
+
+                    <Button
+                        android:id="@+id/btnSeeMoreMovies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="@string/see_more"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_primary"
+                        android:background="@drawable/card_background"
+                        android:paddingHorizontal="16dp"
+                        android:focusable="true"
+                        android:clickable="true"
+                        style="?android:attr/borderlessButtonStyle" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPeliculas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="8dp"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_movie"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:descendantFocusability="afterDescendants" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

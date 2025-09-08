@@ -1,0 +1,8 @@
+<resources>
+    <!-- Tamaño de póster -->
+    <dimen name="poster_w">200dp</dimen>
+    <dimen name="poster_h">300dp</dimen>
+
+    <!-- Espaciado entre pósters en la grilla -->
+    <dimen name="poster_spacing">5dp</dimen>
+</resources>

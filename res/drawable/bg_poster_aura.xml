@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Capa 1: aura MUY amplia y difuminada, teñida del color del fondo -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <gradient
+                android:type="radial"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:gradientRadius="520dp"
+                android:startColor="#33141414"
+            android:endColor="#00000000"/>
+        </shape>
+    </item>
+
+    <!-- Capa 2: aura media, aún difusa, también con el color del fondo -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <gradient
+                android:type="radial"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:gradientRadius="360dp"
+                android:startColor="#66141414"
+            android:endColor="#00000000"/>
+        </shape>
+    </item>
+
+    <!-- Capa 3: halo suave claro para separar apenas el póster del fondo -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <gradient
+                android:type="radial"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:gradientRadius="240dp"
+                android:startColor="#26FFFFFF"
+            android:endColor="#00000000"/>
+        </shape>
+    </item>
+
+</layer-list>

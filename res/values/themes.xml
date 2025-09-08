@@ -1,0 +1,117 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.ToleTV" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/tole_tv_primary</item>
+        <item name="colorPrimaryVariant">@color/tole_tv_secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorSecondaryVariant">@color/nav_selected</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/background_main</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/status_bar_bg</item>
+        <item name="android:navigationBarColor">@color/background_main</item>
+        <item name="android:windowBackground">@color/background_main</item>
+    </style>
+
+    <!-- No Action Bar theme -->
+    <style name="Theme.ToleTV.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Full Screen theme for video player -->
+    <style name="Theme.ToleTV.FullScreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+
+    <!-- TV Leanback theme -->
+    <style name="Theme.ToleTV.Leanback" parent="Theme.Leanback">
+        <item name="colorPrimary">@color/tole_tv_primary</item>
+        <item name="colorAccent">@color/accent_blue</item>
+        <item name="android:colorBackground">@color/background_main</item>
+        <item name="android:windowBackground">@color/background_main</item>
+    </style>
+
+    <!-- Navigation styles -->
+    <style name="NavigationItemStyle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:background">@drawable/nav_item_selector</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- Card styles -->
+    <style name="CardStyle">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- Channel card style -->
+    <style name="ChannelCardStyle" parent="CardStyle">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">120dp</item>
+
+    </style>
+
+    <!-- Movie card style -->
+    <style name="MovieCardStyle" parent="CardStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">160dp</item>
+    </style>
+
+    <!-- Radio card style -->
+    <style name="RadioCardStyle" parent="CardStyle">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+    <!-- Text styles -->
+    <style name="SectionTitleStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <style name="CardTitleStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DurationStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/duration_overlay</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Status bar styles -->
+    <style name="StatusBarTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/status_text</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+</resources>

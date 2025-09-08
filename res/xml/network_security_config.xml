@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">streamtp11.com</domain>
+        <domain includeSubdomains="true">cointv.online</domain>
+        <domain includeSubdomains="true">deportelibre.space</domain>
+        <domain includeSubdomains="true">tele-libre.org</domain>
+        <domain includeSubdomains="true">streamtpglobal.com</domain>
+        <domain includeSubdomains="true">viphlvp.xyz</domain>
+        <domain includeSubdomains="true">204.199.3.2</domain>
+        <domain includeSubdomains="true">stream1.sersat.com</domain>
+        <domain includeSubdomains="true">g1.vxral-hor.transport.edge-access.net</domain>
+        <domain includeSubdomains="true">router.cdn.rcs.net.ar</domain>
+        <domain includeSubdomains="true">telefeviacom1.akamaized.net</domain>
+        <domain includeSubdomains="true">live-01-07-ciudad.vodgc.net</domain>
+        <domain includeSubdomains="true">appcreator24.com</domain>
+
+    </domain-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>

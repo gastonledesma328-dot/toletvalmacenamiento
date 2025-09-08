@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <aapt:attr name="android:drawable" xmlns:aapt="http://schemas.android.com/aapt">
+        <vector
+            android:width="200dp"
+            android:height="200dp"
+            android:viewportWidth="200"
+            android:viewportHeight="200">
+
+            <!-- TV Screen Background -->
+            <path
+                android:name="tvBackground"
+                android:fillColor="@color/primary_dark"
+                android:pathData="M20,40 L180,40 Q190,40 190,50 L190,130 Q190,140 180,140 L20,140 Q10,140 10,130 L10,50 Q10,40 20,40 Z" />
+
+            <!-- TV Screen -->
+            <path
+                android:name="tvScreen"
+                android:fillColor="@color/background_main"
+                android:pathData="M30,55 L170,55 Q175,55 175,60 L175,115 Q175,120 170,120 L30,120 Q25,120 25,115 L25,60 Q25,55 30,55 Z" />
+
+            <!-- Play Button -->
+            <path
+                android:name="playButton"
+                android:fillColor="@color/tole_tv_primary"
+                android:pathData="M80,75 L120,90 L80,105 Z" />
+
+            <!-- TV Stand -->
+            <path
+                android:name="tvStand"
+                android:fillColor="@color/secondary_dark"
+                android:pathData="M70,140 L130,140 L125,160 L75,160 Z" />
+
+
+
+        </vector>
+    </aapt:attr>
+
+    <!-- Animations -->
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="200dp"
+        android:height="200dp"
+        android:viewportWidth="200"
+        android:viewportHeight="200">
+
+        <!-- ejemplo de uso correcto de aapt:attr para un gradiente -->
+        <path
+            android:pathData="M100,0 A100,100 0 1,1 99.99,0"
+            android:fillType="nonZero">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="radial"
+                    android:centerX="100"
+                    android:centerY="100"
+                    android:gradientRadius="100"
+                    android:startColor="@color/sun_yellow"
+                    android:endColor="@color/sun_orange" />
+            </aapt:attr>
+        </path>
+    </vector>
+
+
+</animated-vector>

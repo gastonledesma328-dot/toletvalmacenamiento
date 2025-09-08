@@ -1,0 +1,37 @@
+<resources>
+    <!-- Barra de estado -->
+    <string name="events">Eventos</string>
+    <string name="account">Cuenta</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="app_description">Tu centro de TV en vivo, películas y series. Disfrutá todo en un solo lugar.</string>
+    <string name="play_now">Ver ahora</string>
+    <!-- Sidebar -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_live">En vivo</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="security">Seguridad</string>
+    <string name="car_mode">Modo Auto</string>
+
+    <!-- Secciones -->
+    <string name="section_canales">Canales</string>
+    <string name="section_entretenimiento">Entretenimiento</string>
+    <string name="section_cine">Cine</string>
+    <string name="section_deportes">Deportes</string>
+    <string name="section_favoritos">Favoritos</string>
+    <string name="section_peliculas">Películas</string>
+    <string name="section_radios">Radios</string>
+    <string name="back">Volver</string>
+    <!-- Botones -->
+    <string name="see_more">Ver más</string>
+
+        <!-- ...lo que ya tengas... -->
+        <string name="search">Buscar</string>
+        <string name="clear">Limpiar</string>
+    <string name="variants">Variantes</string>
+
+
+    <!-- App -->
+    <string name="app_name">TOLE TV</string>
+</resources>
