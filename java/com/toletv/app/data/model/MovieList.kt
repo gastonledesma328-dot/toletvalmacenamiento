@@ -1,0 +1,539 @@
+// app/src/main/java/com/toletv/app/data/model/MovieList.kt
+package com.toletv.app.data.model
+
+import com.example.tv67777.Movie
+
+object MovieList {
+    val list = ArrayList<Movie>()
+
+    init {
+        // 📺 TV
+        list.add(
+            Movie(
+                1, "Telefe", "Canal generalista argentino",
+                "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
+                "https://mitelefe.com/Api/Videos/GetSourceUrl/694564/0/HLS",
+                StreamType.WEB,
+                ChannelCategory.TV.key
+            )
+        )
+        list.add(
+            Movie(
+                2, "Telefe Cba", "Canal generalista argentino",
+                "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
+                "https://www.parsatv.com/embed.php?name=Telefe-Cordoba",
+                StreamType.WE2,
+                ChannelCategory.TV.key
+            )
+        )
+        list.add(
+            Movie(
+                3, "El Trece", "Canal argentino de televisión abierta",
+                "https://upload.wikimedia.org/wikipedia/commons/e/ec/Logo_Canal_13_200_8.png",
+                "https://router.cdn.rcs.net.ar/mnp/el13_hls/playlist.m3u8",
+                StreamType.M3U8,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                4, "A24", "Canal argentino de televisión abierta",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/A24-logo.svg/258px-A24-logo.svg.png",
+                "https://canalesonline.netlify.app/servidores/anbalancer.html?id=A24",
+                StreamType.WE2,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                5, "TV Pública", "Canal argentino de televisión abierta",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TVP_-_Televisi%C3%B3n_P%C3%BAblica_%282021%29.svg/1200px-TVP_-_Televisi%C3%B3n_P%C3%BAblica_%282021%29.svg.png",
+                "https://cointv.online/cvatt.html?get=Q2FuYWw3",
+                StreamType.WE2,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                6, "LN", "Canal argentino de televisión abierta",
+                "https://upload.wikimedia.org/wikipedia/commons/8/81/LN%2B.png",
+                "https://canalesonline.netlify.app/servidores/sensa.html?id=LaNacionMas",
+                StreamType.WE2,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                7, "C5N", "Señal en vivo desde canal oficial",
+                "https://upload.wikimedia.org/wikipedia/commons/5/5a/C5N_%282017%29.png",
+                "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8",
+                StreamType.M3U8 ,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                8, "El Doce TV", "Canal de Córdoba",
+                "https://upload.wikimedia.org/wikipedia/commons/9/94/El_doce_tv_cba_logo.png",
+                "https://canalesonline.netlify.app/servidores/sensa.html?id=Canal12cba",
+                StreamType.WEB,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                9, "Canal 26", "Señal informativa argentina",
+                "https://upload.wikimedia.org/wikipedia/commons/8/8c/LogoCanal26.png",
+                "https://canalesonline.netlify.app/servidores/sensa.html?id=Canal26",
+                StreamType.WE2,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                10, "Crónica", "Señal de noticias argentina",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cr%C3%B3nica-logo.svg/1280px-Cr%C3%B3nica-logo.svg.png",
+                "https://canalesonline.netlify.app/servidores/sensa.html?id=Cronic",
+                StreamType.WE2,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                11, "Canal 4", "Canal regional",
+                "https://directostv.teleame.com/wp-content/uploads/2020/09/Canal-4-San-Francisco-Cordoba-en-vivo-Online.png",
+                "http://204.199.3.2/.m3u8",
+                StreamType.M3U8,
+                ChannelCategory.TV.key
+            )
+        )
+
+        list.add(
+            Movie(
+                12, "America", "Canal regional",
+                "https://upload.wikimedia.org/wikipedia/commons/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",
+                "https://canalesonline.netlify.app/servidores/anbalancer.html?id=AMERICA_TV",
+                StreamType.WE2,
+                ChannelCategory.TV.key
+            )
+        )
+
+        // 🎭 Entretenimiento
+        list.add(
+            Movie(
+                13, "Garage TV", "Canal automotor",
+                "https://static.wikia.nocookie.net/logopedia/images/d/d1/Large.logo_garageTV_HD.png.9288a09ab4d6cbef56c691cd4890aa24.png/revision/latest?cb=20210525001851&path-prefix=es",
+                "https://stream1.sersat.com/hls/garagetv.m3u8",
+                StreamType.M3U8,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+        list.add(
+            Movie(
+                14, "Cartoon Network", "",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cartoon_network_modified_logo.PNG/960px-Cartoon_network_modified_logo.PNG",
+                "https://cointv.online/cvatt.html?get=Q2FydG9vbk5ldHdvcms=",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                15, "Cartoonito", "",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/2560px-Cartoonito_-_Logo_2021.svg.png",
+                "https://cointv.online/cvatt.html?get=Qm9vbWVyYW5n",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+        list.add(
+            Movie(
+                16, "Disney Channel", "",
+                "https://upload.wikimedia.org/wikipedia/commons/7/78/Disney_Channel_Germany_Logo_2014.png",
+                "https://cointv.online/cvatt.html?get=RGlzbmV5Q2hhbm5lbEhE",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                17, "Disney Jr", "",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/2024_Disney_Jr._Logo.svg/1200px-2024_Disney_Jr._Logo.svg.png",
+                "https://cointv.online/cvatt.html?get=RGlzbmV5SnI=",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                18, "Discovery Kids", "",
+                "https://upload.wikimedia.org/wikipedia/commons/6/62/Discovery_kids_logo.png",
+                "https://cointv.online/cvatt.html?get=RGlzY292ZXJ5X0tpZHM=",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+        list.add(
+            Movie(
+                19, "NICKELODEON", "",
+                "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nickelodeon_2023_logo.png",
+                "https://cointv.online/cvatt.html?get=Tmlja2Vsb2Rlb24=",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                20, "NICK JR", "",
+                "https://upload.wikimedia.org/wikipedia/commons/0/05/Nick_Jr.logo.png",
+                "https://cointv.online/cvatt.html?get=Tmlja19Kcg==",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                21, "Animal Planet", "Documentales de animales",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png",
+                "https://cointv.online/cvatt.html?get=QW5pbWFsUGxhbmV0",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                22, "Love Nature", "Documentales de animales",
+                "https://lovenature.com/wp-content/uploads/2020/08/love-nature-logo_peacock.png",
+                "https://canalesonline.netlify.app/servidores/anbalancer.html?id=LOVE_NATURE",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                23, "Discovery Channel", "",
+                "https://static.cdnlogo.com/logos/d/60/discovery-channel.png",
+                "https://cointv.online/cvatt.html?get=RGlzY292ZXJ5SEQ=",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                24, "History", "",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/History_Logo.svg/1200px-History_Logo.svg.png",
+                "https://cointv.online/cvatt.html?get=SGlzdG9yeUhE",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                25, "History 2", "",
+                "https://upload.wikimedia.org/wikipedia/commons/a/a3/History2Logo2019.png",
+                "https://cointv.online/cvatt.html?get=SGlzdG9yeV8y",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        list.add(
+            Movie(
+                26, "National Geographic", "Documentales de ciencia",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Geographic-Logo.svg/1200px-National-Geographic-Logo.svg.png",
+                "https://cointv.online/cvatt.html?get=TmF0R2VvSEQ=",
+                StreamType.WE2,
+                ChannelCategory.ENTRETENIMIENTO.key
+            )
+        )
+
+        // ⚽ Deportes
+        list.add(
+            Movie(
+                27, "ESPN", "Deportes 24/7",
+                "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
+                "https://cointv.online/html/cvattde.html?get=RVNQTjJIRA",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                28, "ESPN 2", "Deportes 24/7",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/2560px-ESPN2_logo.svg.png",
+                "https://cointv.online/cvattde.html?get=RVNQTjJfQXJn",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                29, "ESPN 3", "Deportes 24/7",
+                "https://televvd.com/wp-content/uploads/2024/03/TODOS_2024_ESPN-3-1024x357.png",
+                "https://cointv.online/cvattde.html?get=RVNQTjM",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                30, "ESPN 4", "Deportes 24/7",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/1200px-ESPN_4_logo.svg.png",
+                "https://streamtp11.com/global1.php?stream=espn4",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                31, "ESPN Premium", "Fútbol argentino",
+                "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
+                "https://canalesonline.netlify.app/servidores/anbalancer.html?id=ESPN_PREMIUM",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                32, "TyC Sports", "Deportes en vivo",
+                "https://r2.thesportsdb.com/images/media/channel/logo/zmpjy41624030194.png",
+                "https://streamtp11.com/global1.php?stream=tycsports",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                33, "TNT Sports", "Deportes en vivo",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
+                "https://cointv.online/cvattde.html?get=VE5UX1Nwb3J0c19IRA",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                34, "Fox Sports", "Deportes en vivo",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/2560px-FOX_Sports_logo.svg.png",
+                "https://cointv.online/cvattde.html?get=Rm94U3BvcnRz",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                35, "Fox Sports 2", "Deportes en vivo",
+                "https://cdn.storage.foromedios.com/monthly_2023_02/large.1344882745_FOXSports2ARG(2023-).png.dc87e7653323f06426dd778a825e3514.png",
+                "https://cointv.online/cvattde.html?get=Rm94U3BvcnRzMkhE",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                36, "Fox Sports 3", "Deportes en vivo",
+                "https://cdn.storage.foromedios.com/monthly_2023_02/large.551251533_FOXSports3ARG(2023-).png.9facfaf5bfc0dd66a8d9535ea8d7cb05.png",
+                "https://cointv.online/cvattde.html?get=Rm94U3BvcnRzM0hE",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        list.add(
+            Movie(
+                37, "Dsport", "Deportes en vivo",
+                "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
+                "https://streamtp11.com/global1.php?stream=dsports",
+                StreamType.WE2,
+                ChannelCategory.DEPORTES.key
+            )
+        )
+
+        // 🎬 Cine
+        list.add(
+            Movie(
+                38, "Dreamworks", "Canal de pelis",
+                "https://logos-world.net/wp-content/uploads/2020/12/DreamWorks-Animation-Logo.png",
+                "https://cointv.online/cvatt.html?get=RHJlYW13b3Jrcw==",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                39, "Warner", "Canal de pelis",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/355px-Warner_Bros_logo.svg.png",
+                "https://cointv.online/html/cvatt.html?get=V2FybmVySEQ=",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                40, "TNT Series", "Canal de series",
+                "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png",
+                "https://tele-libre.org/html/cvatt.html?get=VE5UU2VyaWVz",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+        list.add(
+            Movie(
+                41, "TNT", "",
+                "https://upload.wikimedia.org/wikipedia/commons/6/68/Logo_TNT_Series.png",
+                "https://cointv.online/cvatt.html?get=VE5UX0hEX0FyZw",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                42, "TNT Novelas", "",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo_TNT_Novelas.png/1200px-Logo_TNT_Novelas.png",
+                "https://cointv.online/cvatt.html?get=VEJT",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+        list.add(
+            Movie(
+                43, "Cine Ar", "Cine argentino",
+                "https://upload.wikimedia.org/wikipedia/commons/a/a4/CINEARLogo.png",
+                "https://cointv.online/html/cvatt.html?get=SU5DQUFfVHY=",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                44, "Star Channel", "Películas y series",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/2560px-Star_Channel_2020.svg.png",
+                "https://cointv.online/html/cvatt.html?get=Rk9YSEQ=",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                45, "Cine Canal", "Cine internacional",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/1200px-CinecanalLA.png",
+                "https://cointv.online/html/cvatt.html?get=Q2luZWNhbmFsSEQ=",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                46, "Cinemax", "Películas",
+                "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cinemax_LA.png",
+                "https://cointv.online/cvatt.html?get=Q2luZW1heA==",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                47, "Space", "Cine de acción",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/1200px-SpaceLogo.svg.png",
+                "https://cointv.online/cvatt.html?get=U3BhY2U=",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                48, "Paramount Network", "Películas y series",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/1028px-Paramount_Network.svg.png",
+                "https://cointv.online/html/cvatt.html?get=UGFyYW1vdW50",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                49, "HBO", "Películas y series",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/512px-HBO_logo.svg.png",
+                "https://cointv.online/html/cvatt.html?get=SEJPSEQ=",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        list.add(
+            Movie(
+                50, "HBO Family", "Películas familiares",
+                "https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png",
+                "https://cointv.online/html/cvatt.html?get=SEJPX0ZhbWlseQ==",
+                StreamType.WE2,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        // 🎞️ Películas
+        list.add(
+            Movie(
+                51, "Ciudad Magazine", "Películas y entretenimiento",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Ciudad_magazine_logo.png/640px-Ciudad_magazine_logo.png",
+                "https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/tracks-v1a1/mono.m3u8",
+                StreamType.M3U8,
+                ChannelCategory.CINE.key
+            )
+        )
+
+        // 📽️ Series (fuera del zapping por categoría principal)
+        list.add(
+            Movie(
+                52, "Serie 1", "Descripción de la serie 1",
+                "https://cdn.wallpapersafari.com/42/26/n2jWqv.jpg",
+                "https://example.com/serie1.m3u8",
+                StreamType.M3U8,
+                "series"
+            )
+        )
+    }
+
+    val MOVIE_CATEGORY = arrayOf(
+        "🏠 Home",
+        "📺 TV",
+        "🎭 Entretenimiento",
+        "🎬 Cine",
+        "⚽ Deportes",
+        "🎞️ Películas",
+        "📽️ Series"
+    )
+}
