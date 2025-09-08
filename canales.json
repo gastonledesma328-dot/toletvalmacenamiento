@@ -54,6 +54,15 @@
     "category": "tv"
   },
   {
+    "id": 7,
+    "name": "C5N",
+    "description": "Señal en vivo desde canal oficial",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/C5N_%282017%29.png",
+    "streamUrl": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8",
+    "streamType": "M3U8",
+    "category": "tv"
+  },
+  {
     "id": 8,
     "name": "El Doce TV",
     "description": "Canal de Córdoba",
