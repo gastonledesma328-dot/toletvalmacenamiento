@@ -382,7 +382,7 @@
     "name": "Cine Ar",
     "description": "Cine argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/CINEARLogo.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=SU5DQUFfVHY=",
+    "streamUrl": "https://canalesonline.netlify.app/servidores/cvatt.html?get=SU5DQUFfVHY=",
     "streamType": "WE2",
     "category": "cine"
   },
