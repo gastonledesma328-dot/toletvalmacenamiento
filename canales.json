@@ -58,9 +58,8 @@
     "name": "C5N",
     "description": "Señal en vivo desde canal oficial",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/C5N_%282017%29.png",
-    "streamUrl": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8",
-    "streamType": "M3U8",
-    "category": "tv"
+    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=C5N",
+    "streamType": "WE2",
   },
   {
     "id": 8,
