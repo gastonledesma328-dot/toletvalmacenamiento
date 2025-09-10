@@ -103,7 +103,7 @@
     "name": "America",
     "description": "Canal regional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=AMERICA_TV",
+    "streamUrl": "https://tvlivre.online/html/dash.html?get=aHR0cHM6Ly9kYWkuZ29vZ2xlLmNvbS9saW5lYXIvaGxzL3BhL2V2ZW50L09ZMmlfbEw0U015WEU1WmFqNFVMRWcvc3RyZWFtLzgxOGNjYmMyLTcxZjItNGQyNS05ODNhLTkyODZiY2I5MWUzNDpDQkYyL21hc3Rlci5tM3U4",
     "streamType": "WE2",
     "category": "tv"
   },
