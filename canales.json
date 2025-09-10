@@ -59,7 +59,8 @@
     "description": "Señal en vivo desde canal oficial",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/C5N_%282017%29.png",
     "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=C5N",
-    "streamType": "WEB",
+    "streamType": "WE2",
+    "category": "tv"
   },
   {
     "id": 8,
