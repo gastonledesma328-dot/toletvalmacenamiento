@@ -32,7 +32,7 @@
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/A24-logo.svg/258px-A24-logo.svg.png",
     "streamUrl": "https://www.youtube.com/embed/live_stream?enablejsapi=1&autoplay=1&channel=UCR9120YBAqMfntqgRTKmkjQ",
-    "streamType": "WE2",
+    "streamType": "WEB",
     "category": "tv"
   },
   {
