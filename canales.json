@@ -346,7 +346,7 @@
     "name": "Warner",
     "description": "Canal de pelis",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/355px-Warner_Bros_logo.svg.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=V2FybmVySEQ=",
+    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Warner_Channel_HD",
     "streamType": "WE2",
     "category": "cine"
   },
