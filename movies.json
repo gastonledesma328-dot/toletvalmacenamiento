@@ -1,5 +1,4 @@
 [
-  
   {
     "id": "lamovie-pitufos-2025",
     "title": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Logo_Los_Pitufos_%282019%29.png",
@@ -17,15 +16,14 @@
     "country": "EE.UU.",
     "quality": "HD"
   },
-
 {
     "id": "lamovie-f1-2025",
     "title": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/F1_2025_Logo.png/250px-F1_2025_Logo.png",
     "displayTitle": "F1 2025",
     "posterUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/F1_2025_Logo.png/250px-F1_2025_Logo.png",
-    "backdropUrl": "https://i.pinimg.com/1200x/6a/04/69/6a0469ae314e37cfb98e7e2a60da661e.jpg",
+    "backdropUrl": "https://m.media-amazon.com/images/M/MV5BMDBkNzMyNGMtMTk3NC00ZDA1LWJiYWQtNTI3NzRkY2E3MmY4XkEyXkFqcGdeQXZ3ZXNsZXk@._V1_.jpg",
     "streamUrl": "https://example.com/stream.m3u8",
-    "streamType": "M3U8",
+    "streamType": "WEB",
     "category": "Deportes",
     "description": "La temporada 2025 de Fórmula 1 comienza con nuevas emociones.",
     "duration": "120m",
@@ -12114,6 +12112,7 @@
     "quality": ""
   }
 ]
+
 
 
 
