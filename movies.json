@@ -19,22 +19,22 @@
   },
 
 {
-  "id": "lamovie-f1-la-pelicula-2025",
-  "title": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Logo_Los_Pitufos_%282019%29.png",
-  "displayTitle": "F1: La película",
-  "posterUrl": "https://hackstore2.com/wp-content/uploads/thumbs/e7457d17b2c25be95c52d11b9661e3d0_hd.webp",
-  "backdropUrl": "https://www.xtrafondos.com/wallpapers/los-pitufos-el-pueblo-perdido-2685.jpg",
-  "streamUrl": "https://embed69.org/f/tt16311594",
-  "streamType": "WEB",
-  "category": "Acción",
-  "description": "Una historia llena de velocidad, drama y adrenalina en el mundo de la Fórmula 1.",
-  "duration": "120m",
-  "rating": 6.8,
-  "year": 2025,
-  "language": "Español / Inglés",
-  "country": "Reino Unido / EE.UU.",
-  "quality": "HD"
-},
+    "id": "lamovie-f1-2025",
+    "title": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/F1_2025_Logo.png/250px-F1_2025_Logo.png",
+    "displayTitle": "F1 2025",
+    "posterUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/F1_2025_Logo.png/250px-F1_2025_Logo.png",
+    "backdropUrl": "https://i.pinimg.com/1200x/6a/04/69/6a0469ae314e37cfb98e7e2a60da661e.jpg",
+    "streamUrl": "https://example.com/stream.m3u8",
+    "streamType": "M3U8",
+    "category": "Deportes",
+    "description": "La temporada 2025 de Fórmula 1 comienza con nuevas emociones.",
+    "duration": "120m",
+    "rating": 8.5,
+    "year": 2025,
+    "language": "Español / Inglés",
+    "country": "Global",
+    "quality": "4K"
+  },
 {
   "id": "lamovie-los-tipos-malos-2-2025",
   "title": "Los tipos malos 2 (2025)",
@@ -12114,6 +12114,7 @@
     "quality": ""
   }
 ]
+
 
 
 
