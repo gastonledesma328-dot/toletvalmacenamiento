@@ -18,8 +18,8 @@
   },
 {
     "id": "lamovie-f1-2025",
-    "title": "f1",
-    "displayTitle": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/F1_2025_Logo.png/250px-F1_2025_Logo.png",
+    "title": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/F1_2025_Logo.png/250px-F1_2025_Logo.png",
+    "displayTitle": "",
     "posterUrl": "https://pelispedia.mov/wp-content/uploads/f1-la-pelicula-2025.jpg",
     "backdropUrl": "https://m.media-amazon.com/images/M/MV5BMDBkNzMyNGMtMTk3NC00ZDA1LWJiYWQtNTI3NzRkY2E3MmY4XkEyXkFqcGdeQXZ3ZXNsZXk@._V1_.jpg",
     "streamUrl": "https://embed69.org/f/tt16311594",
@@ -12111,6 +12111,7 @@
     "quality": ""
   }
 ]
+
 
 
 
