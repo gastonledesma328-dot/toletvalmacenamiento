@@ -469,13 +469,13 @@
   }
 {
   "id": 53,
-  "title": "Argentina vs Brasil",
+  "name": "Argentina vs Brasil",
   "logoUrl": "https://pxbcdn.diariohuarpe.com/huarpe/012025/1736869051635.webp?extw=jpg",
-  "displayTitle": "Everton vs Aston Villa - Premier League Fecha 4",
+  "description": "Everton vs Aston Villa - Premier League Fecha 4",
   "streamUrl": "https://la14hd.com/vivo/canales.php?stream=disney11",
   "streamType": "WE2",
-  "category": "events",
-  "date": "2025-13-09 11AM"
+  "category": "events"
+  
 }
 
   
