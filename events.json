@@ -5,7 +5,7 @@
     "description": "Partido de las Eliminatorias rumbo al Mundial 2026",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Argentina_-_Brazil.png",
     "streamUrl": "https://ejemplo.com/arg-vs-bra.m3u8",
-    "streamType": "M3U8",
+    "streamType": "WEB",
     "category": "events"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Superclásico de la Liga Profesional Argentina",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/River_vs_Boca.png",
     "streamUrl": "https://ejemplo.com/river-boca.m3u8",
-    "streamType": "M3U8",
+    "streamType": "WEB",
     "category": "events"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Gran final de la Copa Libertadores 2025",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Copa_Libertadores_trophy.png",
     "streamUrl": "https://ejemplo.com/libertadores-final.m3u8",
-    "streamType": "M3U8",
+    "streamType": "WEB",
     "category": "events"
   },
   {
