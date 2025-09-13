@@ -460,21 +460,12 @@
   },
   {
     "id": 52,
-    "name": "Serie 1",
+    "name": "E VS AS",
     "description": "Descripción de la serie 1",
-    "logoUrl": "https://cdn.wallpapersafari.com/42/26/n2jWqv.jpg",
-    "streamUrl": "https://example.com/serie1.m3u8",
-    "streamType": "M3U8",
-    "category": "series"
+    "logoUrl": "https://pxbcdn.diariohuarpe.com/huarpe/012025/1736869051635.webp?extw=jpg",
+    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=disney11",
+    "streamType": "WE2",
+    "category": "events"
   },
-{
-  "id": 53,
-  "name": "Everton vs Aston Villa",
-  "logoUrl": "https://pxbcdn.diariohuarpe.com/huarpe/012025/1736869051635.webp?extw=jpg",
-  "description": "Everton vs Aston Villa Premier League Fecha 4",
-  "streamUrl": "https://la14hd.com/vivo/canales.php?stream=disney11",
-  "streamType": "WE2",
-  "category": "events"
-  
-},
+
 ]
