@@ -382,8 +382,8 @@
     "name": "Cine Ar",
     "description": "Cine argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/CINEARLogo.png",
-    "streamUrl": "https://mg.bestleague.one/cvatt.html?get=SU5DQUFfVHY=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://joy.nx-pc.edge-apps.net/hls/m6l52-i7flc-5bii9-70gkm.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
