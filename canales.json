@@ -409,7 +409,7 @@
     "name": "Cinemax",
     "description": "Películas",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cinemax_LA.png",
-    "streamUrl": "https://cointv.online/cvatt.html?get=Q2luZW1heA==",
+    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=CINEMAX",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -436,7 +436,7 @@
     "name": "HBO",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/512px-HBO_logo.svg.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=SEJPSEQ=",
+    "streamUrl": "https://teledeportes.top/ch.php?id=hbo",
     "streamType": "WEB",
     "category": "cine"
   },
