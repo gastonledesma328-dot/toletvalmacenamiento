@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://tvlibreonline.org/en-vivo/telefe/hl.html",
+    "streamUrl": "https://mitelefe.com/Api/Videos/GetSourceUrl/694564/0/HLS",
     "streamType": "WEB",
     "category": "tv"
   },
