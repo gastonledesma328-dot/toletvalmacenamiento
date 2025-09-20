@@ -13,7 +13,7 @@
     "name": "Telefe Cba",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://mg.bestleague.one/cvatt.html?get=Q2FuYWxfOF9DQkE&lang=1",
+    "streamUrl": "https://canalesonline.netlify.app/servidores/fetch.html?stream=Telefe_Cordoba",
     "streamType": "WEB",
     "category": "tv"
   },
