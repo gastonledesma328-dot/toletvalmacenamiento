@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://telegratuita.com/reproductor/?r=L3NwZWVkL3RlbGVmZWludC5waHA=",
+    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=TELEFE",
     "streamType": "WEB",
     "category": "tv"
   },
