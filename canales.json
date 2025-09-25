@@ -328,7 +328,7 @@
     "name": "Dsport",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
-    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=dsports",
+    "streamUrl": "https://elcanaldeportivo.com/dsports-sharecast.php",
     "streamType": "WEB",
     "category": "deportes"
   },
