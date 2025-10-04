@@ -1,20 +1,23 @@
 {
   "1": [
+    { "url": "https://mg.bestleague.world/cvatt.html?get=VGVsZWZlSEQ=&lang=1", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canal.php?stream=telefe", "type": "WEB" }
   ],
   "2": [
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfOF9DQkE", "type": "WEB" },
-    { "url": "https://mg.bestleague.one/cvatt.html?get=Q2FuYWxfOF9DQkE&lang=1", "type": "WEB" }
+    { "url": "https://mg.bestleague.world/cvatt.html?get=Q2FuYWxfOF9DQkE&lang=1", "type": "WEB" }
   ],
   "3": [
-    { "url": "https://tvlivre.online/html/dash.html?get=aHR0cHM6Ly9saXZlLTAxLTAyLWVsdHJlY2Uudm9kZ2MubmV0L2VsdHJlY2V0di9pbmRleC5tM3U4", "type": "WEB" },
-    { "url": "https://cointv.online/html/cvatt.html?get=QXJ0ZWFySEQ", "type": "WEB" }
+    
+    { "url": "https://cointv.online/html/cvatt.html?get=QXJ0ZWFySEQ", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=QXJ0ZWFySEQ&lang=1", "type": "WEB" }
   ],
   "4": [
-    { "url": "https://mg.bestleague.one/cvatt.html?get=QW1lcmljYTI0&lang=1", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=QW1lcmljYTI0&lang=1", "type": "WEB" },
     { "url": "https://tele-libre.org/html/cvatt.html?get=QW1lcmljYTI0", "type": "WEB" }
   ],
   "5": [
+    { "url": "https://mg.bestleague.world/cvatt.html?get=Q2FuYWw3&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWw3", "type": "WEB" },
     { "url": "https://canalesonline.netlify.app/servidores/sensa.html?id=TVPublica", "type": "WEB" }
   ],
@@ -22,30 +25,31 @@
     { "url": "https://cointv.online/html/cvatt.html?get=TGFfTmFjaW9u", "type": "WEB" }
   ],
   "7": [
-    { "url": "https://www.youtube.com/watch?v=Uo-ziJhrTvI", "type": "WEB" },
+    
     { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=C5N", "type": "WEB" },
     { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" }
   ],
   "8": [
-    { "url": "https://sixdayslater.com/cvatt.html?get=Q2FuYWxfMTJfQ0JB&lang=1", "type": "WEB" }
+    { "url": "https://mg.bestleague.world/cvatt.html?get=Q2FuYWxfMTJfQ0JB&lang=1", "type": "WEB" },
+    
   ],
   "9": [
     { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Canal_26", "type": "WEB" },
-    { "url": "https://cointv.online/html/cvatt.html?get=MjZfVFZfSEQ", "type": "WEB" }
+    { "url": "https://mg.bestleague.world/cvatt.html?get=MjZfVFZfSEQ&lang=1", "type": "WEB" }
   ],
   "10": [
-    { "url": "https://cointv.online/html/cvatt.html?get=Q3JvbmljYVRW", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=Q3JvbmljYVRW&lang=1", "type": "WEB" },
     { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Cronica_TV", "type": "WEB" }
   ],
   "11": [
     { "url": "http://204.199.3.2/.m3u8", "type": "M3U8" }
   ],
   "12": [
-    { "url": "https://mg.bestleague.one/cvatt.html?get=QW1lcmljYVRW&lang=1", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=QW1lcmljYVRW&lang=1", "type": "WEB" },
     { "url": "https://canalesonline.netlify.app/servidores/sensa.html?id=America", "type": "WEB" }
   ],
   "13": [
-    { "url": "https://mg.bestleague.one/cvatt.html?get=RWxfR2FyYWdl&lang=1", "type": "WEB" }
+    { "url": "https://mg.bestleague.world/cvatt.html?get=RWxfR2FyYWdl&lang=1", "type": "WEB" }
   ],
   "14": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVEyRnlkRzl2Yms1bGRIZHZjbXM9", "type": "WEB" },
@@ -56,7 +60,7 @@
     { "url": "https://cointv.online/html/cvatt.html?get=Qm9vbWVyYW5n", "type": "WEB" }
   ],
   "16": [
-    { "url": "https://mg.bestleague.one/cvatt.html?get=RGlzbmV5Q2hhbm5lbEhE&lang=1", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=RGlzbmV5Q2hhbm5lbEhE&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=RGlzbmV5Q2hhbm5lbEhE", "type": "WEB" }
   ],
   "17": [
@@ -169,7 +173,7 @@
     { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=TNT_NOVELAS", "type": "WEB" }
   ],
   "43": [
-    { "url": "https://mg.bestleague.one/cvatt.html?get=SU5DQUFfVHY=&lang=1", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=SU5DQUFfVHY=&lang=1", "type": "WEB" },
     { "url": "https://canalesonline.netlify.app/servidores/sensa.html?id=CineAR", "type": "WEB" }
   ],
   "44": [
@@ -178,11 +182,11 @@
   ],
   "45": [
     { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=CINECANAL_HD", "type": "WEB" },
-    { "url": "https://mg.bestleague.one/cvatt.html?get=Q2luZWNhbmFsSEQ=&lang=1", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=Q2luZWNhbmFsSEQ=&lang=1", "type": "WEB" },
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVEybHVaV05oYm1Gc1NFUT0=", "type": "WEB" }
   ],
   "46": [
-    { "url": "https://mg.bestleague.one/cvatt.html?get=Q2luZW1heA==&lang=1", "type": "WEB" },
+    { "url": "https://mg.bestleague.world/cvatt.html?get=Q2luZW1heA==&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2luZW1heA==", "type": "WEB" }
   ],
   "47": [
