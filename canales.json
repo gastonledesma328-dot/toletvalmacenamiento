@@ -31,7 +31,7 @@
     "name": "A24",
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/A24-logo.svg/258px-A24-logo.svg.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=A24",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=A24",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -49,7 +49,7 @@
     "name": "LN",
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/LN%2B.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/sensa.html?id=LaNacionMas",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=LN_Plus",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -193,7 +193,7 @@
     "name": "Love Nature",
     "description": "Documentales de animales",
     "logoUrl": "https://lovenature.com/wp-content/uploads/2020/08/love-nature-logo_peacock.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=LOVE_NATURE",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=LOVE_NATURE",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -238,7 +238,7 @@
     "name": "ESPN",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=ESPN_HD",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_HD",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -247,7 +247,7 @@
     "name": "ESPN 2",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/2560px-ESPN2_logo.svg.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=ESPN_2_HD",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_2_HD",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -256,7 +256,7 @@
     "name": "ESPN 3",
     "description": "Deportes 24/7",
     "logoUrl": "https://televvd.com/wp-content/uploads/2024/03/TODOS_2024_ESPN-3-1024x357.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=ESPN_3_HD",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_3_HD",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -265,7 +265,7 @@
     "name": "ESPN 4",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/1200px-ESPN_4_logo.svg.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=ESPN_4_HD",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_4_HD",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -274,7 +274,7 @@
     "name": "ESPN Premium",
     "description": "Fútbol argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=ESPN_PREMIUM",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_PREMIUM",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -346,7 +346,7 @@
     "name": "Warner",
     "description": "Canal de pelis",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/355px-Warner_Bros_logo.svg.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Warner_Channel_HD",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=Warner_Channel_HD",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -409,7 +409,7 @@
     "name": "Cinemax",
     "description": "Películas",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cinemax_LA.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=CINEMAX",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=CINEMAX",
     "streamType": "WEB",
     "category": "cine"
   },
