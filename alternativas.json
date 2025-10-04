@@ -31,19 +31,19 @@
     
   ],
   "9": [
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Canal_26", "type": "WEB" },
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=Canal_26", "type": "WEB" },
     { "url": "https://mg.bestleague.world/cvatt.html?get=MjZfVFZfSEQ&lang=1", "type": "WEB" }
   ],
   "10": [
     { "url": "https://mg.bestleague.world/cvatt.html?get=Q3JvbmljYVRW&lang=1", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Cronica_TV", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=Cronica_TV", "type": "WEB" }
   ],
   "11": [
     { "url": "http://204.199.3.2/.m3u8", "type": "M3U8" }
   ],
   "12": [
     { "url": "https://mg.bestleague.world/cvatt.html?get=QW1lcmljYVRW&lang=1", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/sensa.html?id=America", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=AMERICA_TV", "type": "WEB" }
   ],
   "13": [
     { "url": "https://mg.bestleague.world/cvatt.html?get=RWxfR2FyYWdl&lang=1", "type": "WEB" }
@@ -79,7 +79,7 @@
     { "url": "https://cointv.online/html/cvatt.html?get=QW5pbWFsUGxhbmV0", "type": "WEB" }
   ],
   "22": [
-    { "url": "https://canalesonline.netlify.app/servidores/m3u8.html?stream=Love_Nature1", "type": "WEB" }
+    
   ],
   "23": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJHbHpZMjkyWlhKNVNFUT0=", "type": "WEB" }
@@ -123,26 +123,26 @@
   ],
   "32": [
     { "url": "https://telegratuita.org/repro/?r=L3NwZWVkL3R5Y19pbnRlcm5hY2lvbmFsLnBocA==", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=TyC_HD", "type": "WEB" },
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=TyC_HD", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canales.php?stream=tycsports", "type": "WEB" }
   ],
   "33": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVZFNVVYMU53YjNKMGMxOUlSQQ==", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=TNT_Sports_HD", "type": "WEB" },
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_Sports_HD", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canales.php?stream=tntsports", "type": "WEB" }
   ],
   "34": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJtOTRVM0J2Y25Seg==", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=FOX_SPORTS_HD", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=FOX_SPORTS_HD", "type": "WEB" }
   ],
   "35": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJtOTRVM0J2Y25Sek1raEU=", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Fox_Sports_2_HD", "type": "WEB" },
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=Fox_Sports_2_HD", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canales.php?stream=foxsports2", "type": "WEB" }
   ],
   "36": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJtOTRVM0J2Y25Sek0waEU=", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Fox_Sports_3_HD", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=Fox_Sports_3_HD", "type": "WEB" }
   ],
   "37": [
     { "url": "https://vivozly.com/cobo.html?id=laligatv", "type": "WEB" },
@@ -159,15 +159,15 @@
   ],
   "40": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVZFNVVVMlZ5YVdWeg==", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=TNT_SERIES_HD", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_SERIES_HD", "type": "WEB" }
   ],
   "41": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVZFNVVYMGhFWDBGeVp3PT0=", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=TNT_HD", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_HD", "type": "WEB" }
   ],
   "42": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVZFSlQ=", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=TNT_NOVELAS", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_NOVELAS", "type": "WEB" }
   ],
   "43": [
     { "url": "https://mg.bestleague.world/cvatt.html?get=SU5DQUFfVHY=&lang=1", "type": "WEB" },
@@ -175,10 +175,10 @@
   ],
   "44": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJrOVlTRVE9", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=FOX_HD", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=FOX_HD", "type": "WEB" }
   ],
   "45": [
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=CINECANAL_HD", "type": "WEB" },
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=CINECANAL_HD", "type": "WEB" },
     { "url": "https://mg.bestleague.world/cvatt.html?get=Q2luZWNhbmFsSEQ=&lang=1", "type": "WEB" },
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVEybHVaV05oYm1Gc1NFUT0=", "type": "WEB" }
   ],
@@ -188,19 +188,19 @@
   ],
   "47": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVUzQmhZMlU9", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Space_HD", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=Space_HD", "type": "WEB" }
   ],
   "48": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVVHRnlZVzF2ZFc1MA==", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=Paramount_HD", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=Paramount_HD", "type": "WEB" }
   ],
   "49": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVNFSlBTRVE9", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=HBO", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=HBO", "type": "WEB" }
   ],
   "50": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVNFSlBYMFpoYldsc2VRPT0=", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=HBO_Family", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=HBO_Family", "type": "WEB" }
   ],
   "51": [
     { "url": "https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/tracks-v1a1/mono.m3u8", "type": "M3U8" }
