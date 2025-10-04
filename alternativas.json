@@ -19,15 +19,15 @@
   "5": [
     { "url": "https://mg.bestleague.world/cvatt.html?get=Q2FuYWw3&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWw3", "type": "WEB" },
-    { "url": "https://canalesonline.netlify.app/servidores/sensa.html?id=TVPublica", "type": "WEB" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=TV_PUBLICA_HD", "type": "WEB" }
   ],
   "6": [
     { "url": "https://cointv.online/html/cvatt.html?get=TGFfTmFjaW9u", "type": "WEB" }
   ],
   "7": [
     
-    { "url": "https://canalesonline.netlify.app/servidores/anbalancer.html?id=C5N", "type": "WEB" },
-    { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" }
+    { "url": "https://anbalancer.netlify.app/anbalancer.html?id=C5N", "type": "WEB" },
+    { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "WEB" }
   ],
   "8": [
     { "url": "https://mg.bestleague.world/cvatt.html?get=Q2FuYWxfMTJfQ0JB&lang=1", "type": "WEB" },
