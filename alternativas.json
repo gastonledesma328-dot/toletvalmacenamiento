@@ -3,19 +3,19 @@
     { "url": "https://la14hd.com/vivo/canal.php?stream=telefe", "type": "WEB" }
   ],
   "2": [
-    { "url": "https://www.parsatv.com/embed.php?name=Telefe-Cordoba", "type": "WEB" },
+    
     { "url": "https://mg.bestleague.one/cvatt.html?get=Q2FuYWxfOF9DQkE&lang=1", "type": "WEB" }
   ],
   "3": [
     { "url": "https://tvlivre.online/html/dash.html?get=aHR0cHM6Ly9saXZlLTAxLTAyLWVsdHJlY2Uudm9kZ2MubmV0L2VsdHJlY2V0di9pbmRleC5tM3U4", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=QXJ0ZWFySEQ", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfOF9DQkE", "type": "WEB" }
   ],
   "4": [
     { "url": "https://mg.bestleague.one/cvatt.html?get=QW1lcmljYTI0&lang=1", "type": "WEB" },
     { "url": "https://tele-libre.org/html/cvatt.html?get=QW1lcmljYTI0", "type": "WEB" }
   ],
   "5": [
-    { "url": "https://cointv.online/cvatt.html?get=Q2FuYWw3", "type": "WEB" },
+    { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWw3", "type": "WEB" },
     { "url": "https://canalesonline.netlify.app/servidores/sensa.html?id=TVPublica", "type": "WEB" }
   ],
   "6": [
@@ -49,33 +49,33 @@
   ],
   "14": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVEyRnlkRzl2Yms1bGRIZHZjbXM9", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=Q2FydG9vbk5ldHdvcms=", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=Q2FydG9vbk5ldHdvcms=", "type": "WEB" }
   ],
   "15": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVFtOXZiV1Z5WVc1bg==", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=Qm9vbWVyYW5n", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=Qm9vbWVyYW5n", "type": "WEB" }
   ],
   "16": [
     { "url": "https://mg.bestleague.one/cvatt.html?get=RGlzbmV5Q2hhbm5lbEhE&lang=1", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=RGlzbmV5Q2hhbm5lbEhE", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=RGlzbmV5Q2hhbm5lbEhE", "type": "WEB" }
   ],
   "17": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJHbHpibVY1U25JPQ==", "type": "WEB" }
   ],
   "18": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJHbHpZMjkyWlhKNVgwdHBaSE09", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=RGlzY292ZXJ5X0tpZHM=", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=RGlzY292ZXJ5X0tpZHM=", "type": "WEB" }
   ],
   "19": [
-    { "url": "https://cointv.online/cvatt.html?get=Tmlja2Vsb2Rlb24=", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=Tmlja2Vsb2Rlb24=", "type": "WEB" }
   ],
   "20": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVRtbGphMTlLY2c9PQ==", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=Tmlja19Kcg==", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=Tmlja19Kcg==", "type": "WEB" }
   ],
   "21": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVFXNXBiV0ZzVUd4aGJtVjA=", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=QW5pbWFsUGxhbmV0", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=QW5pbWFsUGxhbmV0", "type": "WEB" }
   ],
   "22": [
     { "url": "https://canalesonline.netlify.app/servidores/m3u8.html?stream=Love_Nature1", "type": "WEB" }
@@ -102,13 +102,13 @@
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJWTlFUakpmUVhKbg==", "type": "WEB" },
     { "url": "https://streamtp11.com/global1.php?stream=espn2", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canales.php?stream=espn2", "type": "WEB" },
-    { "url": "https://cointv.online/cvattde.html?get=RVNQTjJfQXJn", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvattde.html?get=RVNQTjJfQXJn", "type": "WEB" }
   ],
   "29": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJWTlFUak0=", "type": "WEB" },
     { "url": "https://streamtp11.com/global1.php?stream=espn3", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canales.php?stream=espn3", "type": "WEB" },
-    { "url": "https://cointv.online/cvattde.html?get=RVNQTjM", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvattde.html?get=RVNQTjM", "type": "WEB" }
   ],
   "30": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJWTlFUa2hF", "type": "WEB" },
@@ -183,7 +183,7 @@
   ],
   "46": [
     { "url": "https://mg.bestleague.one/cvatt.html?get=Q2luZW1heA==&lang=1", "type": "WEB" },
-    { "url": "https://cointv.online/cvatt.html?get=Q2luZW1heA==", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=Q2luZW1heA==", "type": "WEB" }
   ],
   "47": [
     { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVUzQmhZMlU9", "type": "WEB" },
