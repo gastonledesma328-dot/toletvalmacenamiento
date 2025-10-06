@@ -355,7 +355,7 @@
     "name": "TNT Series",
     "description": "Canal de series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png",
-    "streamUrl": "https://tele-libre.org/html/cvatt.html?get=VE5UU2VyaWVz",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_SERIES_HD",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -364,7 +364,7 @@
     "name": "TNT",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Logo_TNT_Series.png",
-    "streamUrl": "https://cointv.online/cvatt.html?get=VE5UX0hEX0FyZw",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_HD",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -373,7 +373,7 @@
     "name": "TNT Novelas",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo_TNT_Novelas.png/1200px-Logo_TNT_Novelas.png",
-    "streamUrl": "https://cointv.online/cvatt.html?get=VEJT",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_NOVELAS",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -400,7 +400,7 @@
     "name": "Cine Canal",
     "description": "Cine internacional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/1200px-CinecanalLA.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=Q2luZWNhbmFsSEQ=",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=CINECANAL_HD",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -418,7 +418,7 @@
     "name": "Space",
     "description": "Cine de acción",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/1200px-SpaceLogo.svg.png",
-    "streamUrl": "https://cointv.online/cvatt.html?get=U3BhY2U=",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=Space_HD",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -427,7 +427,7 @@
     "name": "Paramount Network",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/1028px-Paramount_Network.svg.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=UGFyYW1vdW50",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=Paramount_HD",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -436,7 +436,7 @@
     "name": "HBO",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/512px-HBO_logo.svg.png",
-    "streamUrl": "https://teledeportes.top/ch.php?id=hbo",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=HBO",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -445,7 +445,7 @@
     "name": "HBO Family",
     "description": "Películas familiares",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=SEJPX0ZhbWlseQ==",
+    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=HBO_Family",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -458,14 +458,4 @@
     "streamType": "M3U8",
     "category": "cine"
   },
-  {
-    "id": 52,
-    "name": "E VS AS",
-    "description": "Descripción de la serie 1",
-    "logoUrl": "https://pxbcdn.diariohuarpe.com/huarpe/012025/1736869051635.webp?extw=jpg",
-    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=disney11",
-    "streamType": "WEB",
-    "category": "events"
-  },
-
 ]
