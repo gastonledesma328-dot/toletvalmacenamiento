@@ -4,8 +4,8 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://telefeappmitelefe1.akamaized.net/hls/live/2037985/appmitelefe/TOK/master.m3u8?hdnea=st=1759680378~exp=1759687578~acl=/hls/live/2037985/appmitelefe/TOK/*~hmac=ea7667ad69766697827090e2290fc48ea4b7f8b9d620284e33016c5efa6c03db",
-    "streamType": "WEB",
+    "streamUrl": "https://telefeappmitelefe1.akamaized.net/hls/live/2037985/appmitelefe/TOK/master.m3u8?hdnea=st=1760304382~exp=1760311582~acl=/hls/live/2037985/appmitelefe/TOK/*~hmac=18b367f5d7cfdcf861a30a32a5e967de38a79c2c54202659ec92f35b74c627f3",
+    "streamType": "M3U8",
     "category": "tv"
   },
   {
