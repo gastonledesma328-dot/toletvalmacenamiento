@@ -40,7 +40,7 @@
     "name": "TV Pública",
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TVP_-_Televisi%C3%B3n_P%C3%BAblica_%282021%29.svg/1200px-TVP_-_Televisi%C3%B3n_P%C3%BAblica_%282021%29.svg.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L3RybS90dnB1YmxpY2EucGhw",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2FuYWw3&lang=1",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -193,7 +193,7 @@
     "name": "Love Nature",
     "description": "Documentales de animales",
     "logoUrl": "https://lovenature.com/wp-content/uploads/2020/08/love-nature-logo_peacock.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=LOVE_NATURE",
+    "streamUrl": "https://telegratuita.org/repro/?r=L21nby9sb3ZlbmF0dXJlLnBocA==",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -238,7 +238,7 @@
     "name": "ESPN",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjJIRA&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -247,7 +247,7 @@
     "name": "ESPN 2",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/2560px-ESPN2_logo.svg.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_2_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjJfQXJn&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -256,7 +256,7 @@
     "name": "ESPN 3",
     "description": "Deportes 24/7",
     "logoUrl": "https://televvd.com/wp-content/uploads/2024/03/TODOS_2024_ESPN-3-1024x357.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_3_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjM&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -265,7 +265,7 @@
     "name": "ESPN 4",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/1200px-ESPN_4_logo.svg.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_4_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTkhE&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -274,7 +274,7 @@
     "name": "ESPN Premium",
     "description": "Fútbol argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=ESPN_PREMIUM",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -346,7 +346,7 @@
     "name": "Warner",
     "description": "Canal de pelis",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/355px-Warner_Bros_logo.svg.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=Warner_Channel_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=V2FybmVySEQ=&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -355,7 +355,7 @@
     "name": "TNT Series",
     "description": "Canal de series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_SERIES_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VE5UU2VyaWVz&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -364,7 +364,7 @@
     "name": "TNT",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Logo_TNT_Series.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VE5UX0hEX0FyZw==&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -373,7 +373,7 @@
     "name": "TNT Novelas",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo_TNT_Novelas.png/1200px-Logo_TNT_Novelas.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=TNT_NOVELAS",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VEJT&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -400,7 +400,7 @@
     "name": "Cine Canal",
     "description": "Cine internacional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/1200px-CinecanalLA.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=CINECANAL_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2luZWNhbmFsSEQ=&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -409,7 +409,7 @@
     "name": "Cinemax",
     "description": "Películas",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cinemax_LA.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=CINEMAX",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2luZW1heA==&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -418,7 +418,7 @@
     "name": "Space",
     "description": "Cine de acción",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/1200px-SpaceLogo.svg.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=Space_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=U3BhY2U=&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -427,7 +427,7 @@
     "name": "Paramount Network",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/1028px-Paramount_Network.svg.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=Paramount_HD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=UGFyYW1vdW50&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -436,7 +436,7 @@
     "name": "HBO",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/512px-HBO_logo.svg.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=HBO",
+    "streamUrl": "https://telegratuita.org/cv.php?get=SEJPSEQ=&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -445,7 +445,7 @@
     "name": "HBO Family",
     "description": "Películas familiares",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png",
-    "streamUrl": "https://anbalancer.netlify.app/anbalancer.html?id=HBO_Family",
+    "streamUrl": "https://telegratuita.org/cv.php?get=SEJPX0ZhbWlseQ==&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
