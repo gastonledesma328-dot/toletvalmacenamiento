@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Monitor de Canales TOLE TV</title>
+<style>
+  body {
+    background: #0b0b0b;
+    color: #eaeaea;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    color: #00ff7f;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+    vertical-align: middle;
+  }
+  .online { color: #00ff7f; font-weight: bold; }
+  .offline { color: #ff5555; font-weight: bold; }
+  .source { font-size: 0.9em; color: #aaa; }
+  video {
+    width: 160px;
+    height: 90px;
+    border-radius: 6px;
+    display: none;
+  }
+  .preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+  <h1>🛰️ Monitor de Canales TOLE TV</h1>
+  <p>Verificando canales y mostrando vista previa en miniatura</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Canal</th>
+        <th>Estado</th>
+        <th>Fuente</th>
+        <th>Vista previa</th>
+      </tr>
+    </thead>
+    <tbody id="channelList"></tbody>
+  </table>
+
+  <script>
+    const MAIN_URL = "https://raw.githubusercontent.com/gastonledesma328-dot/toletvalmacenamiento/refs/heads/main/canales.json";
+    const ALT_URL  = "https://raw.githubusercontent.com/gastonledesma328-dot/toletvalmacenamiento/refs/heads/main/alternativas.json";
+
+    async function obtenerJSON(url) {
+      const res = await fetch(url);
+      return await res.json();
+    }
+
+    // Verificar usando <video>
+    function verificarVideo(url) {
+      return new Promise((resolve) => {
+        const video = document.createElement("video");
+        video.src = url;
+        video.muted = true;
+        video.playsInline = true;
+        video.preload = "metadata";
+        video.volume = 0;
+        video.addEventListener("loadeddata", () => resolve({ ok: true, video }), { once: true });
+        video.addEventListener("error", () => resolve({ ok: false, video }), { once: true });
+        // Fallback por si tarda demasiado
+        setTimeout(() => resolve({ ok: false, video }), 8000);
+      });
+    }
+
+    async function monitorear() {
+      const tbody = document.getElementById("channelList");
+      tbody.innerHTML = "<tr><td colspan='5'>Cargando canales...</td></tr>";
+
+      try {
+        const [canales, alternativas] = await Promise.all([
+          obtenerJSON(MAIN_URL),
+          obtenerJSON(ALT_URL)
+        ]);
+
+        tbody.innerHTML = "";
+
+        const lista = Object.values(canales);
+
+        for (let i = 0; i < lista.length; i++) {
+          const canal = lista[i];
+          const nombre = canal.name || canal.title || `Canal ${i+1}`;
+          const urlPrincipal = canal.streamUrl;
+
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${i+1}</td>
+            <td>${nombre}</td>
+            <td>⏳ Verificando...</td>
+            <td class="source">Principal</td>
+            <td class="preview"></td>
+          `;
+          tbody.appendChild(row);
+
+          // 1️⃣ probar el principal
+          let fuente = "Principal";
+          let estado = await verificarVideo(urlPrincipal);
+
+          // 2️⃣ si no carga, probar alternativas
+          if (!estado.ok && alternativas[i+1]) {
+            for (let j = 0; j < alternativas[i+1].length; j++) {
+              const alt = alternativas[i+1][j];
+              if (alt.url) {
+                const test = await verificarVideo(alt.url);
+                if (test.ok) {
+                  estado = test;
+                  fuente = `Alternativa ${j+1}`;
+                  break;
+                }
+              }
+            }
+          }
+
+          // 3️⃣ actualizar resultados
+          if (estado.ok) {
+            row.cells[2].innerHTML = `<span class="online">🟢 Online</span>`;
+            row.cells[3].innerText = fuente;
+            const vid = estado.video;
+            vid.style.display = "block";
+            vid.autoplay = true;
+            vid.loop = true;
+            row.cells[4].appendChild(vid);
+          } else {
+            row.cells[2].innerHTML = `<span class="offline">🔴 Offline</span>`;
+            row.cells[3].innerText = fuente;
+            row.cells[4].innerHTML = `<span class="offline">❌</span>`;
+          }
+        }
+      } catch (err) {
+        console.error("Error cargando JSON:", err);
+        tbody.innerHTML = `<tr><td colspan="5">❌ Error al cargar JSON</td></tr>`;
+      }
+    }
+
+    monitorear();
+    // Actualiza cada 5 min
+    setInterval(monitorear, 5 * 60 * 1000);
+  </script>
+</body>
+</html>
