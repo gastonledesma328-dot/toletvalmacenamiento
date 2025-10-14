@@ -1,7 +1,8 @@
 {
   "1": [
-    { "url": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVZHVnNaV1psU0VRPQ==", "type": "WEB" },
+    { "url": "https://telegratuita.org/cv.php?get=VGVsZWZlSEQ=&lang=1", "type": "WEB" },
     { "url": "https://streamtp22.com/global2.php?stream=telefe", "type": "WEB" },
+    { "url": "https://telefeappmitelefe1.akamaized.net/hls/live/2037985/appmitelefe/TOK/master.m3u8?hdnea=st=1760399293~exp=1760406493~acl=/hls/live/2037985/appmitelefe/TOK/*~hmac=b25b0f664820f6840a74cc8ca334f06c6458ba171c8c946c893c6c71a6f4f7e6", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canal.php?stream=telefe", "type": "WEB" }
   ],
   "2": [
@@ -25,7 +26,7 @@
     { "url": "https://cointv.online/html/cvatt.html?get=TGFfTmFjaW9u", "type": "WEB" }
   ],
   "7": [
-    { "url": "https://www.youtube.com/embed/live_stream?channel=UCFgk2Q2mVO1BklRQhSv6p0w&autoplay=1", "type": "WEB" }
+    { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" }
   ],
   "8": [
     { "url": "https://ern.bestleague.world/cvatt.html?get=Q2FuYWxfMTJfQ0JB&lang=1", "type": "WEB" }
