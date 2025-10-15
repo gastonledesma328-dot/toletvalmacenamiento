@@ -58,7 +58,7 @@
     "name": "C5N",
     "description": "Señal en vivo desde canal oficial",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/C5N_%282017%29.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=QzVO",
+    "streamUrl": "https://telegratuita.org/cv.php?get=QzVO",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -67,7 +67,7 @@
     "name": "El Doce TV",
     "description": "Canal de Córdoba",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/El_doce_tv_cba_logo.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfMTJfQ0JB",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2FuYWxfMTJfQ0JB",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -76,7 +76,7 @@
     "name": "Canal 26",
     "description": "Señal informativa argentina",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/LogoCanal26.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=MjZfVFZfSEQ",
+    "streamUrl": "https://telegratuita.org/cv.php?get=MjZfVFZfSEQ",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -85,7 +85,7 @@
     "name": "Crónica",
     "description": "Señal de noticias argentina",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cr%C3%B3nica-logo.svg/1280px-Cr%C3%B3nica-logo.svg.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=Q3JvbmljYVRW",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q3JvbmljYVRW",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -283,7 +283,7 @@
     "name": "TyC Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://r2.thesportsdb.com/images/media/channel/logo/zmpjy41624030194.png",
-    "streamUrl": "https://streamtp11.com/global1.php?stream=tycsports",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VHlDU3BvcnQ&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -292,7 +292,7 @@
     "name": "TNT Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
-    "streamUrl": "https://cointv.online/cvattde.html?get=VE5UX1Nwb3J0c19IRA",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VE5UX1Nwb3J0c19IRA&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -301,7 +301,7 @@
     "name": "Fox Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/2560px-FOX_Sports_logo.svg.png",
-    "streamUrl": "https://cointv.online/cvattde.html?get=Rm94U3BvcnRz",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRz&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -310,7 +310,7 @@
     "name": "Fox Sports 2",
     "description": "Deportes en vivo",
     "logoUrl": "https://cdn.storage.foromedios.com/monthly_2023_02/large.1344882745_FOXSports2ARG(2023-).png.dc87e7653323f06426dd778a825e3514.png",
-    "streamUrl": "https://cointv.online/cvattde.html?get=Rm94U3BvcnRzMkhE",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzMkhE&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -319,7 +319,7 @@
     "name": "Fox Sports 3",
     "description": "Deportes en vivo",
     "logoUrl": "https://cdn.storage.foromedios.com/monthly_2023_02/large.551251533_FOXSports3ARG(2023-).png.9facfaf5bfc0dd66a8d9535ea8d7cb05.png",
-    "streamUrl": "https://cointv.online/cvattde.html?get=Rm94U3BvcnRzM0hE",
+    "streamUrl": "https://telegratuita.org/repro/?r=L3Byby9pcHR2LnBocD9jaGFubmVsPWZveDNhcg==",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -337,7 +337,7 @@
     "name": "Dreamworks",
     "description": "Canal de pelis",
     "logoUrl": "https://logos-world.net/wp-content/uploads/2020/12/DreamWorks-Animation-Logo.png",
-    "streamUrl": "https://cointv.online/cvatt.html?get=RHJlYW13b3Jrcw==",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RHJlYW13b3Jrcw==&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -391,7 +391,7 @@
     "name": "Star Channel",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/2560px-Star_Channel_2020.svg.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=Rk9YSEQ=",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Rk9YSEQ=&lang=1",
     "streamType": "WEB",
     "category": "cine"
   },
