@@ -2,6 +2,7 @@
   "1": [
     { "url": "https://telegratuita.org/cv.php?get=VGVsZWZlSEQ=&lang=1", "type": "WEB" },
     { "url": "https://streamtp22.com/global2.php?stream=telefe", "type": "WEB" },
+    { "url": "https://mitelefe.com/Api/Videos/GetSourceUrl/837222/0/HLS", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canal.php?stream=telefe", "type": "WEB" }
   ],
   "2": [
@@ -183,7 +184,7 @@
   ],
   "40": [
     { "url": "https://cointv.online/html/cvatt.html?get=VE5UU2VyaWVz", "type": "WEB" },
-    { "url": "https://telegratuita.org/repro/?r=L3Byby90bnRzZXJpZXMucGhw", "type": "WEB" }
+    { "url": "https://telegratuita.org/cv.php?get=VE5UU2VyaWVz&lang=1", "type": "WEB" }
   ],
   "41": [
     { "url": "https://telegratuita.org/repro/?r=L3RybS90bnQucGhw", "type": "WEB" },
