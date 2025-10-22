@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL2V4cC9wbGF5ZXIucGhwP2lkPTY4NjU=",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VGVsZWZlSEQ=&lang=1",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -121,7 +121,7 @@
     "name": "Cartoon Network",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cartoon_network_modified_logo.PNG/960px-Cartoon_network_modified_logo.PNG",
-    "streamUrl": "https://telegratuita.org/repro/?r=L2xhdGFtLnBocD9jYW5hbD1jYXJ0b29u",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2FydG9vbk5ldHdvcms=&lang=1",
     "streamType": "WEB",
     "category": "kids"
   },
@@ -130,7 +130,7 @@
     "name": "Cartoonito",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/2560px-Cartoonito_-_Logo_2021.svg.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L2xhdGFtLnBocD9jYW5hbD1jYXJ0b29uaXRv",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Qm9vbWVyYW5n&lang=1",
     "streamType": "WEB",
     "category": "kids"
   },
@@ -139,7 +139,7 @@
     "name": "Disney Channel",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Disney_Channel_Germany_Logo_2014.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L21nby9kaXNuZXljaGFubmVsLnBocA==",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RGlzbmV5Q2hhbm5lbEhE&lang=1",
     "streamType": "kids",
     "category": "entretenimiento"
   },
@@ -202,7 +202,7 @@
     "name": "Discovery Channel",
     "description": "",
     "logoUrl": "https://static.cdnlogo.com/logos/d/60/discovery-channel.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L3RybS9kaXNjb3ZlcnkucGhw",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RGlzY292ZXJ5SEQ=&lang=1",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -211,7 +211,7 @@
     "name": "History",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/History_Logo.svg/1200px-History_Logo.svg.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L3RybS9oaXN0b3J5LnBocA==",
+    "streamUrl": "https://telegratuita.org/cv.php?get=SGlzdG9yeUhE&lang=1",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -220,7 +220,7 @@
     "name": "History 2",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/History2Logo2019.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L3RybS9oaXN0b3J5Mi5waHA=",
+    "streamUrl": "https://telegratuita.org/cv.php?get=SGlzdG9yeV8y&lang=1",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -229,7 +229,7 @@
     "name": "National Geographic",
     "description": "Documentales de ciencia",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Geographic-Logo.svg/1200px-National-Geographic-Logo.svg.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L3RybS9uYXRnZW8ucGhw",
+    "streamUrl": "https://telegratuita.org/cv.php?get=TmF0R2VvSEQ=&lang=1",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -319,7 +319,7 @@
     "name": "Fox Sports 3",
     "description": "Deportes en vivo",
     "logoUrl": "https://cdn.storage.foromedios.com/monthly_2023_02/large.551251533_FOXSports3ARG(2023-).png.9facfaf5bfc0dd66a8d9535ea8d7cb05.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L3Byby9pcHR2LnBocD9jaGFubmVsPWZveDNhcg==",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzM0hE&lang=1",
     "streamType": "WEB",
     "category": "deportes"
   },
