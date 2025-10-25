@@ -103,7 +103,7 @@
     "name": "America",
     "description": "Canal regional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",
-    "streamUrl": "https://joy.nx-pc.edge-apps.net/hls/6d4cm-ihgob-f3k27-31j97_720p/index.m3u8",
+    "streamUrl": "https://dai.google.com/linear/hls/pa/event/OY2i_lL4SMyXE5Zaj4ULEg/stream/c751d7b8-a4a3-4ea7-83a2-0a0655b81222:SCL2/master.m3u8",
     "streamType": "M3U8",
     "category": "tv"
   },
