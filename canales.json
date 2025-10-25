@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "http://104.238.205.28:8989/278773_.m3u8",
+    "streamUrl": "https://telefe.com/Api/Videos/GetSourceUrl/694564/0/HLS?.m3u8",
     "streamType": "M3U8",
     "category": "tv"
   },
