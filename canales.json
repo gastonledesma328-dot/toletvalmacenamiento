@@ -337,8 +337,8 @@
     "name": "Dsport",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
-    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=dsports",
-    "streamType": "WEB",
+    "streamUrl": "http://38.183.182.166:8000/play/a125/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
