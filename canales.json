@@ -31,8 +31,8 @@
     "name": "A24",
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/A24-logo.svg/258px-A24-logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=QW1lcmljYTI0",
-    "streamType": "WEB",
+    "streamUrl": "https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.m3u8?sense=true",
+    "streamType": "M3U8",
     "category": "tv"
   },
   {
