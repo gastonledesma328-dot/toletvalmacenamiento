@@ -6,6 +6,7 @@
     { "url": "https://la14hd.com/vivo/canal.php?stream=telefe", "type": "WEB" }
   ],
   "2": [
+    { "url": "https://canalesonline.netlify.app/servidores/fetch.html?stream=Telefe_Cordoba", "type": "WEB" },
     { "url": "https://telegratuita.org/cv.php?get=Q2FuYWxfOF9DQkE", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfOF9DQkE", "type": "WEB" },
     { "url": "https://dot.bestleague.world/cvatt.html?get=Q2FuYWxfOF9DQkE&lang=1", "type": "WEB" }
@@ -21,6 +22,7 @@
     { "url": "https://dot.bestleague.world/cvatt.html?get=QW1lcmljYTI0&lang=1", "type": "WEB" }
   ],
   "5": [
+    { "url": "https://telegratuita.org/cv.php?get=Q2FuYWw3&lang=1", "type": "WEB" },
     { "url": "https://la14hd.com/vivo/canales.php?stream=tvpublica", "type": "WEB" },
     { "url": "https://dot.bestleague.world/cvatt.html?get=Q2FuYWw3&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWw3", "type": "WEB" }
@@ -42,6 +44,7 @@
     { "url": "https://dot.bestleague.world/cvatt.html?get=MjZfVFZfSEQ&lang=1", "type": "WEB" }
   ],
   "10": [
+    { "url": "https://telegratuita.org/cv.php?get=Q3JvbmljYVRW", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q3JvbmljYVRW", "type": "WEB" },
     { "url": "https://dot.bestleague.world/cvatt.html?get=Q3JvbmljYVRW&lang=1", "type": "WEB" }
   ],
