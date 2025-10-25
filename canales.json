@@ -31,7 +31,7 @@
     "name": "A24",
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/A24-logo.svg/258px-A24-logo.svg.png",
-    "streamUrl": "https://edge-live15-sl.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzYxNTg1OTEwIiwic2lwIjoiMzguMTAuMTEzLjE2OSIsInBhdGgiOiIvbGl2ZS9jN2Vkcy9MYV9OYWNpb24vU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImE5MDFjOTI3NjBmOGJkYjEiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzIwMS4yMzUuNjYuMTIzIiwiYXVkIjoiMTA4Iiwic291cmNlcyI6Wzg1LDE0NCw4Niw4OF19.NJG3ieYVhwWUUzeqiI08ptFXPrvR7jgsn1QmhMxYbX9dpP02pYduNrd97McSDHUSausAOzagmU_YoT0ceaDWHQ==/live/c3eds/ESPN2HD/SA_Live_dash_enc/ESPN2HD.mpd",
+    "streamUrl": "https://nskzbm.futebol12.nexus/espn/index.m3u8",
     "streamType": "M3U8",
     "category": "tv"
   },
