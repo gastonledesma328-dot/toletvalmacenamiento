@@ -67,8 +67,8 @@
     "name": "El Doce TV",
     "description": "Canal de Córdoba",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/El_doce_tv_cba_logo.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Q2FuYWxfMTJfQ0JB",
-    "streamType": "WEB",
+    "streamUrl": "https://www.youtube.com/embed/nndzeKDSjuc?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=es&playsinline=true&enablejsapi=1&origin=https%3A%2F%2Feldoce.tv&widgetid=1&forigin=https%3A%2F%2Feldoce.tv%2Fvivo%2F&aoriginsup=1&gporigin=https%3A%2F%2Fwww.google.com%2F&vf=1",
+    "streamType": "M3U8",
     "category": "tv"
   },
   {
