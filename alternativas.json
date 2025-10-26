@@ -33,7 +33,7 @@
   "7": [
     { "url": "https://telegratuita.org/cv.php?get=QzVO", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=QzVO", "type": "WEB" },
-    { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" },
+    { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" }
   ],
   "8": [
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfMTJfQ0JB", "type": "WEB" },
@@ -164,7 +164,7 @@
     { "url": "https://cointv.online/cvatt.html?get=RHJlYW13b3Jrcw==", "type": "WEB" }
   ],
   "39": [
-    { "url": "https://telegratuita.org/cv.php?get=V2FybmVySEQ=&lang=1", "type": "WEB" }
+    { "url": "https://telegratuita.org/cv.php?get=V2FybmVySEQ=&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=V2FybmVySEQ=", "type": "WEB" }
   ],
   "40": [
@@ -211,7 +211,7 @@
     { "url": "https://teledeportes.top/ch.php?id=hbo", "type": "WEB" }
   ],
   "50": [
-    { "url": "https://telegratuita.org/cv.php?get=SEJPX0ZhbWlseQ==&lang=1", "type": "WEB" }.
+    { "url": "https://telegratuita.org/cv.php?get=SEJPX0ZhbWlseQ==&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=SEJPX0ZhbWlseQ==", "type": "WEB" }
   ],
   "51": [
