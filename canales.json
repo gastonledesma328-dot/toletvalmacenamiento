@@ -220,7 +220,7 @@
   "name": "History 2",
   "description": "",
   "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/History2Logo2019.png",
-  "streamUrl": "https://1147-tbx.vrioott.com/historychannel2/manifest.mpd",
+  "streamUrl": "https://cdn.cvattv.com.ar/live/c6eds/History_2/SA_Live_dash_enc/History_2.mpd",
   "streamType": "MPD",
   "category": "entretenimiento"
   },
