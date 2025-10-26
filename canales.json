@@ -418,8 +418,8 @@
     "name": "Cinemax",
     "description": "Películas",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cinemax_LA.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Q2luZW1heA==&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/CINEMAX/index.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
