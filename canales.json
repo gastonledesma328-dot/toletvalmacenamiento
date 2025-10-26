@@ -346,8 +346,8 @@
     "name": "Dreamworks",
     "description": "Canal de pelis",
     "logoUrl": "https://logos-world.net/wp-content/uploads/2020/12/DreamWorks-Animation-Logo.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RHJlYW13b3Jrcw==&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://live1-ott.izzigo.tv/12/out/u/dash/DREAM-WORKS-HD/default.mpd",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
