@@ -409,8 +409,8 @@
     "name": "Cine Canal",
     "description": "Cine internacional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/1200px-CinecanalLA.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Q2luZWNhbmFsSEQ=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/CINECANAL/index.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
