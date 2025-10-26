@@ -103,7 +103,7 @@
     "name": "America",
     "description": "Canal regional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",
-    "streamUrl": "https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/americahls/playlist.m3u8",
     "streamType": "M3U8",
     "category": "tv"
   },
@@ -211,8 +211,8 @@
     "name": "History",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/History_Logo.svg/1200px-History_Logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=SGlzdG9yeUhE&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/HISTORY/index.m3u8",
+    "streamType": "M3U8",
     "category": "entretenimiento"
   },
   {
@@ -220,7 +220,7 @@
     "name": "History 2",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/History2Logo2019.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=SGlzdG9yeV8y&lang=1",
+    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/HISTORY2/index.m3u8",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -355,8 +355,8 @@
     "name": "Warner",
     "description": "Canal de pelis",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/355px-Warner_Bros_logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=V2FybmVySEQ=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/warner_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
@@ -364,8 +364,8 @@
     "name": "TNT Series",
     "description": "Canal de series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png",
-    "streamUrl": "https://cointv.online/html/cvatt.html?get=VE5UU2VyaWVz",
-    "streamType": "WEB",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/tntseries_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
@@ -373,8 +373,8 @@
     "name": "TNT",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Logo_TNT_Series.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=VE5UX0hEX0FyZw==&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/tnt_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
@@ -382,8 +382,8 @@
     "name": "TNT Novelas",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo_TNT_Novelas.png/1200px-Logo_TNT_Novelas.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=VEJT&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/tntnovelas_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
@@ -391,7 +391,7 @@
     "name": "Cine Ar",
     "description": "Cine argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/CINEARLogo.png",
-    "streamUrl": "https://mxlivechannelsvosdash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(HBO_HD_MX)/manifest.mpd",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/cinear_hls/playlist.m3u8",
     "streamType": "M3U8",
     "category": "cine"
   },
@@ -409,8 +409,8 @@
     "name": "Cine Canal",
     "description": "Cine internacional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/1200px-CinecanalLA.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=SU5DQUFfVHY=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/cinecanal_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
@@ -427,8 +427,8 @@
     "name": "Space",
     "description": "Cine de acción",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/1200px-SpaceLogo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=U3BhY2U=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/space_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
@@ -437,7 +437,7 @@
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/1028px-Paramount_Network.svg.png",
     "streamUrl": "https://router.cdn.rcs.net.ar/mnp/paramount_hls/playlist.m3u8",
-    "streamType": "WEB",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
