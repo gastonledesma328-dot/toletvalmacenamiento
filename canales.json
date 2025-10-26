@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://twilight-heart-e08f.jet-1968.workers.dev/proxy?url=https://1139-tbx.vrioott.com/hbofamilyla/manifest.mpd",
+    "streamUrl": "https://telefe.com/Api/Videos/GetSourceUrl/694564/0/HLS?.m3u8",
     "streamType": "M3U8",
     "category": "tv"
   },
@@ -454,8 +454,8 @@
     "name": "HBO Family",
     "description": "Películas familiares",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=SEJPX0ZhbWlseQ==&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/hbofam_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
