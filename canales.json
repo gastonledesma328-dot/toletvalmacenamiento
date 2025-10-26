@@ -117,6 +117,15 @@
     "category": "entretenimiento"
   },
   {
+    "id": 52,
+    "name": "Bob Esponja",
+    "description": "",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bob_esponja_logotipo.svg/2560px-Bob_esponja_logotipo.svg.png",
+    "streamUrl": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6254598f5083f800076d8563/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=unknown&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=94b33a50-52dc-11ed-8a57-a7949f30f39c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c32ca8be-d69f-4d5d-af36-5defdd524167&userId=",
+    "streamType": "M3U8",
+    "category": "kids"
+  },
+  {
     "id": 14,
     "name": "Cartoon Network",
     "description": "",
@@ -149,7 +158,7 @@
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/2024_Disney_Jr._Logo.svg/1200px-2024_Disney_Jr._Logo.svg.png",
     "streamUrl": "https://access.cdn.rcs.net.ar/mnp/disneyjr_hls/playlist.m3u8",
-    "streamType": "WEB",
+    "streamType": "M3U8",
     "category": "kids"
   },
   {
@@ -166,8 +175,8 @@
     "name": "NICKELODEON",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nickelodeon_2023_logo.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Tmlja2Vsb2Rlb24=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/nickelodeon_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "kids"
   },
   {
@@ -175,16 +184,7 @@
     "name": "NICK JR",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Nick_Jr.logo.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Tmlja19Kcg==&lang=1",
-    "streamType": "WEB",
-    "category": "kids"
-  },
-  {
-    "id": 52,
-    "name": "Bob Esponja",
-    "description": "",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Nick_Jr.logo.png",
-    "streamUrl": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6254598f5083f800076d8563/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=unknown&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=94b33a50-52dc-11ed-8a57-a7949f30f39c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c32ca8be-d69f-4d5d-af36-5defdd524167&userId=",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/nickjr_hls/playlist.m3u8",
     "streamType": "M3U8",
     "category": "kids"
   },
@@ -212,7 +212,7 @@
     "description": "",
     "logoUrl": "https://static.cdnlogo.com/logos/d/60/discovery-channel.png",
     "streamUrl": "https://access.cdn.rcs.net.ar/mnp/discovery_hls/playlist.m3u8",
-    "streamType": "WEB",
+    "streamType": "M3U8",
     "category": "entretenimiento"
   },
   {
@@ -256,8 +256,8 @@
     "name": "ESPN 2",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/2560px-ESPN2_logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjJfQXJn&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/espn2/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -265,8 +265,8 @@
     "name": "ESPN 3",
     "description": "Deportes 24/7",
     "logoUrl": "https://televvd.com/wp-content/uploads/2024/03/TODOS_2024_ESPN-3-1024x357.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjM&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/espn3/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -274,8 +274,8 @@
     "name": "ESPN 4",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/1200px-ESPN_4_logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTkhE&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/espn4/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -283,8 +283,8 @@
     "name": "ESPN 5",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1200px-ESPN_5_logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjQ=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/espn5/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -292,8 +292,8 @@
     "name": "ESPN Premium",
     "description": "Fútbol argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/espnpremium/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -310,8 +310,8 @@
     "name": "TNT Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=VE5UX1Nwb3J0c19IRA&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/tntar/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -319,8 +319,8 @@
     "name": "Fox Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/2560px-FOX_Sports_logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRz&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/fox1ar/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -328,8 +328,8 @@
     "name": "Fox Sports 2",
     "description": "Deportes en vivo",
     "logoUrl": "https://cdn.storage.foromedios.com/monthly_2023_02/large.1344882745_FOXSports2ARG(2023-).png.dc87e7653323f06426dd778a825e3514.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzMkhE&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/fox2ar/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
@@ -346,7 +346,7 @@
     "name": "Dsport",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
-    "streamUrl": "http://38.183.182.166:8000/play/a125/index.m3u8",
+    "streamUrl": "https://k8o5.futebol12.nexus/dsports/index.m3u8",
     "streamType": "M3U8",
     "category": "deportes"
   },
