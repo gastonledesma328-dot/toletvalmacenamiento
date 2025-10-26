@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://edge-live15-sl.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzYxNjIxMzE4Iiwic2lwIjoiMzguMTAuMTEzLjE2OSIsInBhdGgiOiIvbGl2ZS9jN2Vkcy9MYV9OYWNpb24vU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6IjMyYzhhNzhlNjk4NmFlZmUiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzIwMS4yMzUuNjYuMTIzIiwiYXVkIjoiMTA4Iiwic291cmNlcyI6Wzg1LDE0NCw4Niw4OF19.kgB21LYHoZwc9ppozQ_B8uFmAS79GyiteNF6NOQFFeb1Go947kTr-0D-3qXyg27j0S7yj1F4p_ESB0cgFkeupg==/live/c6eds/Canal_12_CBA/SA_Live_dash_enc/Canal_12_CBA.mpd",
+    "streamUrl": "https://telefe.com/Api/Videos/GetSourceUrl/694564/0/HLS?.m3u8",
     "streamType": "M3U8",
     "category": "tv"
   },
@@ -76,8 +76,8 @@
     "name": "Canal 26",
     "description": "Señal informativa argentina",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/LogoCanal26.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=MjZfVFZfSEQ",
-    "streamType": "WEB",
+    "streamUrl": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8",
+    "streamType": "M3U8",
     "category": "tv"
   },
   {
