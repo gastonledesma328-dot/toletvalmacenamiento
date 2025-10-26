@@ -221,7 +221,7 @@
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/History2Logo2019.png",
     "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/HISTORY2/index.m3u8",
-    "streamType": "WEB",
+    "streamType": "M3U8",
     "category": "entretenimiento"
   },
   {
