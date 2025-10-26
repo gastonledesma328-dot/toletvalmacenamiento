@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://cdn.trimi.com.ar/live/sm-live/PARAMOUNT/sa_live_dash/PARAMOUNT.mpd",
+    "streamUrl": "https://live1-ott.izzigo.tv/11/out/u/dash/SPACE-HD/default.mpd",
     "streamType": "M3U8",
     "category": "tv"
   },
