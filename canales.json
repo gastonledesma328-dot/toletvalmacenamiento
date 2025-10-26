@@ -121,8 +121,8 @@
     "name": "Cartoon Network",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cartoon_network_modified_logo.PNG/960px-Cartoon_network_modified_logo.PNG",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Q2FydG9vbk5ldHdvcms=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/cartoon_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "kids"
   },
   {
@@ -130,8 +130,8 @@
     "name": "Cartoonito",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/2560px-Cartoonito_-_Logo_2021.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Qm9vbWVyYW5n&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/boomerang_hls/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "kids"
   },
   {
@@ -139,16 +139,16 @@
     "name": "Disney Channel",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Disney_Channel_Germany_Logo_2014.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RGlzbmV5Q2hhbm5lbEhE&lang=1",
-    "streamType": "kids",
-    "category": "entretenimiento"
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/disney_hls/playlist.m3u8",
+    "streamType": "M3U8",
+    "category": "kids"
   },
   {
     "id": 17,
     "name": "Disney Jr",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/2024_Disney_Jr._Logo.svg/1200px-2024_Disney_Jr._Logo.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RGlzbmV5SnI=&lang=1",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/disneyjr_hls/playlist.m3u8",
     "streamType": "WEB",
     "category": "kids"
   },
@@ -180,6 +180,15 @@
     "category": "kids"
   },
   {
+    "id": 52,
+    "name": "Bob Esponja",
+    "description": "",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Nick_Jr.logo.png",
+    "streamUrl": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6254598f5083f800076d8563/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=unknown&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=94b33a50-52dc-11ed-8a57-a7949f30f39c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c32ca8be-d69f-4d5d-af36-5defdd524167&userId=",
+    "streamType": "M3U8",
+    "category": "kids"
+  },
+  {
     "id": 21,
     "name": "Animal Planet",
     "description": "Documentales de animales",
@@ -202,7 +211,7 @@
     "name": "Discovery Channel",
     "description": "",
     "logoUrl": "https://static.cdnlogo.com/logos/d/60/discovery-channel.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RGlzY292ZXJ5SEQ=&lang=1",
+    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/discovery_hls/playlist.m3u8",
     "streamType": "WEB",
     "category": "entretenimiento"
   },
@@ -220,8 +229,8 @@
   "name": "History 2",
   "description": "",
   "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/History2Logo2019.png",
-  "streamUrl": "https://cdn.cvattv.com.ar/live/c6eds/History_2/SA_Live_dash_enc/History_2.mpd",
-  "streamType": "MPD",
+  "streamUrl": "https://telegratuita.org/cv.php?get=SGlzdG9yeV8y&lang=1",
+  "streamType": "WEB",
   "category": "entretenimiento"
   },
   {
