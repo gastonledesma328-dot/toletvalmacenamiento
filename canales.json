@@ -391,7 +391,7 @@
     "name": "Cine Ar",
     "description": "Cine argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/CINEARLogo.png",
-    "streamUrl": "https://twilight-heart-e08f.jet-1968.workers.dev/proxy?url=https://1140-tbx.vrioott.com/hbo/manifest.mpd",
+    "streamUrl": "https://mxlivechannelsvosdash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(HBO_HD_MX)/manifest.mpd",
     "streamType": "M3U8",
     "category": "cine"
   },
