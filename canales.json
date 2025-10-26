@@ -400,8 +400,8 @@
     "name": "Star Channel",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/2560px-Star_Channel_2020.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Rk9YSEQ=&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/STARCHANNEL/index.m3u8",
+    "streamType": "M3U8",
     "category": "cine"
   },
   {
@@ -436,7 +436,7 @@
     "name": "Paramount Network",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/1028px-Paramount_Network.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=UGFyYW1vdW50&lang=1",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/paramount_hls/playlist.m3u8",
     "streamType": "WEB",
     "category": "cine"
   },
