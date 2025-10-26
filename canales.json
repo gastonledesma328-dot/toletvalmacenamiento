@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://1196-tbx.vrioott.com/starchannelarg/manifest.mpd?ck=Ijg4ZWQyODk4NjU0ZjViYjE4NGFhMTI3OWVmNzkyMWEzIjoiZWMyZDRiM2IxZmViNzNkZWMyYjI3YTIwYjVmZGVjYjki&headers=eyJvcmlnaW4iOiJodHRwczovL3dlYmNsaWVudC5hbnRpbmFwbGF5cGx1cy5jb20uYXIiLCJyZWZlcmVyIjoiaHR0cHM6Ly93ZWJjbGllbnQuYW50aW5hcGxheXBsdXMuY29tLmFyLyJ9",
+    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/STARCHANNEL/index.m3u8",
     "streamType": "M3U8",
     "category": "tv"
   },
