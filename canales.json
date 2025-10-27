@@ -13,7 +13,7 @@
     "name": "Telefe Cba",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://telefecanal3.akamaized.net/hls/live/2040462/canal8cordoba/TOK/master.m3u8?hdnea=st=1761360298~exp=1761536698~acl=/hls/live/2040462/canal8cordoba/TOK/*~hmac=9cbfe0aea3af60978b6d40d165a21ffb22cbc9e7e9eac9fe29eb7b2cf57897e2",
+    "streamUrl": "https://telefecanal3.akamaized.net/hls/live/2040462/canal8cordoba/TOK/master.m3u8?hdnea=st=1761580803~exp=1761757203~acl=/hls/live/2040462/canal8cordoba/TOK/*~hmac=1d031e3eae66a0b5227ac84df080382fc83a0a09a3c21a7a349507f6a2349b8c",
     "streamType": "M3U8",
     "category": "tv"
   },
