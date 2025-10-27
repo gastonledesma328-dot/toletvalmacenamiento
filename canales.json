@@ -238,7 +238,7 @@
     "name": "National Geographic",
     "description": "Documentales de ciencia",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National-Geographic-Logo.svg/1200px-National-Geographic-Logo.svg.png",
-    "streamUrl": "http://38.183.182.166:8000/play/a0vd/index.m3u8",
+    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/natgeohd_hls/playlist.m3u8",
     "streamType": "M3U8",
     "category": "entretenimiento"
   },
@@ -301,8 +301,8 @@
     "name": "TyC Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://r2.thesportsdb.com/images/media/channel/logo/zmpjy41624030194.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=VHlDU3BvcnQ&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://nskzbm.futebol12.nexus/tyc/index.m3u8",
+    "streamType": "M3U8",
     "category": "deportes"
   },
   {
