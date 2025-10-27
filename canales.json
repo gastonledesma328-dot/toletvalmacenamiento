@@ -247,7 +247,7 @@
     "name": "ESPN",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
-    "streamUrl": "http://38.183.182.166:8000/play/a122/index.m3u8",
+    "streamUrl": "https://nskzbm.futebol12.nexus/espn/index.m3u8",
     "streamType": "M3U8",
     "category": "deportes"
   },
