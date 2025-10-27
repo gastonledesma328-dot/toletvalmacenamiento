@@ -126,15 +126,6 @@
     "category": "kids"
   },
   {
-  "id": 53,
-  "name": "TNT Sports HD",
-  "description": "Fútbol Argentino",
-  "logoUrl": "https://example.com/tnt_sports_logo.png",
-  "streamUrl": "https://edge7-ccast-sl.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzYxNzA0MzIxIiwic2lwIjoiMzguMTAuMTEzLjE2OSIsInBhdGg...DbQ==/live/c6eds/TNT_Sports_HD/SA_Live_dash_enc/TNT_Sports_HD.mpd",
-  "streamType": "DASH",
-  "category": "deportes"
-  },
-  {
     "id": 14,
     "name": "Cartoon Network",
     "description": "",
