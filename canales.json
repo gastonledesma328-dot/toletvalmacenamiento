@@ -347,7 +347,7 @@
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
     "streamUrl": "https://telegratuita.org/repro/?r=L3dhdGNoLnBocD9pZD1kc3BvcnRzMQ==",
-    "streamType": "M3U8",
+    "streamType": "WEB",
     "category": "deportes"
   },
   {
