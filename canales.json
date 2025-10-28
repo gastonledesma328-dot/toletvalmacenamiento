@@ -346,7 +346,7 @@
     "name": "Dsport",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
-    "streamUrl": "https://k8o5.futebol12.nexus/dsports/tracks-v1a1/mono.ts.m3u8",
+    "streamUrl": "https://telegratuita.org/repro/?r=L3dhdGNoLnBocD9pZD1kc3BvcnRzMQ==",
     "streamType": "M3U8",
     "category": "deportes"
   },
