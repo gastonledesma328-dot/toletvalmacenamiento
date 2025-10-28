@@ -346,7 +346,7 @@
     "name": "Dsport",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
-    "streamUrl": "http://38.183.182.166:8000/play/a125/index.m3u8",
+    "streamUrl": "https://k8o5.futebol12.nexus/dsports/tracks-v1a1/mono.ts.m3u8",
     "streamType": "WEB",
     "category": "deportes"
   },
