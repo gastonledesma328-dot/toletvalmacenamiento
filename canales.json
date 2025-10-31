@@ -18,6 +18,24 @@
     "category": "tv"
   },
   {
+    "id": 53,
+    "name": "Canal 10",
+    "description": "Canal generalista argentino",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Canal_10_C%C3%B3rdoba_%28Logo_2018%29.png",
+    "streamUrl": "https://stream.arcast.net:4443/canal10/ngrp:canal10_all/playlist.m3u8",
+    "streamType": "M3U8",
+    "category": "tv"
+  },
+  {
+    "id": 54,
+    "name": "TN",
+    "description": "Canal generalista argentino",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TN_todo_noticias_logo.svg/2560px-TN_todo_noticias_logo.svg.png",
+    "streamUrl": "https://dai.google.com/linear/hls/pa/event/5OEEtA9FR-yrvhNE5K8PQQ/stream/c086055a-58d6-4916-a19c-484b8cb1995c:SCL2/master.m3u8",
+    "streamType": "M3U8",
+    "category": "tv"
+  },
+  {
     "id": 3,
     "name": "El Trece",
     "description": "Canal argentino de televisión abierta",
@@ -76,8 +94,8 @@
     "name": "Canal 26",
     "description": "Señal informativa argentina",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/LogoCanal26.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=MjZfVFZfSEQ",
-    "streamType": "WEB",
+    "streamUrl": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/0/playlist.m3u8",
+    "streamType": "M3U8",
     "category": "tv"
   },
   {
