@@ -144,6 +144,15 @@
     "category": "kids"
   },
   {
+    "id": 55,
+    "name": "Lilo y Stitch",
+    "description": "",
+    "logoUrl": "https://www.90sdvds.com/images/Lilo%20Stitch.png",
+    "streamUrl": "https://cloudvideo.servers10.com:8081/impactotv/index.m3u8",
+    "streamType": "M3U8",
+    "category": "kids"
+  },
+  {
     "id": 14,
     "name": "Cartoon Network",
     "description": "",
@@ -250,6 +259,15 @@
   "streamUrl": "https://telegratuita.org/cv.php?get=SGlzdG9yeV8y&lang=1",
   "streamType": "WEB",
   "category": "entretenimiento"
+  },
+  {
+    "id": 56,
+    "name": "CGTN",
+    "description": "Documentales",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/2560px-CGTN.svg.png",
+    "streamUrl": "https://espanol-livews.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8",
+    "streamType": "M3U8",
+    "category": "entretenimiento"
   },
   {
     "id": 26,
