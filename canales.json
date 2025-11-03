@@ -346,8 +346,8 @@
     "name": "TNT Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
-    "streamUrl": "https://cdn.trimi.com.ar/live/sm-live/TNT_SPORTS_BKP4/sa_live_dash_ll/TNT_SPORTS_BKP4.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://bestleague.world/mpdk/?get=aHR0cHM6Ly9jZG4udHJpbWkuY29tLmFyL2xpdmUvc20tbGl2ZS9UTlRfU1BPUlRTX0JLUDQvc2FfbGl2ZV9kYXNoX2xsL1ROVF9TUE9SVFNfQktQNC5tcGQ=&key=NGM3OWEyN2Y0NmY0NGJmYmI3NzRiOGM3ZjFmMWU1N2Y=&key2=NTMwZmQwY2JhOWRjNTU2YTMzOWIwM2FmNGIwOTUxYjk=",
+    "streamType": "WEB",
     "category": "deportes"
   },
   {
