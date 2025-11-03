@@ -346,7 +346,7 @@
     "name": "TNT Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
-    "streamUrl": "https://bestleague.world/mpdk/?get=aHR0cHM6Ly9jZG4udHJpbWkuY29tLmFyL2xpdmUvc20tbGl2ZS9UTlRfU1BPUlRTX0JLUDQvc2FfbGl2ZV9kYXNoX2xsL1ROVF9TUE9SVFNfQktQNC5tcGQ=&key=NGM3OWEyN2Y0NmY0NGJmYmI3NzRiOGM3ZjFmMWU1N2Y=&key2=NTMwZmQwY2JhOWRjNTU2YTMzOWIwM2FmNGIwOTUxYjk=",
+    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=tntsports",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -355,8 +355,8 @@
     "name": "Fox Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/2560px-FOX_Sports_logo.svg.png",
-    "streamUrl": "https://nskzbm.futebol12.nexus/fox1ar/index.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRz&lang=1",
+    "streamType": "WEB",
     "category": "deportes"
   },
   {
@@ -364,8 +364,8 @@
     "name": "Fox Sports 2",
     "description": "Deportes en vivo",
     "logoUrl": "https://cdn.storage.foromedios.com/monthly_2023_02/large.1344882745_FOXSports2ARG(2023-).png.dc87e7653323f06426dd778a825e3514.png",
-    "streamUrl": "https://nskzbm.futebol12.nexus/fox2ar/index.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzMkhE&lang=1",
+    "streamType": "WEB",
     "category": "deportes"
   },
   {
