@@ -284,7 +284,7 @@
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
     "streamUrl": "https://streamtp11.com/global1.php?stream=espn",
-    "streamType": "WE2",
+    "streamType": "WEB",
     "category": "deportes"
   },
   {
