@@ -111,7 +111,7 @@
   "27": [
     { "url": "https://elcanaldeportivo.com/espnhd.php", "type": "WEB" },
     { "url": "https://elcanaldeportivo.com/espn-sharecast.php", "type": "WEB" },
-    { "url": "https://streamtpmedia.com/global2.php?stream=espn", "type": "WEB" }
+    { "url": "https://streamtpmedia.com/global1.php?stream=espn", "type": "WEB" }
   ],
   "28": [
     { "url": "https://telegratuita.org/cv.php?get=RVNQTjJfQXJn&lang=1", "type": "WEB" },
