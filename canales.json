@@ -283,7 +283,7 @@
     "name": "ESPN",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
-    "streamUrl": "https://cointv.online/canales/espn/op2.php",
+    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=espn",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -292,8 +292,8 @@
     "name": "ESPN 2",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/2560px-ESPN2_logo.svg.png",
-    "streamUrl": "https://nskzbm.futebol12.nexus/espn2/index.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=espn2",
+    "streamType": "WEB",
     "category": "deportes"
   },
   {
@@ -301,8 +301,8 @@
     "name": "ESPN 3",
     "description": "Deportes 24/7",
     "logoUrl": "https://televvd.com/wp-content/uploads/2024/03/TODOS_2024_ESPN-3-1024x357.png",
-    "streamUrl": "https://nskzbm.futebol12.nexus/espn3/index.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/QVsZxnupYwKdAtb5Dk3zvFXBMGqcWgmfR/output.mpd",
+    "streamType": "MPD",
     "category": "deportes"
   },
   {
