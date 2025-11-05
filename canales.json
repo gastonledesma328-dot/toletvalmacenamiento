@@ -319,7 +319,7 @@
     "name": "ESPN 5",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1200px-ESPN_5_logo.svg.png",
-    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=espn5",
+    "streamUrl": "https://telegratuita.org/repro/?r=L3BocC9mbC8/Z2V0PVJWTlFUalE9",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -346,7 +346,7 @@
     "name": "TNT Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
-    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=tntsports",
+    "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL2V4cC9wbGF5ZXIucGhwP2lkPTY3Njg=",
     "streamType": "WEB",
     "category": "deportes"
   },
@@ -454,8 +454,8 @@
     "name": "Star Channel",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/2560px-Star_Channel_2020.svg.png",
-    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/STARCHANNEL/index.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/repro/?r=L2V4dGVuc2lvbi5waHA/cj1odHRwcyUzQSUyRiUyRjExOTYtdGJ4LnZyaW9vdHQuY29tJTJGc3RhcmNoYW5uZWxhcmclMkZtYW5pZmVzdC5tcGQlM0ZjayUzRGV5STRPR1ZrTWpnNU9EWTFOR1kxWW1JeE9EUmhZVEV5TnpsbFpqYzVNakZoTXlJNkltVmpNbVEwWWpOaU1XWmxZamN6WkdWak1tSXlOMkV5TUdJMVptUmxZMkk1SW4wJTNEJTI2dGl0bGUlM0RUZWxlR3JhdHVpdGE=",
+    "streamType": "WEB",
     "category": "cine"
   },
   {
