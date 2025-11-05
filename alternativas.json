@@ -131,6 +131,7 @@
     { "url": "https://streamtp11.com/global1.php?stream=espn4", "type": "WEB" }
   ],
 "57": [
+    { "url": "https://la14hd.com/vivo/canales.php?stream=espn5", "type": "WEB" },
     { "url": "https://streamtp11.com/global1.php?stream=espn5", "type": "WEB" }
   ],
   
@@ -145,7 +146,7 @@
     { "url": "https://streamtp11.com/global1.php?stream=tycsports", "type": "WEB" }
   ],
   "33": [
-    { "url": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL2V4cC9wbGF5ZXIucGhwP2lkPTY3Njg=", "type": "WEB" },
+    { "url": "https://la14hd.com/vivo/canales.php?stream=tntsports", "type": "WEB" },
     { "url": "https://telegratuita.org/cv.php?get=VE5UX1Nwb3J0c19IRA&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/cvattde.html?get=VE5UX1Nwb3J0c19IRA", "type": "WEB" },
     { "url": "https://elcanaldeportivo.com/tntsports.php", "type": "WEB" }
@@ -164,8 +165,7 @@
   "37": [
     { "url": "https://bolaloca.my/player/4/94", "type": "WEB" },
     { "url": "https://elcanaldeportivo.com/dsports-sharecast.php", "type": "WEB" },
-    { "url": "https://streamtp11.com/global1.php?stream=dsports", "type": "WEB" },
-    { "url": "https://telegratuita.org/watch.php?id=dsports1", "type": "WEB" }
+    { "url": "https://streamtp11.com/global1.php?stream=dsports", "type": "WEB" }
   ],
   "38": [
     { "url": "https://cointv.online/cvatt.html?get=RHJlYW13b3Jrcw==", "type": "WEB" }
