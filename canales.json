@@ -58,7 +58,7 @@
     "name": "TV Pública",
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TVP_-_Televisi%C3%B3n_P%C3%BAblica_%282021%29.svg/1200px-TVP_-_Televisi%C3%B3n_P%C3%BAblica_%282021%29.svg.png",
-    "streamUrl": "https://telegratuita.org/repro/?r=L3RybS90dnB1YmxpY2EucGhw",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2FuYWw3&lang=1",
     "streamType": "WEB",
     "category": "tv"
   },
