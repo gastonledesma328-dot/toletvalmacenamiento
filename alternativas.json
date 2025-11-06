@@ -26,9 +26,6 @@
     { "url": "https://dot.bestleague.world/cvatt.html?get=Q2FuYWw3&lang=1", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWw3", "type": "WEB" }
   ],
-  "6": [
-    { "url": "https://cointv.online/html/cvatt.html?get=TGFfTmFjaW9u", "type": "WEB" }
-  ],
   "7": [
     { "url": "https://router.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "WEB" },
     { "url": "https://telegratuita.org/cv.php?get=QzVO", "type": "WEB" },
@@ -36,6 +33,7 @@
     { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" }
   ],
   "8": [
+    { "url": "https://www.youtube.com/watch?v=nndzeKDSjuc", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfMTJfQ0JB", "type": "WEB" },
     { "url": "https://dot.bestleague.world/cvatt.html?get=Q2FuYWxfMTJfQ0JB&lang=1", "type": "WEB" }
   ],
