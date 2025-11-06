@@ -33,7 +33,6 @@
     { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" }
   ],
   "8": [
-    { "url": "https://www.youtube.com/watch?v=nndzeKDSjuc", "type": "WEB" },
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfMTJfQ0JB", "type": "WEB" },
     { "url": "https://dot.bestleague.world/cvatt.html?get=Q2FuYWxfMTJfQ0JB&lang=1", "type": "WEB" }
   ],
