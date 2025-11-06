@@ -6,13 +6,12 @@
     { "url": "https://la14hd.com/vivo/canal.php?stream=telefe", "type": "WEB" }
   ],
   "2": [
-    { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfOF9DQkE", "type": "WEB" },
-    { "url": "https://dot.bestleague.world/cvatt.html?get=Q2FuYWxfOF9DQkE&lang=1", "type": "WEB" }
+    { "url": "https://dot.bestleague.world/cvatt.html?get=Q2FuYWxfOF9DQkE&lang=1", "type": "WEB" },
+    { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfOF9DQkE", "type": "WEB" }
   ],          
   "3": [
     { "url": "https://telegratuita.org/cv.php?get=QXJ0ZWFySEQ", "type": "WEB" },
-    { "url": "https://cointv.online/html/cvatt.html?get=QXJ0ZWFySEQ", "type": "WEB" },
-    { "url": "https://telegratuita.org/hls.php?get=Ly9saXZldHJ4MDEudm9kZ2MubmV0L2VsdHJlY2V0di9pbmRleC5tM3U4", "type": "WEB" }
+    { "url": "https://cointv.online/html/cvatt.html?get=QXJ0ZWFySEQ", "type": "WEB" }
   ],
   "4": [
     { "url": "https://telegratuita.org/cv.php?get=QW1lcmljYTI0", "type": "WEB" },
@@ -26,8 +25,7 @@
   "7": [
     { "url": "https://router.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "WEB" },
     { "url": "https://telegratuita.org/cv.php?get=QzVO", "type": "WEB" },
-    { "url": "https://cointv.online/html/cvatt.html?get=QzVO", "type": "WEB" },
-    { "url": "https://is-frontera.cdn.rcs.net.ar/mnp/c5n_hls/playlist.m3u8", "type": "M3U8" }
+    { "url": "https://cointv.online/html/cvatt.html?get=QzVO", "type": "WEB" }
   ],
   "8": [
     { "url": "https://cointv.online/html/cvatt.html?get=Q2FuYWxfMTJfQ0JB", "type": "WEB" },
