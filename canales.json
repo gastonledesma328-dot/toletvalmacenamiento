@@ -337,8 +337,8 @@
     "name": "TNT Sports",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
-    "streamUrl": "https://cdnlb.gigared.com.ar/live/eds/TNT_Sports_Premium/sa_live_dash/TNT_Sports_Premium.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL3Bydi5waHA/aWQ9dG50c3BvcnRzYXI=",
+    "streamType": "WEB",
     "category": "deportes"
   },
   {
