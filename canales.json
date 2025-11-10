@@ -274,8 +274,8 @@
     "name": "ESPN",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjJIRA&lang=1",
-    "streamType": "WEB",
+    "streamUrl": "https://twilight-heart-e08f.jet-1968.workers.dev/proxy?url=https://covoslivechannels2dash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(ESPN_HD)/manifest.mpd",
+    "streamType": "MPD",
     "category": "deportes"
   },
   {
