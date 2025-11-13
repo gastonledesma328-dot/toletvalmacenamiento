@@ -276,7 +276,7 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
     "streamUrl": "https://teledeportes.top/ch.php?id=espn1co",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Colombia"
   },
   {
@@ -286,7 +286,7 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/2560px-ESPN2_logo.svg.png",
     "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/sJDmPFpTWBNS2gZhzj8ydHU7tR9Y6uf4k/output.mpd",
     "streamType": "MPD",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -296,7 +296,7 @@
     "logoUrl": "https://televvd.com/wp-content/uploads/2024/03/TODOS_2024_ESPN-3-1024x357.png",
     "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/QVsZxnupYwKdAtb5Dk3zvFXBMGqcWgmfR/output.mpd",
     "streamType": "MPD",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -306,7 +306,7 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/1200px-ESPN_4_logo.svg.png",
     "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/bPHSdXgELpUR4JkCe3Qu5mV6zn8qMwjTY/output.mpd",
     "streamType": "MPD",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -316,7 +316,7 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1200px-ESPN_5_logo.svg.png",
     "streamUrl": "https://cableparatodos-soextensioonnennbe.blogspot.com/p/repro-floootoods-1.html?get=RVNQTjQ=&lang=1",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -326,7 +326,7 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
     "streamUrl": "https://cointv.online/cvattde.html?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -336,7 +336,7 @@
     "logoUrl": "https://r2.thesportsdb.com/images/media/channel/logo/zmpjy41624030194.png",
     "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL2V4cC9wbGF5ZXIucGhwP2lkPTY3Njk=",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -346,7 +346,7 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/1280px-TNT_Sports_2021_logo.svg.png",
     "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL3Bydi5waHA/aWQ9dG50c3BvcnRzYXI=",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -356,7 +356,7 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/2560px-FOX_Sports_logo.svg.png",
     "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRz&lang=1",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -366,7 +366,7 @@
     "logoUrl": "https://cdn.storage.foromedios.com/monthly_2023_02/large.1344882745_FOXSports2ARG(2023-).png.dc87e7653323f06426dd778a825e3514.png",
     "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzMkhE&lang=1",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -376,7 +376,7 @@
     "logoUrl": "https://cdn.storage.foromedios.com/monthly_2023_02/large.551251533_FOXSports3ARG(2023-).png.9facfaf5bfc0dd66a8d9535ea8d7cb05.png",
     "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzM0hE&lang=1",
     "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
     "pais": "Argentina"
   },
   {
@@ -386,14 +386,8 @@
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
     "streamUrl": "https://la14hd.com/vivo/canales.php?stream=dsports",
     "streamType": "WEB",
-    "category": "deportes"
-  },
-    "name": "Dsport",
-    "description": "Deportes en vivo",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
-    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=dsports",
-    "streamType": "WEB",
-    "category": "deportes"
+    "category": "deportes",
+    "pais": "Colombia"
   },
   {
     "id": 38,
