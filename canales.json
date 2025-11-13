@@ -277,6 +277,7 @@
     "streamUrl": "https://teledeportes.top/ch.php?id=espn1co",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Colombia"
   },
   {
     "id": 28,
@@ -286,6 +287,7 @@
     "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/sJDmPFpTWBNS2gZhzj8ydHU7tR9Y6uf4k/output.mpd",
     "streamType": "MPD",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 29,
@@ -295,6 +297,7 @@
     "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/QVsZxnupYwKdAtb5Dk3zvFXBMGqcWgmfR/output.mpd",
     "streamType": "MPD",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 30,
@@ -304,6 +307,7 @@
     "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/bPHSdXgELpUR4JkCe3Qu5mV6zn8qMwjTY/output.mpd",
     "streamType": "MPD",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 57,
@@ -313,6 +317,7 @@
     "streamUrl": "https://cableparatodos-soextensioonnennbe.blogspot.com/p/repro-floootoods-1.html?get=RVNQTjQ=&lang=1",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 31,
@@ -322,6 +327,7 @@
     "streamUrl": "https://cointv.online/cvattde.html?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 32,
@@ -331,6 +337,7 @@
     "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL2V4cC9wbGF5ZXIucGhwP2lkPTY3Njk=",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 33,
@@ -340,6 +347,7 @@
     "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMudG9wL3Bydi5waHA/aWQ9dG50c3BvcnRzYXI=",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 34,
@@ -349,6 +357,7 @@
     "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRz&lang=1",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 35,
@@ -358,6 +367,7 @@
     "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzMkhE&lang=1",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 36,
@@ -367,9 +377,17 @@
     "streamUrl": "https://telegratuita.org/cv.php?get=Rm94U3BvcnRzM0hE&lang=1",
     "streamType": "WEB",
     "category": "deportes"
+    "pais": "Argentina"
   },
   {
     "id": 37,
+    "name": "Dsport",
+    "description": "Deportes en vivo",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
+    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=dsports",
+    "streamType": "WEB",
+    "category": "deportes"
+  },
     "name": "Dsport",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
