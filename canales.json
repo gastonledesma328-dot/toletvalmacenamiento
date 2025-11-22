@@ -4,8 +4,8 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://cableparatodos-soextensioonnennbe.blogspot.com/p/sopraexteeen-commpu-1.html?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE",
-    "streamType": "M3U8",
+    "streamUrl": "https://cdn03.gigared.com.ar/live/eds/ESPN/sa_live_dash/ESPN.mpd",
+    "streamType": "MPD",
     "category": "tv"
   },
   {
