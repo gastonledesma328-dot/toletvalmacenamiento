@@ -4,7 +4,7 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://cdn03.gigared.com.ar/live/eds/ESPN/sa_live_dash/ESPN.mpd",
+    "streamUrl": "https://el4live1.boldmss.com/ESPN/ESPN_EL4.isml/ESPN.mpd",
     "streamType": "MPD",
     "category": "tv"
   },
