@@ -4,8 +4,8 @@
     "name": "Telefe",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://cableparatodspracantodsplaeeecongeeeo.blogspot.com/p/caantodsplaaeetrimmm.html?id=eeespee1-trim",
-    "streamType": "WEB",
+    "streamUrl": "https://mitelefe.com/Api/Videos/GetSourceUrl/694564/0/HLS",
+    "streamType": "HLS",
     "category": "tv"
   },
   {
@@ -274,7 +274,7 @@
     "name": "ESPN",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
-    "streamUrl": "https://cableparatodspracanembeecongeeeo.blogspot.com/p/caantodsembbtrimmm.html?id=eeespee1-trim",
+    "streamUrl": "https://teledeportes.top/ch.php?id=espn1co",
     "streamType": "WEB",
     "category": "deportes",
     "pais": "Colombia"
