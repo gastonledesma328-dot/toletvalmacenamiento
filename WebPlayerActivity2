@@ -1,0 +1,1433 @@
+package com.toletv.app.ui.player
+
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.content.pm.ActivityInfo
+import android.graphics.Color
+import android.net.Uri
+import android.net.http.SslError
+import android.os.Build
+import android.os.Bundle
+import android.os.SystemClock
+import android.view.KeyEvent
+import android.view.MotionEvent
+import android.view.View
+import android.view.ViewGroup
+import android.webkit.CookieManager
+import android.webkit.JavascriptInterface
+import android.webkit.RenderProcessGoneDetail
+import android.webkit.SslErrorHandler
+import android.webkit.WebChromeClient
+import android.webkit.WebResourceRequest
+import android.webkit.WebResourceResponse
+import android.webkit.WebSettings
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import android.widget.FrameLayout
+import android.widget.Toast
+import androidx.activity.addCallback
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
+import androidx.webkit.ServiceWorkerClientCompat
+import androidx.webkit.ServiceWorkerControllerCompat
+import androidx.webkit.WebViewFeature
+import com.toletv.app.R
+import com.toletv.app.data.model.StreamSource
+import com.toletv.app.data.model.StreamType
+
+class WebPlayerActivity2 : AppCompatActivity() {
+
+    private lateinit var webView: WebView
+
+    private var webUrl: String? = null
+    private var contentTitle: String? = null
+
+    // Mirrors
+    private var sources: ArrayList<StreamSource> = arrayListOf()
+    private var currentIndex = 0
+
+    // Señales
+    @Volatile private var userInteracted = false
+    @Volatile private var fallingBack   = false
+
+    // Política WE2 / flags
+    private var isWE2: Boolean = false
+    private var softenOverlayKiller = true
+
+    // Auto-tap cuando venimos del botón "Reproducir"
+    private var autoTapOnStart: Boolean = false
+
+    // Permitir handoff aunque sea WE2 (por defecto true)
+    private var allowHandoffOnWE2: Boolean = true
+
+    // Detección
+    private var sniffWhitelist: Array<String> = arrayOf(".mpd", ".ism/manifest", ".mp4", ".m3u8")
+    private var sniffBlacklist: Array<String> = arrayOf("blob:", "data:")
+
+    // Handoff guard
+    @Volatile private var didHandoff = false
+
+    companion object {
+        private val denyHandoffHosts: MutableSet<String> = mutableSetOf()
+    }
+
+    // ---------- Fullscreen WebChrome ----------
+    private var customView: View? = null
+    private var customCallback: WebChromeClient.CustomViewCallback? = null
+    private var originalSystemUi: Int = 0
+    private val decor: ViewGroup by lazy { window.decorView as ViewGroup }
+
+    private fun hostOf(u: String?): String? =
+        try { Uri.parse(u).host?.lowercase() } catch (_: Exception) { null }
+
+    private fun isAdUrl(url: String?): Boolean {
+        if (url.isNullOrBlank()) return false
+        val u = url.lowercase()
+        return listOf(
+            "doubleclick.net","googlesyndication.com","adnxs.com","exoclick","taboola","outbrain",
+            "adservice","adsystem","popads","onclick","adsterra","imasdk","/vast","/preroll"
+        ).any { u.contains(it) }
+    }
+
+    private fun isWe2Url(u: String?): Boolean {
+        if (u.isNullOrBlank()) return false
+        val ul = u.lowercase()
+        return ul.contains("we2") || ul.endsWith(".we2")
+    }
+
+    private fun isDirectStreamUrl(u: String?): Boolean {
+        if (u.isNullOrBlank()) return false
+        if (isWe2Url(u)) return false
+        val ul = u.lowercase()
+        return sniffWhitelist.any { ul.contains(it) } && sniffBlacklist.none { ul.contains(it) }
+    }
+
+    // =================== Ciclo de vida ===================
+    @SuppressLint("SetJavaScriptEnabled")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
+        setContentView(R.layout.activity_web_player)
+
+        window.statusBarColor = Color.BLACK
+        window.navigationBarColor = Color.BLACK
+        enableImmersiveMode()
+
+        contentTitle = intent.getStringExtra("title")
+
+        // URL principal
+        webUrl = intent.getStringExtra("web_url")
+            ?: intent.getStringExtra("url")
+                    ?: intent.getStringExtra("EXTRA_URL")
+                    ?: intent.getStringExtra("streamUrl")
+                    ?: intent.getStringExtra("VIDEO_URL")
+
+        val streamTypeExtra = (intent.getStringExtra("STREAM_TYPE") ?: "").uppercase()
+        isWE2 = streamTypeExtra == "WE2" || isWe2Url(webUrl)
+
+        // Mirrors (opcional)
+        intent.getParcelableArrayListExtra<StreamSource>("SOURCES")?.let { sources = it }
+        if (sources.isEmpty() && !webUrl.isNullOrBlank()) {
+            val t = if (isWE2) StreamType.WE2 else StreamType.WEB
+            sources.add(StreamSource(webUrl!!, t))
+        }
+
+        // Listas de sniff
+        intent.getStringArrayExtra("SNIFF_WHITELIST")?.let { sniffWhitelist = it }
+        intent.getStringArrayExtra("SNIFF_BLACKLIST")?.let { sniffBlacklist = it }
+
+        // Señales desde el caller
+        autoTapOnStart    = intent.getBooleanExtra("AUTO_TAP", true)
+        allowHandoffOnWE2 = intent.getBooleanExtra("ALLOW_WE2_HANDOFF", true)
+
+        val allHosts = buildList {
+            hostOf(webUrl)?.let { add(it) }
+            sources.forEach { hostOf(it.url)?.let { h -> add(h) } }
+        }
+        if (isWE2) denyHandoffHosts.addAll(allHosts)
+
+        // WebView setup
+        webView = findViewById(R.id.webView)
+        with(webView.settings) {
+            javaScriptEnabled = true
+            domStorageEnabled = true
+            mediaPlaybackRequiresUserGesture = false
+            loadsImagesAutomatically = true
+            mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
+            loadWithOverviewMode = true
+            useWideViewPort = true
+            builtInZoomControls = false
+            displayZoomControls = false
+            setSupportZoom(false)
+            cacheMode = WebSettings.LOAD_DEFAULT
+            allowContentAccess = true
+            allowFileAccess = true
+            setGeolocationEnabled(true)
+            javaScriptCanOpenWindowsAutomatically = true
+            setSupportMultipleWindows(true)
+            setNeedInitialFocus(false)
+            @Suppress("DEPRECATION")
+            setOffscreenPreRaster(true)
+            userAgentString = buildUA(userAgentString, desktop = isWE2)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) safeBrowsingEnabled = false
+        }
+        webView.setBackgroundColor(Color.BLACK)
+        webView.isVerticalScrollBarEnabled = false
+        webView.isHorizontalScrollBarEnabled = false
+        webView.overScrollMode = View.OVER_SCROLL_NEVER
+        webView.keepScreenOn = true
+        webView.isFocusable = true
+        webView.isFocusableInTouchMode = true
+        webView.requestFocus()
+        webView.setLayerType(View.LAYER_TYPE_HARDWARE, null)
+        webView.setOnLongClickListener { true }
+        webView.isHapticFeedbackEnabled = false
+
+        CookieManager.getInstance().setAcceptCookie(true)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true)
+        }
+        WebView.setWebContentsDebuggingEnabled(true)
+
+        webView.setOnTouchListener { _, ev ->
+            if (ev.action == MotionEvent.ACTION_UP) {
+                userInteracted = true
+                injectAutoUnmute()
+                ensurePlayerFocus()
+                injectStabilityAgent()
+                injectFocusAndSpatialNavLite()
+                injectDeepNativeSniffer() // <— mantenerlo activo después de interacción
+            }
+            false
+        }
+
+        // JS bridge
+        webView.addJavascriptInterface(object {
+            @JavascriptInterface fun onUserPlay() {
+                userInteracted = true
+                runOnUiThread {
+                    injectAutoUnmute()
+                    ensurePlayerFocus()
+                    injectStabilityAgent()
+                    injectFocusAndSpatialNavLite()
+                    // ❌ nada de performAutoTapAndSearch() ni simulateCenterTap()
+                }
+            }
+            @JavascriptInterface fun tryHandoff(url: String?) {
+                if (url != null) maybeHandoffToNative(url)
+            }
+        }, "AndroidBridge")
+
+        // WebChrome: target=_blank en el mismo WebView + fullscreen real
+        webView.webChromeClient = object : WebChromeClient() {
+            override fun onCreateWindow(view: WebView?, isDialog: Boolean, isUserGesture: Boolean, resultMsg: android.os.Message?): Boolean {
+                return try {
+                    val transport = resultMsg?.obj as? WebView.WebViewTransport
+                    transport?.webView = webView
+                    resultMsg?.sendToTarget()
+                    true
+                } catch (_: Throwable) {
+                    injectForceSelfTargets()
+                    false
+                }
+            }
+            override fun onShowCustomView(view: View?, callback: CustomViewCallback?) {
+                if (customView != null) { callback?.onCustomViewHidden(); return }
+                customView = view
+                customCallback = callback
+                originalSystemUi = window.decorView.systemUiVisibility
+                decor.addView(
+                    view,
+                    FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
+                )
+                requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE
+                webView.visibility = View.GONE
+                enableImmersiveMode()
+            }
+            override fun onHideCustomView() {
+                customView?.let { decor.removeView(it) }
+                customView = null
+                customCallback?.onCustomViewHidden()
+                webView.visibility = View.VISIBLE
+                window.decorView.systemUiVisibility = originalSystemUi
+                requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+                enableImmersiveMode()
+            }
+        }
+
+        webView.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
+                val u = request?.url?.toString() ?: return false
+                if (isAdUrl(u)) return true
+                // Si ya es stream directo ⇒ handoff
+                maybeHandoffToNative(u)
+                val scheme = request?.url?.scheme
+                val schemeOk = scheme == "http" || scheme == "https"
+                return !schemeOk
+            }
+
+            override fun shouldInterceptRequest(view: WebView?, request: WebResourceRequest?): WebResourceResponse? {
+                val u = request?.url?.toString() ?: return super.shouldInterceptRequest(view, request)
+                if (isAdUrl(u) && !userInteracted) return WebResourceResponse("text/plain", "utf-8", null)
+
+                // Sniff de recursos: .m3u8/.mpd/.mp4 directo ⇒ ExoPlayer
+                if (isDirectStreamUrl(u)) {
+                    if (maybeHandoffToNative(u)) {
+                        return WebResourceResponse("text/plain", "utf-8", null)
+                    }
+                }
+                return super.shouldInterceptRequest(view, request)
+            }
+
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                injectMinimalCss()
+                if (softenOverlayKiller) injectOverlayKillerSoft()
+                injectPlayDetection()
+                injectAutoPlaySoft()
+                injectForceSelfTargets()
+                injectDirectLinkSniffer()
+                injectFullscreenBridge()
+                ensurePlayerFocus()
+                injectAutoUnmute()
+                injectVideoHealthWatchdog()
+                injectFocusAndSpatialNavLite()
+                injectDeepNativeSniffer()
+
+                // 👇 elegir automáticamente el primer botón rectangular de servidor (sin autoclick central)
+                injectPickFirstRectServerNoCircles()
+                webView.postDelayed({ injectPickFirstRectServerNoCircles() }, 600)
+                webView.postDelayed({ injectPickFirstRectServerNoCircles() }, 1600)
+
+                // ❌ NO llamar a scheduleAutoTapSequence() ni a performAutoTapAndSearch()
+            }
+
+
+            override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: android.webkit.WebResourceError?) {
+                if (request?.isForMainFrame == true) fallToNext("Error de carga: ${error?.description}")
+            }
+            override fun onReceivedHttpError(view: WebView?, request: WebResourceRequest?, errorResponse: WebResourceResponse?) {
+                if (request?.isForMainFrame == true) {
+                    val code = errorResponse?.statusCode ?: 200
+                    if (code >= 400) fallToNext("HTTP $code")
+                }
+            }
+            override fun onReceivedSslError(view: WebView?, handler: SslErrorHandler?, error: SslError?) {
+                handler?.cancel()
+                Toast.makeText(this@WebPlayerActivity2, "Problema SSL. Probá nuevamente.", Toast.LENGTH_SHORT).show()
+            }
+            override fun onRenderProcessGone(view: WebView, detail: RenderProcessGoneDetail): Boolean {
+                try { view.destroy() } catch (_: Exception) {}
+                fallToNext("Crash render process")
+                return true
+            }
+        }
+
+        installServiceWorkerAdPolicy()
+
+        // Arranque
+        currentIndex = 0
+        playCurrent()
+
+        onBackPressedDispatcher.addCallback(this) {
+            when {
+                customView != null ->
+                    webView.post { (webView.webChromeClient as? WebChromeClient)?.onHideCustomView() }
+                this@WebPlayerActivity2::webView.isInitialized && webView.canGoBack() -> webView.goBack()
+                else -> finish()
+            }
+        }
+    }
+
+
+
+
+    // ============== Handoff a ExoPlayer ==============
+    private fun maybeHandoffToNative(foundUrl: String?): Boolean {
+        if (didHandoff) return false
+        val u = foundUrl ?: return false
+        if (!isDirectStreamUrl(u)) return false
+        val host = hostOf(u) ?: return false
+
+        // Permite handoff incluso si es WE2 (configurable)
+        if (denyHandoffHosts.contains(host)) return false
+        if (isWE2 && !allowHandoffOnWE2) return false
+
+        didHandoff = true
+        runOnUiThread {
+            startActivity(
+                Intent(this, VideoPlayerActivity::class.java).apply {
+                    putExtra("VIDEO_URL", u)
+                    putExtra("title", contentTitle ?: host)
+                    putExtra("is_live", false)
+                }
+            )
+            finish()
+        }
+        return true
+    }
+
+    // ================= Lógica de mirrors =================
+    private fun playCurrent() {
+        if (currentIndex !in 0 until sources.size) {
+            Toast.makeText(this, "No hay más mirrors", Toast.LENGTH_SHORT).show()
+            return
+        }
+        didHandoff = false
+        val cur = sources[currentIndex]
+        webUrl = cur.url
+        try {
+            val headers = (cur.headers ?: emptyMap())
+            if (headers.isEmpty()) webView.loadUrl(cur.url) else webView.loadUrl(cur.url, headers)
+        } catch (_: Exception) { fallToNext("Excepción al cargar URL") }
+    }
+
+    private fun fallToNext(reason: String) {
+        if (fallingBack) return
+        fallingBack = true
+        currentIndex++
+        if (currentIndex < sources.size) {
+            Toast.makeText(this, "Probando mirror ${currentIndex + 1}/${sources.size}", Toast.LENGTH_SHORT).show()
+            webView.postDelayed({ fallingBack = false; playCurrent() }, 350)
+        } else {
+            fallingBack = false
+            Toast.makeText(this, "Error: $reason. Sin más mirrors. Atrás para salir.", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    // ==================== JS helpers ====================
+    private fun injectMinimalCss() {
+        val js = """
+            (function(){
+              try{
+                var css=`html,body{margin:0!important;padding:0!important;background:#000!important}
+                video{image-rendering:auto}`;
+                var s=document.getElementById('__MIN_CSS__');
+                if(!s){ s=document.createElement('style'); s.id='__MIN_CSS__'; s.textContent=css; document.head.appendChild(s); }
+                var v=document.querySelector('video');
+                if(v){ try{ v.style.willChange='transform'; v.style.transform='translateZ(0)'; }catch(e){} }
+              }catch(e){}
+            })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+    /** Navegación DPAD en la página (promueve controles a focusables) */
+    private fun injectFocusAndSpatialNavLite() {
+        val js = """
+(function(){
+  try{
+    if (window.__TV_DPAD_LITE__) return;
+    window.__TV_DPAD_LITE__ = true;
+
+    function visible(el){
+      if(!el) return false;
+      var cs=getComputedStyle(el);
+      if(cs.display==='none'||cs.visibility==='hidden'||el.disabled) return false;
+      if(cs.opacity && parseFloat(cs.opacity)<0.12) return false;
+      if(cs.pointerEvents==='none') return false;
+      var r=el.getBoundingClientRect();
+      return (r.width>=20 && r.height>=20 && r.bottom>=0 && r.right>=0 &&
+              r.top<=(innerHeight||document.documentElement.clientHeight) &&
+              r.left<=(innerWidth||document.documentElement.clientWidth));
+    }
+
+    function markFocusables(){
+      var q='a[href],button,[role="button"],[role="link"],[onclick],select,summary,input,textarea';
+      var els=[].slice.call(document.querySelectorAll(q)).filter(visible);
+      els.forEach(function(el){
+        if (el.tabIndex < 0) el.setAttribute('tabindex','0');
+        el.setAttribute('data-tv-focus','1');
+      });
+      if (!document.getElementById('__TV_MILD_FOCUS__')){
+        var s=document.createElement('style'); s.id='__TV_MILD_FOCUS__';
+        s.textContent='[data-tv-focus]:focus{outline:2px solid rgba(0,150,255,.9);outline-offset:3px;border-radius:6px}';
+        document.head.appendChild(s);
+      }
+    }
+
+    function rect(el){ var r=el.getBoundingClientRect(); return {l:r.left,t:r.top,r:r.right,b:r.bottom,w:r.width,h:r.height,cx:(r.left+r.right)/2,cy:(r.top+r.bottom)/2}; }
+    function focusables(){
+      var q='[tabindex]:not([tabindex="-1"]),a[href],button,input,select,textarea,summary,[role="button"],[role="link"]';
+      return [].slice.call(document.querySelectorAll(q)).filter(visible);
+    }
+    function spatial(dir){
+      var cur=(document.activeElement && document.activeElement!==document.body)?document.activeElement:null;
+      var list=focusables();
+      if(!list.length) return false;
+      if(!cur){ list[0].focus({preventScroll:true}); return true; }
+
+      var cr=rect(cur), cand=[];
+      list.forEach(function(el){
+        if(el===cur) return;
+        var rr=rect(el), inDir=false, primary=1e9, secondary=1e9;
+        if (dir==='left'  && rr.r<=cr.l){ inDir=true; primary=cr.l-rr.r; secondary=Math.abs(rr.cy-cr.cy); }
+        if (dir==='right' && rr.l>=cr.r){ inDir=true; primary=rr.l-cr.r; secondary=Math.abs(rr.cy-cr.cy); }
+        if (dir==='up'    && rr.b<=cr.t){ inDir=true; primary=cr.t-rr.b; secondary=Math.abs(rr.cx-cr.cx); }
+        if (dir==='down'  && rr.t>=cr.b){ inDir=true; primary=rr.t-cr.b; secondary=Math.abs(rr.cx-cr.cx); }
+        if (inDir){ cand.push({el:el, score: primary*1000 + secondary}); }
+      });
+      if(!cand.length) return false;
+      cand.sort(function(a,b){ return a.score-b.score; });
+      var next=cand[0].el;
+      if(next){ next.focus({preventScroll:true}); next.scrollIntoView({block:'nearest',inline:'nearest'}); return true; }
+      return false;
+    }
+
+    document.addEventListener('keydown', function(e){
+      var k=e.key, c=e.keyCode||e.which, handled=false;
+
+      if (k==='ArrowLeft'||c===37)  handled = spatial('left');
+      else if (k==='ArrowRight'||c===39) handled = spatial('right');
+      else if (k==='ArrowUp'||c===38)    handled = spatial('up');
+      else if (k==='ArrowDown'||c===40)  handled = spatial('down');
+      else if (k==='Enter'||k===' '||c===13||c===32){
+        var el=document.activeElement; 
+        if(el && visible(el)){
+          try{
+            if (typeof el.click==='function') el.click();
+            else el.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}));
+          }catch(_){}
+          handled = true;
+        }
+      }
+      if (handled){ e.preventDefault(); e.stopPropagation(); }
+    }, true);
+
+    function tick(){ try{ markFocusables(); }catch(_){ } }
+    tick(); setTimeout(tick,700); setTimeout(tick,1500); setInterval(tick,2500);
+  }catch(e){}
+})();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    /** Bridge de fullscreen: refuerza autoplay/unmute/focus cuando cambia fullscreen */
+    private fun injectFullscreenBridge() {
+        if (!this::webView.isInitialized) return
+        val js = """
+      (function(){
+        try{
+          if (window.__FS_BRIDGE__) return;
+          window.__FS_BRIDGE__ = true;
+          function emit(){ try { AndroidBridge.onUserPlay(); } catch(e){} }
+          document.addEventListener('fullscreenchange', emit, true);
+          document.addEventListener('webkitfullscreenchange', emit, true);
+        }catch(e){}
+      })();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+    private fun injectOverlayKillerSoft() {
+        val js = """
+          (function(){
+            try{
+              var bad = [
+                '[class*="overlay"]','[id*="overlay"]','[class*="modal"]','[id*="modal"]',
+                '.ad','.ads','.advert','.jw-rightclick','.video-ads','.ytp-paid-content-overlay',
+                '[class*="popup"]','[id*="popup"]'
+              ];
+              function looksLikePlayer(n){
+                try{
+                  if (n.querySelector && n.querySelector('video')) return true;
+                  var t = (n.textContent||'').toLowerCase();
+                  if (t.includes('reproductor')||t.includes('player')) return true;
+                }catch(e){}
+                return false;
+              }
+              function hideAll(){
+                bad.forEach(function(sel){
+                  document.querySelectorAll(sel).forEach(function(n){
+                    try{
+                      var r=n.getBoundingClientRect(), st=getComputedStyle(n);
+                      if(r.width>160 && r.height>120 && st.position!=='static' && !looksLikePlayer(n)){
+                        n.style.setProperty('display','none','important');
+                        n.style.setProperty('visibility','hidden','important');
+                        n.style.setProperty('pointer-events','none','important');
+                      }
+                    }catch(e){}
+                  });
+                });
+              }
+              hideAll(); setTimeout(hideAll,600); setInterval(hideAll,2500);
+            }catch(e){}
+          })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    private fun injectPlayDetection() {
+        val js = """
+            (function(){
+              try{
+                ['.vjs-big-play-button','.plyr__control--overlaid','button[class*="play"]','.jw-display','button[aria-label="Play"]']
+                  .forEach(function(sel){
+                    document.querySelectorAll(sel).forEach(function(btn){
+                      btn.addEventListener('click', function(){ AndroidBridge.onUserPlay(); }, {capture:true});
+                      btn.addEventListener('touchend', function(){ AndroidBridge.onUserPlay(); }, {capture:true});
+                    });
+                  });
+                var v = document.querySelector('video');
+                if (v){ v.addEventListener('play', function(){ AndroidBridge.onUserPlay(); }, {capture:true}); }
+              }catch(e){}
+            })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    private fun injectAutoPlaySoft() {
+        val js = """
+        (function(){
+          try{
+            function playAll(){
+              try{
+                var vids=document.querySelectorAll('video');
+                vids.forEach(function(v){
+                  try{
+                    v.muted=false;
+                    v.removeAttribute('muted');
+                    v.volume=1.0;
+                    v.defaultMuted=false;
+                    v.play().catch(()=>{});
+                  }catch(_){}
+                });
+              }catch(_){}
+              try{
+                if(typeof jwplayer==='function'){ var jw=jwplayer(); if(jw&&jw.play) jw.play(); }
+              }catch(_){}
+              try{
+                if(typeof videojs==='function'){
+                  var players = videojs.getPlayers ? Object.values(videojs.getPlayers()) : [];
+                  players.forEach(function(p){ try{ p.play(); }catch(_){} });
+                }
+              }catch(_){}
+              try{
+                if(window.Plyr){
+                  var els=document.querySelectorAll('.plyr,video');
+                  els.forEach(function(e){ if(e.plyr) e.plyr.play(); });
+                }
+              }catch(_){}
+            }
+            setTimeout(playAll, 400);
+            setTimeout(playAll, 1200);
+            setTimeout(playAll, 2500);
+            setTimeout(playAll, 5000);
+          }catch(e){}
+        })();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+    private fun injectAutoUnmute() {
+        val js = """
+        (function(){
+          try{
+            function unmuteAll(){
+              document.querySelectorAll('video').forEach(function(v){
+                try{
+                  v.muted=false;
+                  v.removeAttribute('muted');
+                  v.volume=1.0;
+                  v.defaultMuted=false;
+                  if(typeof v.play==='function') v.play().catch(()=>{});
+                }catch(_){}
+              });
+            }
+            var i=0;
+            (function loop(){
+              unmuteAll();
+              if(++i<20) setTimeout(loop, 500);
+            })();
+          }catch(e){}
+        })();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+    private fun injectVideoHealthWatchdog() {
+        val js = """
+        (function(){
+          try{
+            if(window.__VID_WATCHDOG__) return;
+            window.__VID_WATCHDOG__=true;
+            var stuck=0,last=0;
+            function recover(v){
+              try{ v.play().catch(()=>{}); if(v.readyState<2) v.load(); }catch(_){}
+              try{ if(window.hls && hls.recoverMediaError) hls.recoverMediaError(); }catch(_){}
+              try{ if(typeof jwplayer==='function'){ var jw=jwplayer(); if(jw&&jw.play) jw.play(); } }catch(_){}
+            }
+            function loop(){
+              var v=document.querySelector('video');
+              if(!v){ setTimeout(loop,1200); return; }
+              var ct=v.currentTime||0;
+              if(!v.paused && !v.ended){
+                if(Math.abs(ct-last)<0.05) stuck++; else stuck=0;
+              } else stuck=0;
+              last=ct;
+              if(stuck>=5){ recover(v); stuck=0; }
+              setTimeout(loop,1500);
+            }
+            setTimeout(loop,1600);
+          }catch(e){}
+        })();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+    /** Baja calidad si hay muchos frames caídos y luego restaura auto. */
+    private fun injectStabilityAgent() {
+        val js = """
+            (function(){
+              try{
+                if (window.__STAB_AGENT__) return; 
+                window.__STAB_AGENT__ = true;
+
+                function dropped(v){
+                  try{
+                    if (v.getVideoPlaybackQuality) {
+                      var q=v.getVideoPlaybackQuality();
+                      return (q && typeof q.droppedVideoFrames==='number') ? q.droppedVideoFrames : 0;
+                    }
+                    if (typeof v.webkitDroppedFrameCount==='number') return v.webkitDroppedFrameCount;
+                  }catch(e){}
+                  return 0;
+                }
+
+                function clamp720_30(){
+                  try{
+                    var h = window.hls || (window.player && window.player.hls);
+                    if (h && h.levels){
+                      var pick=-1, best=0;
+                      for (var i=0;i<h.levels.length;i++){
+                        var L=h.levels[i]; var hh=L.height||0; var br=L.bitrate||0; var fr=L.frameRate||0;
+                        if (hh<=720 && (fr===0 || fr<=30)){ if (br>best){best=br;pick=i;} }
+                      }
+                      if (pick>=0){ h.autoLevelEnabled=false; h.currentLevel=pick; return true; }
+                    }
+                  }catch(e){}
+                  return false;
+                }
+                function restoreAuto(){
+                  try{ var h=window.hls; if (h){ h.autoLevelEnabled=true; h.currentLevel=-1; } }catch(e){}
+                }
+
+                function gpuHints(){
+                  var v=document.querySelector('video'); if (!v) return;
+                  try{ v.style.willChange='transform'; v.style.transform='translateZ(0)'; }catch(e){}
+                }
+
+                function loop(){
+                  var v=document.querySelector('video'); 
+                  if(!v){ setTimeout(loop,1200); return; }
+                  gpuHints();
+                  var d=dropped(v);
+                  if (typeof window.__lastDropped==='undefined') window.__lastDropped=d;
+                  var inc=d-window.__lastDropped; window.__lastDropped=d;
+
+                  if (inc>=20){
+                    if (!window.__capActive__){ window.__capActive__ = clamp720_30(); }
+                    if (typeof window.__capRelax!=='undefined') clearTimeout(window.__capRelax);
+                    window.__capRelax = setTimeout(function(){ window.__capActive__=false; restoreAuto(); }, 15000);
+                  }
+                  setTimeout(loop, 2000);
+                }
+                setTimeout(loop, 1500);
+              }catch(e){}
+            })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    /** Forzar _blank → _self */
+    private fun injectForceSelfTargets() {
+        val js = """
+          (function(){
+            try{
+              document.querySelectorAll('a[target="_blank"]').forEach(function(a){ a.setAttribute('target','_self'); });
+              try{ 
+                var oldOpen = window.open;
+                window.open = function(url){
+                  try{ if (url) location.href = url; }catch(e){}
+                  return oldOpen ? oldOpen.apply(this, arguments) : null;
+                }; 
+              }catch(e){}
+            }catch(e){}
+          })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    /** Sniffer JS “clásico” fetch/XHR/links */
+    private fun injectDirectLinkSniffer() {
+        val js = """
+          (function(){
+            try{
+              if (window.__NATIVE_SNIFFER__) return;
+              window.__NATIVE_SNIFFER__ = true;
+
+              function isDirect(u){
+                if(!u) return false;
+                u = (""+u).toLowerCase();
+                if (u.indexOf("blob:")===0 || u.indexOf("data:")===0) return false;
+                return /\.m3u8(\?|#|$)/.test(u) || /\.mpd(\?|#|$)/.test(u) || /\.mp4(\?|#|$)/.test(u) || u.indexOf(".ism/manifest")>=0;
+              }
+              function hand(u){ try{ if(isDirect(u)) AndroidBridge.tryHandoff(u); }catch(_){ } }
+
+              document.addEventListener('click', function(e){
+                var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+                if(!a) return;
+                var href = a.href;
+                if (isDirect(href)){
+                  try{ AndroidBridge.tryHandoff(href); }catch(_){}
+                  e.preventDefault(); e.stopPropagation();
+                  return false;
+                }
+              }, true);
+
+              try{
+                var _open = window.open;
+                window.open = function(url){
+                  try{ if (isDirect(url)){ AndroidBridge.tryHandoff(url); return null; } }catch(_){}
+                  return _open ? _open.apply(this, arguments) : null;
+                };
+              }catch(_){}
+
+              try{
+                var _fetch = window.fetch;
+                window.fetch = function(input, init){
+                  try{
+                    var u = (typeof input === 'string') ? input : (input && input.url);
+                    if (isDirect(u)) { AndroidBridge.tryHandoff(u); }
+                  }catch(_){}
+                  return _fetch.apply(this, arguments);
+                };
+              }catch(_){}
+
+              try{
+                var _xhrOpen = XMLHttpRequest.prototype.open;
+                XMLHttpRequest.prototype.open = function(m,u){
+                  try{ if (isDirect(u)) { AndroidBridge.tryHandoff(u); } }catch(_){}
+                  return _xhrOpen.apply(this, arguments);
+                };
+              }catch(_){}
+            }catch(e){}
+          })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    // ================== SNIFFER PROFUNDO ==================
+    /** SNIFFER PROFUNDO: marca __NATIVE_FOUND__ cuando detecta .m3u8/.mpd/.mp4 y hace handoff */
+    private fun injectDeepNativeSniffer() {
+        val js = """
+        (function(){
+          try{
+            if(window.__DEEP_NATIVE_SNIFFER__) return;
+            window.__DEEP_NATIVE_SNIFFER__=true;
+            function isDirect(u){
+              if(!u) return false;
+              u=(""+u).toLowerCase();
+              return !/^blob:|^data:/.test(u) &&
+                     (/\.m3u8(\?|#|$)/.test(u) ||
+                      /\.mpd(\?|#|$)/.test(u)  ||
+                      /\.mp4(\?|#|$)/.test(u)  ||
+                      u.indexOf('.ism/manifest')>=0);
+            }
+            function hand(u){
+              try{ if(isDirect(u)){ AndroidBridge.tryHandoff(u); return true; } }catch(_){}
+              return false;
+            }
+            try{
+              var d=Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype,'src');
+              if(d&&d.set){
+                var _s=d.set,_g=d.get;
+                Object.defineProperty(HTMLMediaElement.prototype,'src',{
+                  set:function(v){ hand(v); return _s.call(this,v); },
+                  get:function(){ return _g.call(this); }
+                });
+              }
+            }catch(_){}
+            try{
+              var _sa=Element.prototype.setAttribute;
+              Element.prototype.setAttribute=function(n,v){
+                if((this.tagName==='VIDEO'||this.tagName==='SOURCE')&&n&&n.toLowerCase()==='src') hand(v);
+                return _sa.apply(this,arguments);
+              };
+            }catch(_){}
+            function scan(){
+              try{
+                var v=document.querySelector('video');
+                if(v&&(hand(v.currentSrc||v.src))) return;
+                var es=(performance.getEntriesByType?performance.getEntriesByType('resource'):[]);
+                for(var i=es.length-1;i>=0&&i>es.length-400;i--){
+                  hand(es[i]&&es[i].name);
+                }
+              }catch(_){}
+              setTimeout(scan,2500);
+            }
+            setTimeout(scan,600);
+          }catch(e){}
+        })();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+    /** Clickea en serie botones de SERVIDOR (no idioma) hasta que __NATIVE_FOUND__ sea true */
+    private fun injectAutoCycleServers() {
+        val js = """
+    (function(){
+      try{
+        if (window.__SERVER_CYCLER__) { window.__SERVER_CYCLER__.kick && window.__SERVER_CYCLER__.kick(); return; }
+
+        window.__NATIVE_FOUND__ = !!window.__NATIVE_FOUND__;
+
+        function visible(el){
+          if(!el) return false;
+          var cs=getComputedStyle(el);
+          if(cs.display==='none'||cs.visibility==='hidden'||el.disabled) return false;
+          if(cs.opacity && parseFloat(cs.opacity)<0.12) return false;
+          if(cs.pointerEvents==='none') return false;
+          var r=el.getBoundingClientRect();
+          return (r.width>=20 && r.height>=20 && r.bottom>=0 && r.right>=0 &&
+                  r.top<=(innerHeight||document.documentElement.clientHeight) &&
+                  r.left<=(innerWidth||document.documentElement.clientWidth));
+        }
+
+        var HOST_WORDS = [
+          "vidhide","streamwish","filemoon","mixdrop","streamtape","dood","okru","ok.ru","uqload","vidoza",
+          "sbplay","streamsb","gcloud","upcloud","wolfstream","vidcloud","streamlare","sendvid","megacloud",
+          "pixeldrain","hydrax","fastream","mcloud","voe","mp4upload","megaup","zippy","upload","anbalancer","sensa"
+        ];
+        var SERVER_RX = /(servidor|server|mirror|source|fuente|host|opci[oó]n|enlace|link|player|reproductor|watch|1080p|720p|hd|ver\b|play\b)/i;
+        var LANGUAGE_RX = /(latino|castellano|espa[nñ]ol|\bes\b|english|\ben\b|ingl[eé]s|portugu[eé]s|\bpt\b|\bbr\b|subt[ií]t|sub\b|audio|dual|idioma|language|vose|vos|esp|lat|cast)/i;
+        var FLAG_RX = /[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/; // banderitas 🇦🇷🇪🇸 etc
+        var BAD_RX = /(login|register|sign[- ]?in|sign[- ]?up|cerrar|close|cookie|gdpr|policy|report|share|like|promo|banner|omitir|skip|download|descargar|advert)/i;
+
+        function looksLikeButton(el){
+          var cs=getComputedStyle(el);
+          var br=parseFloat(cs.borderRadius)||0;
+          var cur=cs.cursor||"";
+          var disp=cs.display||"";
+          var bg=cs.backgroundImage||cs.backgroundColor||"";
+          return (cur.indexOf('pointer')>=0) || (br>=6) || (disp==='inline-block'||disp==='flex'||disp==='inline-flex') || (!!bg && bg!=='none');
+        }
+
+        function isLanguageContext(el){
+          var cur=el, hops=0;
+          while(cur && hops<3){
+            var t=((cur.getAttribute&&(cur.getAttribute('data-label')||cur.getAttribute('aria-label')))||cur.textContent||"").toLowerCase();
+            if (LANGUAGE_RX.test(t) || FLAG_RX.test(t)) return true;
+            cur=cur.parentElement; hops++;
+          }
+          return false;
+        }
+
+        function normalizeClickable(el){
+          var base=el, cur=el, best=el, baseR=el.getBoundingClientRect(), baseA=baseR.width*baseR.height;
+          for (var i=0;i<6 && cur && cur!==document.body && cur!==document.documentElement; i++){
+            var r=cur.getBoundingClientRect(), a=r.width*r.height;
+            var looks = cur.tagName==='A'||cur.tagName==='BUTTON'||cur.hasAttribute('onclick')||
+                        cur.getAttribute('role')==='button'||cur.getAttribute('role')==='link';
+            var areaOk = a <= baseA*8;
+            if (visible(cur) && (looks || areaOk)) best = cur;
+            cur = cur.parentElement;
+          }
+          return best;
+        }
+
+        function scoreCandidate(el){
+          if(!visible(el)) return null;
+          el = normalizeClickable(el);
+
+          var t=(el.innerText||el.textContent||el.ariaLabel||el.title||"").trim();
+          var tt=t.toLowerCase();
+          var cls=(el.className||'').toString().toLowerCase();
+          var id =(el.id||'').toString().toLowerCase();
+          var href=(el.getAttribute && (el.getAttribute('href')||'')) || '';
+          var dataKeys = Object.keys(el.dataset||{});
+          var r=el.getBoundingClientRect(), area=r.width*r.height;
+
+          if (BAD_RX.test(tt+" "+cls+" "+id)) return null;
+          if (LANGUAGE_RX.test(tt) || FLAG_RX.test(tt) || isLanguageContext(el)) return null;
+
+          var hostHit = HOST_WORDS.some(function(w){w=w.toLowerCase(); return tt.includes(w)||cls.includes(w)||id.includes(w)||(href.toLowerCase().includes(w));});
+          var mainHit = SERVER_RX.test(tt)||SERVER_RX.test(cls)||SERVER_RX.test(id);
+          var dataHit = dataKeys.some(function(k){ return /server|src|url|host|id|file/.test(k); });
+
+          var big = (r.width>=110 && r.height>=36) || area>=5200 || looksLikeButton(el);
+
+          var s = 0;
+          if (hostHit) s += 70;
+          if (mainHit) s += 50;
+          if (dataHit) s += 30;
+          if (big)     s += 30;
+          s += Math.min(area/1500, 25);  // bonus por tamaño
+          // leve penalización por textos genéricos cortos
+          if (tt.length<=2) s -= 10;
+
+          if (s < 25) return null; // filtro de ruido
+          return {el: el, score: s, area: area, big: big, text: tt};
+        }
+
+        function collectCandidates(){
+          var raw = Array.prototype.slice.call(document.querySelectorAll('a,button,[role="button"],[role="link"],[onclick],li,div'));
+          var arr = [];
+          for (var i=0;i<raw.length;i++){
+            var c=scoreCandidate(raw[i]);
+            if (c) arr.push(c);
+          }
+          // dedupe por nodo
+          var seen=new Set(), out=[];
+          for (var j=0;j<arr.length;j++){
+            var n=arr[j];
+            if (!seen.has(n.el)){ seen.add(n.el); out.push(n); }
+          }
+          // ordenar por score y área (desc)
+          out.sort(function(a,b){
+            if (b.score!==a.score) return b.score-a.score;
+            return b.area-a.area;
+          });
+          return out;
+        }
+
+        function clickEl(el){
+          try{ el.scrollIntoView({block:'center', inline:'center', behavior:'instant'}); }catch(_){}
+          try{ el.focus({preventScroll:true}); }catch(_){}
+          try{ if (typeof el.click==='function') el.click(); }catch(_){}
+          try{
+            var r=el.getBoundingClientRect();
+            var x=Math.round(r.left+r.width/2), y=Math.round(r.top+r.height/2);
+            ['mousedown','mouseup','click'].forEach(function(type){
+              var e=new MouseEvent(type,{bubbles:true,cancelable:true,clientX:x,clientY:y,buttons:1});
+              (document.elementFromPoint(x,y)||el).dispatchEvent(e);
+            });
+          }catch(_){}
+        }
+
+        var list=collectCandidates();
+        var idx=0, running=false, stop=false;
+
+        function step(){
+          if (stop || window.__NATIVE_FOUND__) return;
+          if (idx>=list.length){ stop=true; return; }
+          running=true;
+          var item=list[idx++];
+          clickEl(item.el);
+          try{ // esto dispara unmute/focus/sniffer desde tu lado
+            AndroidBridge.onUserPlay && AndroidBridge.onUserPlay();
+          }catch(_){}
+
+          var tries=0;
+          (function waitLoop(){
+            if (stop || window.__NATIVE_FOUND__) { running=false; return; }
+            if (++tries>=5){ // ~2.5s
+              setTimeout(step, 250);
+            } else {
+              setTimeout(waitLoop, 500);
+            }
+          })();
+        }
+
+        function kick(){
+          if (stop) return;
+          if (!running){
+            // refrescar candidatos por si el DOM cambió
+            list = collectCandidates();
+            idx = 0;
+            step();
+          }
+        }
+
+        window.__SERVER_CYCLER__ = { kick:kick, stop:function(){stop=true;} };
+
+        // arranque + reintentos por si el DOM se arma tarde
+        setTimeout(kick, 200);
+        setTimeout(kick, 900);
+        setTimeout(kick, 1800);
+        setTimeout(kick, 3200);
+        setTimeout(kick, 5200);
+
+      }catch(e){}
+    })();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+
+    // ================== Auto-tap + búsqueda ==================
+    private fun scheduleAutoTapSequence() {
+        webView.postDelayed({ performAutoTapAndSearch() }, 300)
+        webView.postDelayed({ performAutoTapAndSearch() }, 900)
+        webView.postDelayed({ performAutoTapAndSearch() }, 1700)
+        webView.postDelayed({ performAutoTapAndSearch() }, 3000)
+        webView.postDelayed({ performAutoTapAndSearch() }, 5000)
+        autoTapOnStart = false
+    }
+
+    private fun performAutoTapAndSearch() {
+        simulateCenterTap()
+        injectCenterClickJS()
+        injectAutoUnmute()
+        ensurePlayerFocus()
+
+        injectAutoCycleServers()      // ← probar/abrir servidores
+        webView.postDelayed({ injectAutoCycleServers() }, 700)
+
+        injectDeepNativeSniffer()     // ← deja el sniffer corriendo
+        webView.postDelayed({ injectDeepNativeSniffer() }, 400)
+        webView.postDelayed({ injectDeepNativeSniffer() }, 1200)
+    }
+
+    private fun injectCenterClickJS() {
+        val js = """
+        (function(){
+          try{
+            function clickAt(x,y){
+              ['mousedown','mouseup','click'].forEach(function(type){
+                var e = new MouseEvent(type,{bubbles:true,cancelable:true,clientX:x,clientY:y,buttons:1});
+                var el = document.elementFromPoint(x,y);
+                if (el) el.dispatchEvent(e);
+              });
+            }
+            var v = document.querySelector('video');
+            var target = v || document.querySelector('.jw-display') || document.querySelector('.vjs-big-play-button') || document.body;
+            var r = (target && target.getBoundingClientRect())||{left:0,top:0,width:innerWidth,height:innerHeight};
+            var x = Math.round(r.left + r.width/2);
+            var y = Math.round(r.top + Math.min(r.height*0.52, r.height-10));
+            clickAt(x,y);
+
+            // Intentos extra de play
+            try{ if (v){ v.muted=false; v.removeAttribute('muted'); v.play().catch(()=>{});} }catch(_){}
+            try{ if (typeof jwplayer==='function'){ var jw=jwplayer(); if(jw&&jw.play) jw.play(); } }catch(_){}
+            try{ if (typeof videojs==='function'){ var p = videojs.getPlayers && Object.values(videojs.getPlayers())[0]; if(p&&p.play) p.play(); } }catch(_){}
+            try{ if (window.Plyr){ var el=document.querySelector('.plyr, video'); if(el&&el.plyr) el.plyr.play(); } }catch(_){}
+          }catch(e){}
+        })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    /** Elige y clickea el PRIMER botón RECTANGULAR de servidor (arriba-izquierda), evitando círculos/idiomas */
+    private fun injectPickFirstRectServerNoCircles() {
+        val js = """
+    (function(){
+      try{
+        if (window.__PICKED_RECT_SERVER__) return;
+        window.__PICKED_RECT_SERVER__ = true;
+
+        function visible(el){
+          if(!el) return false;
+          var cs=getComputedStyle(el);
+          if(cs.display==='none'||cs.visibility==='hidden'||el.disabled) return false;
+          if(cs.opacity && parseFloat(cs.opacity)<0.12) return false;
+          if(cs.pointerEvents==='none') return false;
+          var r=el.getBoundingClientRect();
+          return (r.width>=12 && r.height>=12 && r.bottom>=0 && r.right>=0 &&
+                  r.top<=(innerHeight||document.documentElement.clientHeight) &&
+                  r.left<=(innerWidth||document.documentElement.clientWidth));
+        }
+
+        function normalizeClickable(el){
+          var base=el, cur=el, best=el, baseR=el.getBoundingClientRect(), baseA=baseR.width*baseR.height;
+          for (var i=0;i<6 && cur && cur!==document.body && cur!==document.documentElement; i++){
+            var r=cur.getBoundingClientRect(), a=r.width*r.height;
+            var looks = cur.tagName==='A'||cur.tagName==='BUTTON'||cur.hasAttribute('onclick')||
+                        cur.getAttribute('role')==='button'||cur.getAttribute('role')==='link';
+            var areaOk = a <= baseA*8;
+            if (visible(cur) && (looks || areaOk)) best = cur;
+            cur = cur.parentElement;
+          }
+          return best;
+        }
+
+        function getBorderRadiusPx(cs, w, h){
+          try{
+            var br=cs.borderRadius||"";
+            if (/%/.test(br)) {
+              // si tiene 50% y es casi cuadrado ⇒ círculo
+              return Math.min(w,h)*0.5;
+            }
+            var m=br.match(/([0-9.]+)px/);
+            return m ? parseFloat(m[1]) : 0;
+          }catch(_){ return 0; }
+        }
+
+        var HOST_WORDS = [
+          "vidhide","streamwish","filemoon","mixdrop","streamtape","dood","okru","ok.ru","uqload","vidoza",
+          "sbplay","streamsb","gcloud","upcloud","wolfstream","vidcloud","streamlare","sendvid","megacloud",
+          "pixeldrain","hydrax","fastream","mcloud","voe","mp4upload","upload","anbalancer","sensa","mega","zippy"
+        ];
+        var SERVER_RX   = /(servidor|server|mirror|source|fuente|host|opci[oó]n|enlace|link|player|reproductor|watch|1080p|720p|hd|ver\b|play\b)/i;
+        var LANGUAGE_RX = /(latino|castellano|espa[nñ]ol|\bes\b|english|\ben\b|ingl[eé]s|portugu[eé]s|\bpt\b|\bbr\b|subt[ií]t|sub\b|audio|dual|idioma|language|vose|vos|esp|lat|cast)/i;
+        var FLAG_RX     = /[\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF]/; // banderas 🇦🇷🇪🇸…
+
+        function isLanguageContext(el){
+          var cur=el, hops=0;
+          while(cur && hops<3){
+            var t=((cur.getAttribute&&(cur.getAttribute('data-label')||cur.getAttribute('aria-label')))||cur.textContent||"").toLowerCase();
+            if (LANGUAGE_RX.test(t) || FLAG_RX.test(t)) return true;
+            cur=cur.parentElement; hops++;
+          }
+          return false;
+        }
+
+        function isRectServerCandidate(node){
+          if(!visible(node)) return null;
+          var el = normalizeClickable(node);
+          if(!visible(el)) return null;
+
+          var cs = getComputedStyle(el);
+          var r  = el.getBoundingClientRect();
+          var w=r.width, h=r.height, area=w*h;
+
+          // descartar "circulitos" (idiomas/chips/bolitas)
+          var br = getBorderRadiusPx(cs, w, h);
+          var ratio = w / (h||1);
+          var isCircleByGeom = (Math.abs(ratio-1) < 0.2) && (br >= Math.min(w,h)*0.45);
+          var cls=(el.className||'').toString().toLowerCase();
+          var id =(el.id||'').toString().toLowerCase();
+          var looksCircleByClass = /\b(circle|round|dot|chip|badge)\b/.test(cls+" "+id);
+          var tiny = area < 1500; // chips chicos de idioma
+
+          if (isCircleByGeom || looksCircleByClass || tiny) return null;
+
+          // evitar idioma por texto/aria/ancestros
+          var t=(el.innerText||el.textContent||el.ariaLabel||el.title||"").trim();
+          var tt=t.toLowerCase();
+          if (LANGUAGE_RX.test(tt) || FLAG_RX.test(tt) || isLanguageContext(el)) return null;
+
+          // detectar que parezca botón de server
+          var href=(el.getAttribute && (el.getAttribute('href')||'')) || '';
+          var hostHit  = HOST_WORDS.some(function(w){w=w.toLowerCase();return tt.includes(w)||cls.includes(w)||id.includes(w)||(href.toLowerCase().includes(w));});
+          var serverHit= SERVER_RX.test(tt)||SERVER_RX.test(cls)||SERVER_RX.test(id);
+
+          // tamaño razonable de botón rectangular
+          var bigEnough = (w>=100 && h>=34) || area>=5200;
+
+          if (!(bigEnough && (hostHit||serverHit))) return null;
+          return { el: el, top:r.top, left:r.left };
+        }
+
+        function collectRectServers(){
+          var raw = Array.prototype.slice.call(document.querySelectorAll('a,button,[role="button"],[role="link"],[onclick],li,div'));
+          var out=[];
+          for (var i=0;i<raw.length;i++){
+            var c=isRectServerCandidate(raw[i]);
+            if (c) out.push(c);
+          }
+          out.sort(function(a,b){ return (a.top-b.top) || (a.left-b.left); }); // arriba→abajo, izquierda→derecha
+          return out;
+        }
+
+        var cand = collectRectServers();
+        if (!cand.length) { window.__PICKED_RECT_SERVER__ = false; return; }
+
+        var el = cand[0].el; // primer rectangular, arriba-izquierda
+        try{ el.scrollIntoView({block:'center', inline:'center', behavior:'instant'}); }catch(_){}
+        try{ el.focus({preventScroll:true}); }catch(_){}
+        try{ if (typeof el.click==='function') el.click(); else el.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true})); }catch(_){}
+
+        // Dispara tu pipeline (unmute/focus/sniffer)
+        try{ AndroidBridge.onUserPlay && AndroidBridge.onUserPlay(); }catch(_){}
+      }catch(e){}
+    })();
+    """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+
+    // ================== Service Worker Ads ==================
+    private fun installServiceWorkerAdPolicy() {
+        if (!WebViewFeature.isFeatureSupported(WebViewFeature.SERVICE_WORKER_BASIC_USAGE)) return
+        ServiceWorkerControllerCompat.getInstance().setServiceWorkerClient(object : ServiceWorkerClientCompat() {
+            override fun shouldInterceptRequest(request: WebResourceRequest): WebResourceResponse? {
+                val u = request.url?.toString() ?: return null
+                return if (isAdUrl(u) && !userInteracted) WebResourceResponse("text/plain","utf-8", null) else null
+            }
+        })
+    }
+
+    // ================== UI / ciclo ==================
+    private fun enableImmersiveMode() {
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        val c = WindowInsetsControllerCompat(window, window.decorView)
+        c.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+        c.hide(WindowInsetsCompat.Type.systemBars())
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        if (hasFocus) enableImmersiveMode()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        enableImmersiveMode()
+        if (this::webView.isInitialized) {
+            webView.onResume()
+            webView.resumeTimers()
+        }
+    }
+
+    override fun onPause()  {
+        if (this::webView.isInitialized) {
+            webView.onPause()
+            webView.pauseTimers()
+        }
+        super.onPause()
+    }
+
+    override fun onDestroy() {
+        try {
+            if (isWE2) {
+                val allHosts = buildList {
+                    hostOf(webUrl)?.let { add(it) }
+                    sources.forEach { hostOf(it.url)?.let { h -> add(h) } }
+                }
+                denyHandoffHosts.removeAll(allHosts)
+            }
+            if (customView != null) {
+                (webView.webChromeClient as? WebChromeClient)?.onHideCustomView()
+            }
+            webView.stopLoading()
+            webView.webViewClient = WebViewClient()
+            webView.webChromeClient = WebChromeClient()
+            (webView.parent as? ViewGroup)?.removeView(webView)
+            webView.clearHistory()
+            webView.clearCache(true)
+            webView.removeAllViews()
+            webView.destroy()
+            CookieManager.getInstance().flush()
+        } catch (_: Exception) { }
+        super.onDestroy()
+    }
+
+    // ================== Controles (remoto) ==================
+    override fun dispatchKeyEvent(event: KeyEvent): Boolean {
+        if (event.action == KeyEvent.ACTION_DOWN) {
+            when (event.keyCode) {
+                KeyEvent.KEYCODE_DPAD_LEFT,
+                KeyEvent.KEYCODE_DPAD_RIGHT,
+                KeyEvent.KEYCODE_DPAD_UP,
+                KeyEvent.KEYCODE_DPAD_DOWN -> {
+                    ensurePlayerFocus()
+                    sendKeyToWeb(event.keyCode)
+                    return true
+                }
+                KeyEvent.KEYCODE_DPAD_CENTER,
+                KeyEvent.KEYCODE_ENTER -> {
+                    ensurePlayerFocus()
+                    sendKeyToWeb(KeyEvent.KEYCODE_ENTER)
+                    sendKeyToWeb(KeyEvent.KEYCODE_SPACE)
+
+                    performAutoTapAndSearch()
+                    return true
+                }
+                KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE,
+                KeyEvent.KEYCODE_MEDIA_PLAY,
+                KeyEvent.KEYCODE_MEDIA_PAUSE -> {
+                    ensurePlayerFocus()
+                    sendKeyToWeb(KeyEvent.KEYCODE_SPACE)
+                    sendKeyToWeb(KeyEvent.KEYCODE_K)
+                    sendKeyToWeb(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE)
+                    performAutoTapAndSearch()
+                    return true
+                }
+                KeyEvent.KEYCODE_F -> { toggleDomFullscreen(); return true }
+                KeyEvent.KEYCODE_VOLUME_MUTE -> { ensurePlayerFocus(); sendKeyToWeb(KeyEvent.KEYCODE_M); return true }
+                KeyEvent.KEYCODE_MEDIA_FAST_FORWARD -> { ensurePlayerFocus(); sendKeyToWeb(KeyEvent.KEYCODE_DPAD_RIGHT); return true }
+                KeyEvent.KEYCODE_MEDIA_REWIND       -> { ensurePlayerFocus(); sendKeyToWeb(KeyEvent.KEYCODE_DPAD_LEFT);  return true }
+            }
+        }
+        return super.dispatchKeyEvent(event)
+    }
+
+    // ================== Helpers de input ==================
+    private fun sendKeyToWeb(code: Int, meta: Int = 0) {
+        val now = SystemClock.uptimeMillis()
+        val down = KeyEvent(now, now, KeyEvent.ACTION_DOWN, code, 0, meta)
+        val up   = KeyEvent(now, now, KeyEvent.ACTION_UP,   code, 0, meta)
+        webView.dispatchKeyEvent(down)
+        webView.dispatchKeyEvent(up)
+    }
+
+    private fun simulateCenterTap() {
+        val x = webView.width / 2f
+        val y = webView.height / 2f
+        val down = SystemClock.uptimeMillis()
+        val evDown = MotionEvent.obtain(down, down, MotionEvent.ACTION_DOWN, x, y, 0)
+        val evUp   = MotionEvent.obtain(down, down + 50, MotionEvent.ACTION_UP, x, y, 0)
+        webView.dispatchTouchEvent(evDown)
+        webView.dispatchTouchEvent(evUp)
+        evDown.recycle()
+        evUp.recycle()
+    }
+
+    /** Da foco al video/iframe/controles para que reciban teclas */
+    private fun ensurePlayerFocus() {
+        if (!this::webView.isInitialized) return
+        val js = """
+        (function(){
+          try{
+            var sels = ['video','.vjs-control-bar','.plyr__controls','.jw-controls','.jw-display'];
+            for (var i=0;i<sels.length;i++){
+              var n = document.querySelector(sels[i]);
+              if(n){
+                var r=n.getBoundingClientRect(), st=getComputedStyle(n);
+                if(r.width>2 && r.height>2 && st.display!=='none' && st.visibility!=='hidden'){
+                  try{ n.setAttribute('tabindex','0'); n.focus({preventScroll:true}); }catch(_){}
+                  return true;
+                }
+              }
+            }
+            var ifr = Array.from(document.querySelectorAll('iframe')).find(function(f){
+              var r=f.getBoundingClientRect(), st=getComputedStyle(f);
+              return r.width>2 && r.height>2 && st.display!=='none' && st.visibility!=='hidden';
+            });
+            if (ifr){
+              try{ ifr.setAttribute('tabindex','0'); ifr.focus({preventScroll:true}); }catch(_){}
+              return true;
+            }
+          }catch(e){}
+          return false;
+        })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    private fun toggleDomFullscreen() {
+        val js = """
+          (function(){
+            try{
+              var el = document.querySelector('video') || document.documentElement;
+              if (document.fullscreenElement || document.webkitFullscreenElement) {
+                (document.exitFullscreen || document.webkitExitFullscreen || function(){})().call(document);
+                return "exit";
+              } else {
+                (el.requestFullscreen || el.webkitRequestFullscreen || el.webkitEnterFullscreen || function(){})().call(el);
+                return "enter";
+              }
+            }catch(e){ return "error"; }
+          })();
+        """.trimIndent()
+        webView.evaluateJavascript(js, null)
+    }
+
+    // ================== Aux ==================
+    private fun buildUA(base: String?, desktop: Boolean): String {
+        val tv = "Mozilla/5.0 (Linux; Android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36 WebView"
+        val desk = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+        val uaBase = base ?: tv
+        return if (desktop) desk else uaBase
+    }
+}
