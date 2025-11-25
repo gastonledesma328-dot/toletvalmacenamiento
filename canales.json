@@ -324,7 +324,7 @@
     "name": "ESPN Premium",
     "description": "Fútbol argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
-    "streamUrl": "https://twilight-heart-e08f.jet-1968.workers.dev/proxy?url=https://covoslivechannels2dash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(ESPN_HD)/manifest.mpd",
+    "streamUrl": "https://cdnlb.gigared.com.ar/live/eds/ESPN_Premium/sa_live_dash/ESPN_Premium.mpd",
     "streamType": "MPD",
     "category": "deportes",
     "pais": "Argentina"
