@@ -324,8 +324,8 @@
     "name": "ESPN Premium",
     "description": "Fútbol argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
-    "streamUrl": "https://cableparatodos-soextensioonnennbe.blogspot.com/p/sopraexteeen-commpu-1.html?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE",
-    "streamType": "WEB",
+    "streamUrl": "https://edge-live03-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzY0MjAyMDQzIiwic2lwIjoiMzguMTAuMTEzLjE2NyIsInBhdGgiOiIvbGl2ZS9jN2Vkcy9MYV9OYWNpb24vU0FfTGl2ZV9kYXNoX2VuYy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImQ0MTBkNjg4ZWQ5ODBiZjEiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzE4MS4xMi4zNi4xNTAiLCJhdWQiOiIyOTYiLCJzb3VyY2VzIjpbODUsODYsODhdfQ==.jdMuUNXse06xU4q4Nh-c0JS2m8webfpvJ0eVeehgW6ICE5NPcuG0r2xsPqaRwc_gg5q1j-015d68PpaPFwTgBA==/live/c7eds/Fox_Sports_Premiun_HD/SA_Live_dash_enc/Fox_Sports_Premiun_HD.mpd",
+    "streamType": "MPD",
     "category": "deportes",
     "pais": "Argentina"
   },
