@@ -1,3 +1,4 @@
+Prueba la IA directamente en tus apps favoritas … Usa Gemini para generar borradores y perfeccionar contenido, y obtén Gemini Pro con acceso a la IA de nueva generación de Google por USD 19.99 USD 9.99 durante 2 meses
 [
   {
     "id": 1,
@@ -13,7 +14,7 @@
     "name": "Telefe Cba",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Telefe.png",
-    "streamUrl": "https://canalesonline.netlify.app/servidores/fetch.html?stream=Telefe_Cordoba",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2FuYWxfOF9DQkE&lang=1",
     "streamType": "WEB",
     "category": "tv"
   },
@@ -31,8 +32,8 @@
     "name": "TN",
     "description": "Canal generalista argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TN_todo_noticias_logo.svg/2560px-TN_todo_noticias_logo.svg.png",
-    "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/tn/output.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VG9kb05vdGljaWFz&lang=1",
+    "streamType": "WEB",
     "category": "tv"
   },
   {
@@ -49,8 +50,8 @@
     "name": "A24",
     "description": "Canal argentino de televisión abierta",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/A24-logo.svg/258px-A24-logo.svg.png",
-    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/a24_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=QW1lcmljYTI0",
+    "streamType": "WEB",
     "category": "tv"
   },
   {
@@ -85,8 +86,8 @@
     "name": "Canal 26",
     "description": "Señal informativa argentina",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/LogoCanal26.png",
-    "streamUrl": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=MjZfVFZfSEQ",
+    "streamType": "WEB",
     "category": "tv"
   },
   {
@@ -94,8 +95,8 @@
     "name": "Crónica",
     "description": "Señal de noticias argentina",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cr%C3%B3nica-logo.svg/1280px-Cr%C3%B3nica-logo.svg.png",
-    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/cronica_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q3JvbmljYVRW",
+    "streamType": "WEB",
     "category": "tv"
   },
   {
@@ -112,8 +113,8 @@
     "name": "America",
     "description": "Canal regional",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",
-    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/americahls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=QW1lcmljYVRW&lang=1",
+    "streamType": "WEB",
     "category": "tv"
   },
   {
@@ -124,15 +125,6 @@
     "streamUrl": "https://stream1.sersat.com/hls/garagetv.m3u8",
     "streamType": "M3U8",
     "category": "entretenimiento"
-  },
-  {
-    "id": 52,
-    "name": "Bob Esponja",
-    "description": "",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bob_esponja_logotipo.svg/2560px-Bob_esponja_logotipo.svg.png",
-    "streamUrl": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6254598f5083f800076d8563/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=unknown&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=94b33a50-52dc-11ed-8a57-a7949f30f39c&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c32ca8be-d69f-4d5d-af36-5defdd524167&userId=",
-    "streamType": "M3U8",
-    "category": "kids"
   },
   {
     "id": 55,
@@ -229,8 +221,8 @@
     "name": "Discovery Channel",
     "description": "",
     "logoUrl": "https://static.cdnlogo.com/logos/d/60/discovery-channel.png",
-    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/discovery_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RGlzY292ZXJ5SEQ=&lang=1",
+    "streamType": "WEB",
     "category": "entretenimiento"
   },
   {
@@ -252,15 +244,6 @@
   "category": "entretenimiento"
   },
   {
-    "id": 56,
-    "name": "CGTN",
-    "description": "Documentales",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/2560px-CGTN.svg.png",
-    "streamUrl": "https://espanol-livews.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8",
-    "streamType": "M3U8",
-    "category": "entretenimiento"
-  },
-  {
     "id": 26,
     "name": "National Geographic",
     "description": "Documentales de ciencia",
@@ -274,8 +257,8 @@
     "name": "ESPN",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/ESPN_logos.png",
-    "streamUrl": "https://hidden-smoke-f51a.jet-1968.workers.dev/https://covoslivechannels2dash.clarovideo.com/Content/DASH_DASH_FK/Live/Channel(ESPN_HD)/manifest.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMub3JnL2NoLnBocD9pZD1lc3BuMWNv",
+    "streamType": "WEB",
     "category": "deportes",
     "pais": "Colombia"
   },
@@ -284,8 +267,8 @@
     "name": "ESPN 2",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/2560px-ESPN2_logo.svg.png",
-    "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/sJDmPFpTWBNS2gZhzj8ydHU7tR9Y6uf4k/output.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMub3JnL2NoLnBocD9pZD1lc3BuMmNv",
+    "streamType": "WEB",
     "category": "deportes",
     "pais": "Argentina"
   },
@@ -294,8 +277,8 @@
     "name": "ESPN 3",
     "description": "Deportes 24/7",
     "logoUrl": "https://televvd.com/wp-content/uploads/2024/03/TODOS_2024_ESPN-3-1024x357.png",
-    "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/QVsZxnupYwKdAtb5Dk3zvFXBMGqcWgmfR/output.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMub3JnL2NoLnBocD9pZD1lc3BuM2Nv",
+    "streamType": "WEB",
     "category": "deportes",
     "pais": "Argentina"
   },
@@ -304,8 +287,8 @@
     "name": "ESPN 4",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/1200px-ESPN_4_logo.svg.png",
-    "streamUrl": "https://delivery.cdn.rcs.net.ar/mnp/bPHSdXgELpUR4JkCe3Qu5mV6zn8qMwjTY/output.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://telegratuita.org/repro/?r=Ly90ZWxlZGVwb3J0ZXMub3JnL2NoLnBocD9pZD1lc3BuNGNv",
+    "streamType": "WEB",
     "category": "deportes",
     "pais": "Argentina"
   },
@@ -314,7 +297,7 @@
     "name": "ESPN 5",
     "description": "Deportes 24/7",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ESPN_5_logo.svg/1200px-ESPN_5_logo.svg.png",
-    "streamUrl": "https://cableparatodos-soextensioonnennbe.blogspot.com/p/repro-floootoods-1.html?get=RVNQTjQ=&lang=1",
+    "streamUrl": "https://telegratuita.org/cv.php?get=RVNQTjQ=&lang=1",
     "streamType": "WEB",
     "category": "deportes",
     "pais": "Argentina"
@@ -324,8 +307,8 @@
     "name": "ESPN Premium",
     "description": "Fútbol argentino",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/ESPN_Premium_logo.png",
-    "streamUrl": "https://cdnlb.gigared.com.ar/live/eds/ESPN_Premium/sa_live_dash/ESPN_Premium.mpd",
-    "streamType": "MPD",
+    "streamUrl": "https://telegratuita.org/repro/?r=L3ByZW1pdW0vcGxheWVyMS5waHA/Y2FuYWw9ZXNwbnByZW1pdW1hcg==",
+    "streamType": "WEB",
     "category": "deportes",
     "pais": "Argentina"
   },
@@ -384,7 +367,7 @@
     "name": "Dsport",
     "description": "Deportes en vivo",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png",
-    "streamUrl": "https://la14hd.com/vivo/canales.php?stream=dsports",
+    "streamUrl": "https://telegratuita.org/repro/?r=L3ByZW1pdW0vcGxheWVyMS5waHA/Y2FuYWw9ZHNwb3J0cw==",
     "streamType": "WEB",
     "category": "deportes",
     "pais": "Colombia"
@@ -412,8 +395,8 @@
     "name": "TNT Series",
     "description": "Canal de series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png",
-    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/tntseries_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VE5UU2VyaWVz&lang=1",
+    "streamType": "WEB",
     "category": "cine"
   },
   {
@@ -421,8 +404,8 @@
     "name": "TNT",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Logo_TNT_Series.png",
-    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/tnt_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=VE5UX0hEX0FyZw==&lang=1",
+    "streamType": "WEB",
     "category": "cine"
   },
   {
@@ -430,8 +413,8 @@
     "name": "TNT Novelas",
     "description": "",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo_TNT_Novelas.png/1200px-Logo_TNT_Novelas.png",
-    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/tntnovelas_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/repro/?r=L3R2L3Bydi5waHA/aWQ9dG50bm92ZWxhcw==",
+    "streamType": "WEB",
     "category": "cine"
   },
   {
@@ -448,7 +431,7 @@
     "name": "Star Channel",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/2560px-Star_Channel_2020.svg.png",
-    "streamUrl": "https://telegratuita.org/cv.php?get=Rk9YSEQ=&lang=1",
+    "streamUrl": "https://telegratuita.org/repro/?r=L2lwdHYucGhwP2NoYW5uZWw9c3RhcmNoYW5uZWw=",
     "streamType": "WEB",
     "category": "cine"
   },
@@ -466,8 +449,8 @@
     "name": "Cinemax",
     "description": "Películas",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cinemax_LA.png",
-    "streamUrl": "https://telegratuita.org/cors-proxy.php?url=https://streamer1.nexgen.bz/CINEMAX/index.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=Q2luZW1heA==&lang=1",
+    "streamType": "WEB",
     "category": "cine"
   },
   {
@@ -480,21 +463,12 @@
     "category": "cine"
   },
   {
-    "id": 48,
-    "name": "Paramount Network",
-    "description": "Películas y series",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/1028px-Paramount_Network.svg.png",
-    "streamUrl": "https://router.cdn.rcs.net.ar/mnp/paramount_hls/playlist.m3u8",
-    "streamType": "M3U8",
-    "category": "cine"
-  },
-  {
     "id": 49,
     "name": "HBO",
     "description": "Películas y series",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/512px-HBO_logo.svg.png",
-    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/hbo_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=SEJPSEQ=&lang=1",
+    "streamType": "WEB",
     "category": "cine"
   },
   {
@@ -502,8 +476,8 @@
     "name": "HBO Family",
     "description": "Películas familiares",
     "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png",
-    "streamUrl": "https://access.cdn.rcs.net.ar/mnp/hbofam_hls/playlist.m3u8",
-    "streamType": "M3U8",
+    "streamUrl": "https://telegratuita.org/cv.php?get=SEJPX0ZhbWlseQ==&lang=1",
+    "streamType": "WEB",
     "category": "cine"
   },
   {
